@@ -1,0 +1,43 @@
+package com.example.test;
+
+import org.springframework.web.bind.annotation.*;
+import com.sun.glass.ui.MenuItem;
+import java.util.HashMap;
+import java.util.Hashtable;
+import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
+import java.util.List;
+import java.util.ArrayList;
+import java.time.LocalTime;
+import java.util.Date;
+
+@RestController
+public class Controller{
+	
+    String po = "";
+
+    
+
+    
+    @Autowired
+    Database db;
+    
+    @GetMapping("/person/{id}")
+    Optional<Person> getPerson(@PathVariable Integer id){
+        return db.findById(id);
+    }
+
+    @RequestMapping("/persons")
+    List<Person> hello() {
+        return db.findAll();
+    }
+
+    @PostMapping("/person")
+    Person createPerson(@RequestBody Person p){
+        db.save(p);
+        return p;
+    }
+    
+
+}
+

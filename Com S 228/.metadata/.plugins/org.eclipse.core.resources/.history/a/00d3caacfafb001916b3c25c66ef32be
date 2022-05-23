@@ -1,0 +1,270 @@
+package cs228hw2.test;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+public class AmusingLinkedList<E> implements List<E> {
+	private Node head = null,root, end = null;
+	private int index = 0;
+	public class Node {
+		private Node prev, next;
+		private E myData;
+		
+		public Node(Node p, Node n, E data) {
+			prev = p;
+			next = n;
+			myData = data;
+		}
+		
+		public E getData() {
+			return myData;
+		}
+		
+		public Node getNext() {
+			return next;
+		}
+		
+		public Node getPrev() {
+			if(index % 2 == 0) {
+				return prev;
+			}
+			return null;
+		}
+	}
+
+	@Override
+	public boolean add(E e) {
+		// TODO Auto-generated method stub
+		if(end == null) {
+			end = new Node(null, null, e);
+			head = new Node(end, end, null);
+			end.next = end;
+			end.prev = end;
+			index++;
+			return true;
+		}
+		else {
+			if(index % 2 == 0) {
+				root = end.prev;
+				root.next = new Node(root.prev, end, e);
+				index++;
+				return true;
+			}
+			else {
+				root = end.prev;
+				root = root.next;
+				root.next = new Node(root.prev.prev,end,e);
+				index++;
+				return true;
+			}
+		}
+		
+	}
+
+	@Override
+	public void add(int idx, E e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean addAll(Collection<? extends E> items) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean addAll(int arg0, Collection<? extends E> items) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		Node myNode = end;
+		for(int i = 0; i <= index; i++) {
+			myNode = myNode.next;
+		}
+	}
+
+	@Override
+	public boolean contains(Object o) {
+		// TODO Auto-generated method stub
+		Node myNode = end;
+		int tempCounter = 0;
+		while(tempCounter != index) {
+			if(myNode.equals(o)) {
+				return true;
+			}
+			else { 
+				myNode = myNode.next;
+				tempCounter++;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public boolean containsAll(Collection<?> arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public E get(int i) {
+		// TODO Auto-generated method stub
+		Node myNode = end;
+		if(i > index || i < 0) {
+			throw new IndexOutOfBoundsException();
+		}
+		else {
+			for(int j = 0; j <= i; i++) {
+				myNode = myNode.next;
+			}
+		}
+		return myNode.myData;
+	}
+
+	@Override
+	public int indexOf(Object o) {
+		// TODO Auto-generated method stub
+		Node myNode = end;
+		for(int i = 0; i <= index; i++) {
+			if(myNode.equals(o)) {
+				return i;
+			}
+			else {
+				myNode = myNode.next;
+			}
+		}
+		return -1;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return end == null;
+	}
+
+	@Override
+	public Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int lastIndexOf(Object o) {
+		// TODO Auto-generated method stub
+		int i, idx = 0;
+		Node myNode = end;
+		for(i = 0; i <= index; i++) {
+			if(myNode.equals(o)) {
+				idx = i;
+				myNode = myNode.next;
+			}
+			myNode = myNode.next;
+		}
+		return idx;
+	}
+
+	@Override
+	public ListIterator<E> listIterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ListIterator<E> listIterator(int arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean remove(Object o) {
+		// TODO Auto-generated method stub
+		Node myNode = end;
+		Node temp = null;
+		int fixerCount = 0;
+		while(!myNode.equals(end.prev)) {
+			if(myNode.equals(o)) {
+				temp.next = myNode.next;
+				myNode.next.prev = temp;
+				myNode.next = null;
+				myNode.prev = null;
+				for(int i = fixerCount; i <= index; i++) {
+					if(i % 2 == 0) {
+						//fixme
+					}
+				}
+			}
+			temp = myNode;
+			myNode = myNode.next;
+			fixerCount++;
+		}
+		return false;
+	}
+
+	@Override
+	public E remove(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean removeAll(Collection<?> arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean retainAll(Collection<?> arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public E set(int idx, E newData) {
+		// TODO Auto-generated method stub
+		if(idx > index || idx < - 1) {
+			throw new IndexOutOfBoundsException();
+		}
+		Node myNode = end;
+		E oldData = myNode.myData;
+		for(int i = 0; i <= index; i++) {
+			if(i == idx) {
+				oldData = myNode.myData;
+				myNode.myData = newData;
+			}
+			myNode = myNode.next;
+		}
+		return oldData;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return index;
+	}
+
+	@Override
+	public List<E> subList(int arg0, int arg1) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object[] toArray() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> T[] toArray(T[] arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

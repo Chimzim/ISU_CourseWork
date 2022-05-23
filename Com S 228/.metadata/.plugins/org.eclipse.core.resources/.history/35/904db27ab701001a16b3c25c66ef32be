@@ -1,0 +1,135 @@
+package cs228hw2.test;
+
+public class toHelp {
+	numb1B.set(0, numb1B.get(0)*-1);
+}
+for(int i = numb2A.size()-1; i >= 0; i--) {
+	if(numb2A.get(i) > numb1A.get(i) && i != 0) {
+		numb1A.set(i, numb1A.get(i)+10);
+		numb1A.set(i-1, numb1A.get(i-1)-1);
+	}
+	else if(numb2A.get(i) > numb1A.get(i) && i == 0) {
+		numb1A.set(i, numb1A.get(i)+10);
+		numb1B.set(numb1B.size()-1, numb1B.get(numb1B.size()-1)-1);
+	}
+	numb2A.set(i, numb1A.get(i)-numb2A.get(i));
+}
+for(int i = numb2B.size()-1; i >= 0; i--) {
+	if(numb2A.get(i) > numb1B.get(i) && i != 0) {
+		numb1B.set(i, numb1B.get(i)+10);
+		numb1B.set(i-1, numb1B.get(i-1)-1);
+	}
+	numb2B.set(i, numb1A.get(i)-numb2B.get(i));
+}
+numb2B.set(0, numb2B.get(0)*-1);
+}
+else if(numb1B.get(0) > 0 && numb2B.get(0) < 0) {
+subtractionNeed = true;
+if(numb1B.get(0) < numb2B.get(0)*-1) {
+	negative = true;
+}
+for(int i = numb2A.size()- 1; i >= 0; i--) {
+	if(numb1A.get(i) > numb2A.get(i) && i != 0) {
+		numb2A.set(i, numb2A.get(i)+10);
+		numb2A.set(i-1, numb2A.get(i-1)-1);
+	}
+	else if(numb1A.get(i) > numb2A.get(i) && i == 0) {
+		numb2A.set(i, numb2A.get(i)+10);
+		numb2B.set(numb2B.size()-1, numb2B.get(numb2B.size()-1)-1);
+	}
+	numb2B.set(i, numb2A.get(i)-numb1A.get(i));
+}
+for(int i = numb2B.size()- 1; i >= 0; i--) {
+	if(numb1B.get(i) > numb2B.get(i) && i != 0) {
+		numb2B.set(i, numb2B.get(i)+10);
+		numb2B.set(i-1, numb2B.get(i-1)-1);
+	}
+	numb2B.set(i, numb2B.get(i)-numb1B.get(i));
+}
+numb2B.set(0, numb2B.get(0)*-1);
+}
+else if(numb1B.get(0) > 0 && numb2B.get(0) < 0) {
+if(numb1B.get(0) > numb2B.get(0)*-1) {
+	for(int i = numb2A.size()-1; i >= 0; i--) {
+		if(numb2A.get(i) > numb1A.get(i) && i != 0) {
+			numb1A.set(i, numb1A.get(i)+10);
+			numb1A.set(i-1, numb1A.get(i-1)-1);
+		}
+		else if(numb2A.get(i) > numb1A.get(i) && i == 0) {
+			numb1A.set(i, numb1A.get(i)+10);
+			numb1B.set(numb1B.size()-1, numb1B.get(numb1B.size()-1)-1);
+		}
+		numb2A.set(i, numb1A.get(i)-numb2A.get(i));
+	}
+	for(int i = numb2B.size()-1; i >= 0; i--) {
+		if(numb2B.get(i) > numb1B.get(i) && i != 0) {
+			numb1B.set(i, numb1B.get(i)+10);
+			numb1B.set(i-1, numb1B.get(i-1)-1);
+		}
+		numb2B.set(i, numb1B.get(i)-numb2B.get(i));
+	}
+}
+}
+else if(numb1B.get(0) < 0 && numb2B.get(0) > 0) {
+if(numb1B.get(0)*-1 < numb2B.get(0)) {
+	for(int i = numb2A.size()-1; i >= 0; i--) {
+		if(numb1A.get(i) > numb2A.get(i) && i != 0) {
+			numb2A.set(i, numb2A.get(i)+10);
+			numb2A.set(i-1, numb2A.get(i-1)-1);
+		}
+		else if(numb1A.get(i) > numb2A.get(i) && i == 0) {
+			numb2A.set(i, numb2A.get(i)+10);
+			numb2B.set(numb2B.size()-1, numb2B.get(numb2B.size()-1)-1);
+		}
+		numb2A.set(i, numb2A.get(i)-numb1A.get(i));
+	}
+	for(int i = numb2B.size()-1; i >= 0; i--) {
+		if(numb1B.get(i) > numb2B.get(i)) {
+			numb2B.set(i, numb2B.get(i)+10);
+			numb2B.set(i-1, numb2B.get(i-1)-1);
+		}
+		numb2B.set(i, numb2B.get(i)-numb1B.get(i));
+	}
+}
+}
+else {
+for(int i = numb2A.size()-1; i >= 0; i--) {
+	numb2A.set(i, numb2A.get(i)+numb1A.get(i));
+	if(numb2A.get(i) >= 10 && i != 0) {
+		numb2A.set(i, numb2A.get(i)%10);
+		numb2A.set(i-1, numb2A.get(i)+1);
+	}
+	else if(numb2A.get(i) >= 10 && i == 0) {
+		numb2A.set(i, numb2A.get(i)%10);
+		numb2B.set(numb2B.size()-1, numb2B.get(numb2B.size()-1)+1);
+	}
+}
+for(int i = numb2B.size()-1; i >= 0; i--) {
+	numb2B.set(i, numb2A.get(i)+numb1A.get(i));
+	if(numb2A.get(i) >= 10 && i != 1) {
+		numb2B.set(i, numb2A.get(i)%10);
+		numb2B.set(i-1, numb2A.get(i)+1);
+	}
+	else if(numb2A.get(i) >= 10 && i == 1) {
+		if(numb2B.get(0) < 0) {
+			numb2B.set(i, numb2A.get(i)%10);
+			numb2B.set(i-1, numb2A.get(i)-1);
+		}
+		else {
+			numb2B.set(i, numb2A.get(i)%10);
+			numb2B.set(i-1, numb2A.get(i)+1);
+		}
+	}
+	else if(numb2A.get(i) >= 10 && i == 0) {
+		numb2B.set(i, numb2A.get(i)%10);
+		if(negative == true) {
+			numb2B.add(0, -1);
+		}
+		else {
+			numb2B.add(0, 1);
+		}
+	}
+	}
+}
+}
+}

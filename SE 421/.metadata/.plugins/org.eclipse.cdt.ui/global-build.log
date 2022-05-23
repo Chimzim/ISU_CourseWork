@@ -1,0 +1,7 @@
+Build not configured correctly
+10:19:33 **** Build of configuration Debug for project hw7 ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin/client;C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\;C:\Users\chimz\AppData\Local\Microsoft\WindowsApps;;C:\Users\chimz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chimz\AppData\Roaming\npm;C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse]

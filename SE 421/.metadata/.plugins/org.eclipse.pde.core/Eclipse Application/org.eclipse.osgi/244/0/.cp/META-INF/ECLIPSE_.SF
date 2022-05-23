@@ -1,0 +1,69 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest-Main-Attributes: rPzADKurkDpsUfYPxlKhqA3UkS3iN
+ 6HW+GE5zos7R6c=
+SHA-256-Digest-Manifest: mVpV/2dTUszj2NGPTTAg7PXxoOnbq4eKricljjpLCq0=
+Created-By: 1.8.0_51 (Oracle Corporation)
+
+Name: about.properties
+SHA-256-Digest: DcVRQi3krimuPHGDAqknPWDcRkzMad0UQpT8f102Xiw=
+
+Name: plugin.xml
+SHA-256-Digest: Uht5IVTXUmUVkax4n3jOQ/a7R6CpyntHODcoXejmxhA=
+
+Name: about.html
+SHA-256-Digest: ncO+WCNUIJ0JLCOl/ot53yopwTqvvtVu0qSgblesdYo=
+
+Name: images/topiclabel/ov_teamsup48.gif
+SHA-256-Digest: ajTCqFKfpDWfxg+HFKESuHK9856xjs00F4l02XDXFAg=
+
+Name: images/topiclabel/tu_merge48.gif
+SHA-256-Digest: 6ec8sVhSbpPYZetY9UuTc2l+yuT5Cb5MPTmy8hl5HcU=
+
+Name: intro/css/overview.css
+SHA-256-Digest: QE653tsadqlAyxudFzi/sZf3L/rT5zqu++EjnLuRBj4=
+
+Name: intro/css/overview.properties
+SHA-256-Digest: 8o0yaF94TuCDxZyYaGizLwbW9hSWeN460Teg1dHpFPg=
+
+Name: images/topiclabel/tu_checkout48_hov.gif
+SHA-256-Digest: 7+xw+ogfeH3ZZuYsymid49JHqVz4TJ0vap7Fh9h0o/k=
+
+Name: eclipse32.png
+SHA-256-Digest: 4Vi6RhGrdWsIEJf2umgsolfDHPhCntdl7133+BjuodY=
+
+Name: intro/overviewExtensionContent.xml
+SHA-256-Digest: VItIRPjjxOrIEXVnjPSUt4YnIfNFNRJZTzSH1AP8xYY=
+
+Name: images/topiclabel/ov_teamsup48_hov.gif
+SHA-256-Digest: YiPcLK9pkEXqHaQxM6VAGhsuBbCjrvQ40kwQ5t0AjVI=
+
+Name: images/topiclabel/tu_checkout48.gif
+SHA-256-Digest: 58YtKSA/M5UGiGzLbdy1gRVbl7GKlOrnoqSKOsfqqHE=
+
+Name: about.mappings
+SHA-256-Digest: +H3TNNdwBhiPKk0kYjSuchiqj6Gh5td8ZIu9V8vasqE=
+
+Name: images/topiclabel/tu_merge48_hov.gif
+SHA-256-Digest: J5u+i8UJzfYjR2nmnmtmiFknKX1MQZyLq8OCb8nikPM=
+
+Name: intro/css/tutorials.css
+SHA-256-Digest: cyD74XVzADOYBx67ZoH4W15iCnDXAjXlbcRkJHrlf8M=
+
+Name: cheatsheets/cvs_merge.xml
+SHA-256-Digest: MG8KSVQ5ltw188zd80fGj4UeBJ4tBX6sYYHqnFST/bw=
+
+Name: about.ini
+SHA-256-Digest: Xw82f0sqQ1cQN/e17khUnzyWRm8E7SAxYc0Fq1juf5w=
+
+Name: plugin.properties
+SHA-256-Digest: JEV8PV4BRKKX8DB7IjQVArmpyIgdePhueIJMDuxsC2U=
+
+Name: intro/tutorialsExtensionContent.xml
+SHA-256-Digest: v6quO7RSNYekkbEGiUuOGVINJ09MjMUEW01R6NXN82g=
+
+Name: intro/css/tutorials.properties
+SHA-256-Digest: DXAnCAXPQhP60eFxvRMXKcNUb3Gl2AM3BGlW17Q6adE=
+
+Name: cheatsheets/cvs_checkout.xml
+SHA-256-Digest: ioApL7wOj/4Db80MCISeg8bG5e19SVQpqgJZw8e1SJ0=
+

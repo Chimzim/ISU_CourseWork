@@ -1,0 +1,256 @@
+2021-10-18 11:51:26 INFO  - Initializing Atlas logger for 'com.ensoftcorp.atlas.3.7.1.202103181345'
+2021-10-18 11:51:26 INFO  - Logging level: RELEASE
+2021-10-18 11:51:26 INFO  - EnSoft Plugins: com.ensoftcorp.abp.3.7.1.202103181345,com.ensoftcorp.abp.common.3.7.1.202103181345,com.ensoftcorp.atlas.3.7.1.202103181345,com.ensoftcorp.atlas.c.core.3.7.1.202103181345,com.ensoftcorp.atlas.c.ui.3.7.1.202103181345,com.ensoftcorp.atlas.core.3.7.1.202103181345,com.ensoftcorp.atlas.db.3.7.1.202103181345,com.ensoftcorp.atlas.db.common.3.7.1.202103181345,com.ensoftcorp.atlas.db.implementation.3.7.1.202103181345,com.ensoftcorp.atlas.epl.3.7.1.202103181345,com.ensoftcorp.atlas.java.core.3.7.1.202103181345,com.ensoftcorp.atlas.java.help.3.7.1.202103181345,com.ensoftcorp.atlas.java.ui.3.7.1.202103181345,com.ensoftcorp.atlas.jimple.core.3.7.1.202103181345,com.ensoftcorp.atlas.jimple.ui.3.7.1.202103181345,com.ensoftcorp.atlas.scala-lang.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.c.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.core.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.java.3.7.1.202103181345,com.ensoftcorp.atlas.ui.3.7.1.202103181345,com.ensoftcorp.atlas.ui.shell.3.7.1.202103181345,com.ensoftcorp.atlas.version.jre.3.7.1.202103181345,com.ensoftcorp.open.batik.1.11.0.202103181345,com.ensoftcorp.open.c.commons.3.7.0.202103162030,com.ensoftcorp.open.c.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.commons.3.7.0.202103162030,com.ensoftcorp.open.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.java.commons.3.7.0.202103162030,com.ensoftcorp.open.java.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.jimple.commons.3.7.0.202103162030,com.ensoftcorp.open.jimple.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.pcg.3.7.0.202103162030,com.ensoftcorp.open.pcg.ui.3.7.0.202103162030,com.ensoftcorp.open.slice.3.7.0.202103162030,com.ensoftcorp.open.slice.ui.3.7.0.202103162030
+2021-10-18 11:51:26 INFO  - Free|Total|Max memory: 129.41 MB|308.0 MB|4096.0 MB (42% free)
+2021-10-18 11:51:26 INFO  - 
+****** System environment: ******
+=::=::\
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\chimz\AppData\Roaming
+COMPUTERNAME=DESKTOP-JPS83P3
+ChocolateyInstall=C:\ProgramData\chocolatey
+ChocolateyLastPathUpdate=132437223347585837
+ComSpec=C:\WINDOWS\system32\cmd.exe
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+DriverData=C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\chimz
+LOCALAPPDATA=C:\Users\chimz\AppData\Local
+LOGONSERVER=\\DESKTOP-JPS83P3
+NUMBER_OF_PROCESSORS=8
+OS=Windows_NT
+OneDrive=C:\Users\chimz\OneDrive
+OneDriveConsumer=C:\Users\chimz\OneDrive
+OnlineServices=Online Services
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+PROCESSOR_LEVEL=23
+PROCESSOR_REVISION=1100
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+Path=C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin/client;C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\;C:\Users\chimz\AppData\Local\Microsoft\WindowsApps;;C:\Users\chimz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chimz\AppData\Roaming\npm;C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse;
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+RegionCode=NA
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\chimz\AppData\Local\Temp
+TMP=C:\Users\chimz\AppData\Local\Temp
+USERDOMAIN=DESKTOP-JPS83P3
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-JPS83P3
+USERNAME=chimz
+USERPROFILE=C:\Users\chimz
+platformcode=KV
+windir=C:\WINDOWS
+****** (end System environment) ******
+
+2021-10-18 11:51:26 INFO  - 
+****** System properties: ******
+applicationXMI=org.eclipse.ui.workbench/LegacyIDE.e4xmi
+awt.toolkit=sun.awt.windows.WToolkit
+ds.delayed.keepInstances=true
+ds.delayed.keepInstances.default=true
+eclipse.application=org.eclipse.ui.ide.workbench
+eclipse.buildId=4.12.0.I20190605-1800
+eclipse.commands=-os
+win32
+-ws
+win32
+-arch
+x86_64
+-showsplash
+C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+-launcher
+C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\eclipse.exe
+-name
+Eclipse
+--launcher.library
+C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.1000.v20190125-2016\eclipse_1801.dll
+-startup
+C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+--launcher.appendVmargs
+-product
+org.eclipse.epp.package.committers.product
+-atlas.bundleDistribution
+true
+-vm
+C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin\client\jvm.dll
+
+eclipse.home.location=file:/C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/
+eclipse.launcher=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\eclipse.exe
+eclipse.launcher.name=Eclipse
+eclipse.p2.data.area=@config.dir/../p2/
+eclipse.p2.profile=epp.package.committers
+eclipse.product=org.eclipse.epp.package.committers.product
+eclipse.startTime=1634575791319
+eclipse.stateSaveDelayInterval=30000
+eclipse.vm=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin\client\jvm.dll
+eclipse.vmargs=-Dosgi.requiredJavaVersion=1.8
+-Dosgi.instance.area.default=@user.home/eclipse-workspace
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
+-Dosgi.requiredJavaVersion=1.8
+-Dosgi.dataAreaRequiresExplicitInit=true
+-Xms256m
+-Xmx4g
+--add-modules=ALL-SYSTEM
+-Djava.class.path=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+
+equinox.init.uuid=true
+file.encoding=Cp1252
+file.separator=\
+gosh.args=--nointeractive
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+java.class.path=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+java.class.version=55.0
+java.home=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre
+java.io.tmpdir=C:\Users\chimz\AppData\Local\Temp\
+java.library.path=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\;C:\Users\chimz\AppData\Local\Microsoft\WindowsApps;;C:\Users\chimz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chimz\AppData\Roaming\npm;.
+java.runtime.name=OpenJDK Runtime Environment
+java.runtime.version=11.0.4+11
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=11
+java.vendor=AdoptOpenJDK
+java.vendor.url=https://adoptopenjdk.net/
+java.vendor.url.bug=https://github.com/AdoptOpenJDK/openjdk-build/issues
+java.vendor.version=AdoptOpenJDK
+java.version=11.0.4
+java.version.date=2019-07-16
+java.vm.info=mixed mode
+java.vm.name=OpenJDK 64-Bit Client VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=11
+java.vm.vendor=AdoptOpenJDK
+java.vm.version=11.0.4+11
+jdk.debug=release
+line.separator=
+
+org.apache.commons.logging.Log=org.apache.commons.logging.impl.NoOpLog
+org.eclipse.equinox.launcher.splash.handle=264686
+org.eclipse.equinox.launcher.splash.location=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+org.eclipse.equinox.simpleconfigurator.configUrl=file:org.eclipse.equinox.simpleconfigurator/bundles.info
+org.eclipse.swt.internal.deviceZoom=100
+org.eclipse.update.resolution_url=
+org.osgi.framework.executionenvironment=OSGi/Minimum-1.0, OSGi/Minimum-1.1, OSGi/Minimum-1.2, JavaSE/compact1-1.8, JavaSE/compact2-1.8, JavaSE/compact3-1.8, JRE-1.1, J2SE-1.2, J2SE-1.3, J2SE-1.4, J2SE-1.5, JavaSE-1.6, JavaSE-1.7, JavaSE-1.8, JavaSE-9, JavaSE-10, JavaSE-11
+org.osgi.framework.language=en
+org.osgi.framework.os.name=Windows10
+org.osgi.framework.os.version=10.0.0
+org.osgi.framework.processor=x86-64
+org.osgi.framework.storage=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\configuration
+org.osgi.framework.system.capabilities=osgi.ee; osgi.ee="OSGi/Minimum"; version:List<Version>="1.0, 1.1, 1.2", osgi.ee; osgi.ee="JRE"; version:List<Version>="1.0, 1.1", osgi.ee; osgi.ee="JavaSE"; version:List<Version>="1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact1"; version:List<Version>="1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact2"; version:List<Version>="1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact3"; version:List<Version>="1.8, 9.0, 10.0, 11.0"
+org.osgi.framework.system.packages=com.sun.java.accessibility.util, com.sun.management, com.sun.net.httpserver, com.sun.net.httpserver.spi, com.sun.nio.file, com.sun.nio.sctp, com.sun.security.auth, com.sun.security.auth.callback, com.sun.security.auth.login, com.sun.security.auth.module, com.sun.security.jgss, java.applet, java.awt, java.awt.color, java.awt.datatransfer, java.awt.desktop, java.awt.dnd, java.awt.event, java.awt.font, java.awt.geom, java.awt.im, java.awt.im.spi, java.awt.image, java.awt.image.renderable, java.awt.print, java.beans, java.beans.beancontext, java.io, java.lang, java.lang.annotation, java.lang.instrument, java.lang.invoke, java.lang.management, java.lang.module, java.lang.ref, java.lang.reflect, java.math, java.net, java.net.http, java.net.spi, java.nio, java.nio.channels, java.nio.channels.spi, java.nio.charset, java.nio.charset.spi, java.nio.file, java.nio.file.attribute, java.nio.file.spi, java.rmi, java.rmi.activation, java.rmi.dgc, java.rmi.registry, java.rmi.server, java.security, java.security.acl, java.security.cert, java.security.interfaces, java.security.spec, java.sql, java.text, java.text.spi, java.time, java.time.chrono, java.time.format, java.time.temporal, java.time.zone, java.util, java.util.concurrent, java.util.concurrent.atomic, java.util.concurrent.locks, java.util.function, java.util.jar, java.util.logging, java.util.prefs, java.util.regex, java.util.spi, java.util.stream, java.util.zip, javax.accessibility, javax.annotation.processing, javax.crypto, javax.crypto.interfaces, javax.crypto.spec, javax.imageio, javax.imageio.event, javax.imageio.metadata, javax.imageio.plugins.bmp, javax.imageio.plugins.jpeg, javax.imageio.plugins.tiff, javax.imageio.spi, javax.imageio.stream, javax.lang.model, javax.lang.model.element, javax.lang.model.type, javax.lang.model.util, javax.management, javax.management.loading, javax.management.modelmbean, javax.management.monitor, javax.management.openmbean, javax.management.relation, javax.management.remote, javax.management.remote.rmi, javax.management.timer, javax.naming, javax.naming.directory, javax.naming.event, javax.naming.ldap, javax.naming.spi, javax.net, javax.net.ssl, javax.print, javax.print.attribute, javax.print.attribute.standard, javax.print.event, javax.rmi.ssl, javax.script, javax.security.auth, javax.security.auth.callback, javax.security.auth.kerberos, javax.security.auth.login, javax.security.auth.spi, javax.security.auth.x500, javax.security.cert, javax.security.sasl, javax.smartcardio, javax.sound.midi, javax.sound.midi.spi, javax.sound.sampled, javax.sound.sampled.spi, javax.sql, javax.sql.rowset, javax.sql.rowset.serial, javax.sql.rowset.spi, javax.swing, javax.swing.border, javax.swing.colorchooser, javax.swing.event, javax.swing.filechooser, javax.swing.plaf, javax.swing.plaf.basic, javax.swing.plaf.metal, javax.swing.plaf.multi, javax.swing.plaf.nimbus, javax.swing.plaf.synth, javax.swing.table, javax.swing.text, javax.swing.text.html, javax.swing.text.html.parser, javax.swing.text.rtf, javax.swing.tree, javax.swing.undo, javax.tools, javax.transaction.xa, javax.xml, javax.xml.catalog, javax.xml.crypto, javax.xml.crypto.dom, javax.xml.crypto.dsig, javax.xml.crypto.dsig.dom, javax.xml.crypto.dsig.keyinfo, javax.xml.crypto.dsig.spec, javax.xml.datatype, javax.xml.namespace, javax.xml.parsers, javax.xml.stream, javax.xml.stream.events, javax.xml.stream.util, javax.xml.transform, javax.xml.transform.dom, javax.xml.transform.sax, javax.xml.transform.stax, javax.xml.transform.stream, javax.xml.validation, javax.xml.xpath, jdk.dynalink, jdk.dynalink.beans, jdk.dynalink.linker, jdk.dynalink.linker.support, jdk.dynalink.support, jdk.jfr, jdk.jfr.consumer, jdk.management.jfr, jdk.nashorn.api.scripting, jdk.nashorn.api.tree, jdk.net, jdk.nio, netscape.javascript, org.ietf.jgss, org.w3c.dom, org.w3c.dom.bootstrap, org.w3c.dom.css, org.w3c.dom.events, org.w3c.dom.html, org.w3c.dom.ls, org.w3c.dom.ranges, org.w3c.dom.stylesheets, org.w3c.dom.traversal, org.w3c.dom.views, org.w3c.dom.xpath, org.xml.sax, org.xml.sax.ext, org.xml.sax.helpers, sun.misc, sun.reflect
+org.osgi.framework.uuid=0f5ae8cd-ac64-4ad5-ad0c-dcf1e2d85061
+org.osgi.framework.vendor=Eclipse
+org.osgi.framework.version=1.9.0
+org.osgi.supports.framework.extension=true
+org.osgi.supports.framework.fragment=true
+org.osgi.supports.framework.requirebundle=true
+os.arch=amd64
+os.name=Windows 10
+os.version=10.0
+osgi.arch=x86_64
+osgi.bundles=reference:file:org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar,reference:file:org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar,reference:file:org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar,reference:file:org.eclipse.equinox.simpleconfigurator_1.3.200.v20181101-1115.jar@1:start
+osgi.bundles.defaultStartLevel=4
+osgi.compatibility.bootdelegation=true
+osgi.compatibility.bootdelegation.default=true
+osgi.configuration.area=file:/C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/configuration/
+osgi.dataAreaRequiresExplicitInit=true
+osgi.framework=file:/c:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi_3.14.0.v20190517-1309.jar
+osgi.framework.extensions=reference:file:org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar,reference:file:org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar,reference:file:org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar
+osgi.framework.shape=jar
+osgi.framework.useSystemProperties=true
+osgi.frameworkClassPath=., file:c:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar, file:c:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar, file:c:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar
+osgi.install.area=file:/C:/Users/chimz/Desktop/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/
+osgi.instance.area=file:/C:/IowaState/Software Engineering/SE 421/
+osgi.instance.area.default=file:/C:/Users/chimz/eclipse-workspace/
+osgi.logfile=C:\IowaState\Software Engineering\SE 421\.metadata\.log
+osgi.nl=en_US
+osgi.os=win32
+osgi.requiredJavaVersion=1.8
+osgi.splashLocation=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+osgi.splashPath=platform:/base/plugins/org.eclipse.platform
+osgi.syspath=c:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\plugins
+osgi.tracefile=C:\IowaState\Software Engineering\SE 421\.metadata\trace.log
+osgi.ws=win32
+path.separator=;
+sun.arch.data.model=64
+sun.boot.library.path=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin
+sun.cpu.endian=little
+sun.cpu.isalist=amd64
+sun.desktop=windows
+sun.io.unicode.encoding=UnicodeLittle
+sun.jnu.encoding=Cp1252
+sun.management.compiler=HotSpot 64-Bit Client Compiler
+sun.os.patch.level=
+user.country=US
+user.dir=C:\Users\chimz\Desktop\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse
+user.home=C:\Users\chimz
+user.language=en
+user.name=chimz
+user.script=
+user.timezone=America/Chicago
+user.variant=
+****** (end System properties) ******
+
+2021-10-18 11:51:26 INFO  - AtlasCommands: DISABLE_NATIVE_MEMORY = false,BUNDLE_DISTRO = true
+2021-10-18 11:51:26 DEBUG - DEBUG - Atlas Started
+2021-10-18 11:51:27 DEBUG - DEBUG - Atlas Started
+2021-10-18 11:51:32 ERROR - Eclipse Status: Error: Cannot run program "gcc": Launching failed
+2021-10-18 11:51:32 WARN  - Eclipse Status: Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\chimz'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+2021-10-18 11:51:33 ERROR - Eclipse Status: Error: Cannot run program "g++": Launching failed
+2021-10-18 11:51:33 ERROR - Eclipse Status: Error: Cannot run program "gcc": Launching failed
+2021-10-18 11:51:34 ERROR - Eclipse Status: Error: Cannot run program "g++": Launching failed
+2021-10-18 11:51:36 ERROR - Eclipse Status: Background Indexer Crash Recovery
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.util.JRTUtil.walkModuleImage(JRTUtil.java:158)
+	at org.eclipse.jdt.internal.core.search.indexing.AddJrtToIndex.execute(AddJrtToIndex.java:268)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:401)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2021-10-18 11:51:38 INFO  - Auto-Loading Index schedule
+2021-10-18 11:51:38 INFO  - Auto-Loading Index start
+2021-10-18 11:51:38 DEBUG - DEBUG - IndexOperation AUTO_LOAD starting. Index Op count = 1
+2021-10-18 11:51:47 INFO  - Auto-Loading Index complete
+2021-10-18 11:51:47 DEBUG - DEBUG - IndexOperation AUTO_LOAD completed. Index Op count = 0
+2021-10-18 11:52:13 DEBUG - DEBUG - Attempting shutdown : AtlasShellCommandEvaluator1
+2021-10-18 12:21:26 ERROR - Eclipse Status: UI freeze of 2.7s at 12:21:23.635
+2021-10-18 12:45:59 DEBUG - DEBUG - Expected file deltas to revert
+2021-10-18 14:06:32 WARN  - Eclipse Status: UI freeze of 0.86s at 14:06:31.419
+2021-10-18 20:33:31 WARN  - Eclipse Status: UI freeze of 0.57s at 20:33:30.426
+2021-10-20 12:06:09 WARN  - Eclipse Status: UI freeze of 0.55s at 12:06:08.498
+2021-10-20 14:32:55 WARN  - Eclipse Status: UI freeze of 0.58s at 14:32:55.093
+2021-10-20 14:33:02 ERROR - Eclipse Status: UI freeze of 5.3s at 14:32:56.696
+2021-10-20 14:33:08 WARN  - Eclipse Status: Enablement expression is missing for descriptor type org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+2021-10-20 14:33:08 WARN  - Eclipse Status: Enablement expression is missing for config provider for org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType
+2021-10-20 14:33:08 WARN  - Eclipse Status: UI freeze of 0.55s at 14:33:08.126
+2021-10-20 14:33:18 ERROR - Eclipse Status: UI freeze of 1.4s at 14:33:16.685
+2021-10-20 14:55:40 DEBUG - DEBUG - Attempting shutdown : AtlasShellCommandEvaluator2
+2021-10-20 14:56:35 DEBUG - DEBUG - Attempting shutdown : AtlasShellCommandEvaluator3
+2021-10-20 14:59:30 DEBUG - DEBUG - Attempting shutdown : AtlasShellCommandEvaluator4
+2021-10-20 15:16:57 ERROR - Eclipse Status: UI freeze of 1.7s at 15:16:55.811
+2021-10-20 15:33:18 ERROR - Eclipse Status: UI freeze of 5.6s at 15:33:12.874
+2021-10-20 15:33:41 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 15:44:49 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 16:08:23 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 16:50:09 WARN  - Eclipse Status: UI freeze of 0.63s at 16:50:08.544
+2021-10-20 20:13:24 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 20:32:15 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 20:38:52 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 20:41:45 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-20 21:52:25 WARN  - Eclipse Status: Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+2021-10-21 10:47:26 WARN  - Eclipse Status: UI freeze of 0.51s at 10:47:26.222

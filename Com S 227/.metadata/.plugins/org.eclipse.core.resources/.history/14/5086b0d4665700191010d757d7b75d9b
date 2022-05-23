@@ -1,0 +1,65 @@
+package hw3;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.io.File;
+import java.io.*;
+import java.io.FileNotFoundException;
+public class AsmFileUtil {
+	private static ArrayList<String> fileCode = new ArrayList<String>();
+	private static int [] arrayCode;
+	public static void assembleAndWriteFile(java.lang.String filename, boolean annotated) throws java.io.FileNotFoundException {
+	int i = 0, j = 0;
+		if(annotated) {
+			int size = assembleFromFile(filename).size(); 
+			String r = filename.substring(0, filename.indexOf(".")) + ".mach227";
+			File f = new File(r);
+			PrintWriter keyboard = new PrintWriter(f);
+			while(j < size) {
+				keyboard.println(assembleFromFile(filename).get(j));
+			}
+			keyboard.close();
+			
+		}
+		else {
+			int size = createMemoryImageFromFile(filename).length;
+			String r = filename.substring(0, filename.indexOf(".")) + ".mach227";
+			File f = new File(r);
+			PrintWriter keyboard = new PrintWriter(f);
+			while(i < size) {
+				keyboard.printf("%+05d\n",createMemoryImageFromFile(filename)[i]);
+			}
+			keyboard.printf("-99999\n");
+			keyboard.close();
+		}
+		
+	}
+	
+	public static java.util.ArrayList<java.lang.String> assembleFromFile(java.lang.String filename) throws FileNotFoundException {
+		File f = new File(filename);
+		Scanner in = new Scanner(f);
+		
+		while(in.hasNextLine()) {
+			String temp = in.nextLine();
+			fileCode.add(temp);
+		}
+		in.close();
+		CS227Asm fromFile = new CS227Asm(fileCode);
+		return fromFile.assemble();
+		
+	}
+	
+	public static int[] createMemoryImageFromFile(java.lang.String filename) throws FileNotFoundException {
+		int codeSize = assembleFromFile(filename).size();
+		codeSize = codeSize - 1;
+		Scanner in;
+		int i = 0;
+		while(i <= codeSize) {
+			String codeLine = assembleFromFile(filename).get(i);
+			in = new Scanner(codeLine);
+			arrayCode[i] = in.nextInt();
+			i += 1;
+		}
+			
+		return arrayCode;
+	}
+}

@@ -1,0 +1,3 @@
+In order to connect the android emulator to Iowa State wifi either:
+1.) Be on Campus a connect your laptop or PC to wifi and then boot up the emulator
+2.) Connect to the vpn using cisco anyconnect mobility client, once the connection to the vpn is secured then boot up the emulator. if it is still not connected close the emulator and run a cold boot and then try again.

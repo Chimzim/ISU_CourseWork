@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Element Detail View">
+	<item key="Show Implicit Tags" value="false"/>
+</section>

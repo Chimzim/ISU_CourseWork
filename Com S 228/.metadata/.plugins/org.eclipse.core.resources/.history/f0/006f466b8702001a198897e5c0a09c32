@@ -1,0 +1,309 @@
+package cs228hw2.test;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Deque;
+import java.util.Iterator;
+
+public class Deque228<E> implements Deque<E>{
+	ArrayList<E> Calculator = new ArrayList<E>();
+	@Override
+	public boolean addAll(Collection<? extends E> c) {
+		// TODO Auto-generated method stub
+		for(E e: c) {
+			Calculator.add(e);
+		}
+		return true;
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		Calculator.clear();		
+	}
+
+	@Override
+	public boolean containsAll(Collection<?> c) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < Calculator.size(); i++) {
+			for(Object e: c) {
+				if(!contains(e)) {
+					return false;
+				}
+			}
+		}
+		
+		return true;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return Calculator.size() == 0;
+	}
+
+	@Override
+	public boolean removeAll(Collection<?> c) {
+		// TODO Auto-generated method stub
+		Calculator.removeAll(c);
+		return true;
+	}
+
+	@Override
+	public boolean retainAll(Collection<?> c) {
+		// TODO Auto-generated method stub
+		Calculator.retainAll(c);
+		return true;
+	}
+
+	@Override
+	public Object[] toArray() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <T> T[] toArray(T[] a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean add(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(arg0);
+		return true;
+	}
+
+	@Override
+	public void addFirst(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(0, arg0);
+		
+	}
+
+	@Override
+	public void addLast(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(Calculator.size()-1, arg0);
+	}
+
+	@Override
+	public boolean contains(Object arg0) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < Calculator.size(); i++) {
+			if(Calculator.get(i).equals(arg0)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public Iterator<E> descendingIterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public E element() {
+		// TODO Auto-generated method stub
+		return Calculator.get(0);
+	}
+
+	@Override
+	public E getFirst() {
+		// TODO Auto-generated method stub
+		return Calculator.get(0);
+	}
+
+	@Override
+	public E getLast() {
+		// TODO Auto-generated method stub
+		return Calculator.get(Calculator.size()-1);
+	}
+
+	@Override
+	public Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return Calculator.iterator();
+	}
+
+	@Override
+	public boolean offer(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(arg0);
+		return true;
+	}
+
+	@Override
+	public boolean offerFirst(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(0, arg0);
+		return true;
+	}
+
+	@Override
+	public boolean offerLast(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(arg0);
+		return true;
+	}
+
+	@Override
+	public E peek() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			return Calculator.get(0);
+		}
+	}
+
+	@Override
+	public E peekFirst() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			return Calculator.get(0);
+		}
+	}
+
+	@Override
+	public E peekLast() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			return Calculator.get(Calculator.size()-1);
+		}
+	}
+
+	@Override
+	public E poll() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			E temp = Calculator.get(0);
+			Calculator.remove(0);
+			return temp;
+		}
+	}
+
+	@Override
+	public E pollFirst() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			E temp = Calculator.get(0);
+			Calculator.remove(0);
+			return temp;
+		}
+	}
+
+	@Override
+	public E pollLast() {
+		// TODO Auto-generated method stub
+		if(Calculator.size() == 0) {
+			return null;
+		}
+		else {
+			E temp = Calculator.get(Calculator.size()-1);
+			Calculator.remove(Calculator.size()-1);
+			return temp;
+		}
+	}
+
+	@Override
+	public E pop() {
+		// TODO Auto-generated method stub
+		E temp = Calculator.get(0);
+		Calculator.remove(0);
+		return temp;
+	}
+
+	@Override
+	public void push(E arg0) {
+		// TODO Auto-generated method stub
+		Calculator.add(0,arg0);
+		
+	}
+
+	@Override
+	public E remove() {
+		// TODO Auto-generated method stub
+		E tempData = Calculator.get(0);
+		Calculator.remove(0);
+		return tempData;
+	}
+
+	@Override
+	public boolean remove(Object o) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < Calculator.size(); i++) {
+			if(Calculator.get(i).equals(o)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public E removeFirst() {
+		// TODO Auto-generated method stub
+		E tempData = Calculator.get(0);
+		Calculator.remove(0);
+		return tempData;
+	}
+
+	@Override
+	public boolean removeFirstOccurrence(Object o) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < Calculator.size(); i++) {
+			if(Calculator.get(i).equals(o)) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	@Override
+	public E removeLast() {
+		// TODO Auto-generated method stub
+		E tempData = Calculator.get(Calculator.size()-1);
+		Calculator.remove(Calculator.size()-1);
+		return tempData;
+	}
+
+	@Override
+	public boolean removeLastOccurrence(Object o) {
+		// TODO Auto-generated method stub
+		int idx = -1;
+		for(int i = 0; i < Calculator.size()-1; i++) {
+			if(Calculator.get(i).equals(o)) {
+				idx = i;
+			}
+		}
+		Calculator.remove(idx);
+		if(idx > 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return Calculator.size();
+	}
+}

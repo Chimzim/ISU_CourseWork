@@ -1,0 +1,8 @@
+# about.mappings
+# contains fill-ins for about.properties
+# java.io.Properties file (ISO 8859-1 with "\" escapes)
+# This file does not need to be translated.
+
+0=20181214-0600
+1=2018-12 (4.10.0)
+featureVersion=@featureVersion@

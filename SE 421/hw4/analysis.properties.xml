@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+   <jars>
+      <applications/>
+      <libraries>
+         <jar path="__MACOSX/jre-9.0.4/lib/._deploy.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._java.jnlp.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._javafx-swt.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._javaws.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._jdk.deploy.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._jdk.javaws.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._jdk.plugin.dom.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._jdk.plugin.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._jrt-fs.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._plugin-legacy.jar"/>
+         <jar path="__MACOSX/jre-9.0.4/lib/._plugin.jar"/>
+         <jar path="jre-9.0.4/lib/deploy.jar"/>
+         <jar path="jre-9.0.4/lib/java.jnlp.jar"/>
+         <jar path="jre-9.0.4/lib/javafx-swt.jar"/>
+         <jar path="jre-9.0.4/lib/javaws.jar"/>
+         <jar path="jre-9.0.4/lib/jdk.deploy.jar"/>
+         <jar path="jre-9.0.4/lib/jdk.javaws.jar"/>
+         <jar path="jre-9.0.4/lib/jdk.plugin.dom.jar"/>
+         <jar path="jre-9.0.4/lib/jdk.plugin.jar"/>
+         <jar path="jre-9.0.4/lib/jrt-fs.jar"/>
+         <jar path="jre-9.0.4/lib/plugin-legacy.jar"/>
+         <jar path="jre-9.0.4/lib/plugin.jar"/>
+      </libraries>
+      <runtimes/>
+   </jars>
+</properties>

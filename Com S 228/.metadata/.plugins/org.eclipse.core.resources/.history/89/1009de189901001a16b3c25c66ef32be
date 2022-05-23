@@ -1,0 +1,60 @@
+package cs228hw2.test;
+
+import java.io.Reader;
+import java.util.LinkedList;
+
+public class AmusingPreciseNumber {
+	LinkedList<Integer> myNumbPrior = new LinkedList<>();
+	LinkedList<Integer> myNumbAfter = new LinkedList<>();
+	LinkedList<Character> myStringNumb = new LinkedList<>();
+	
+	String stringNumb;
+	public AmusingPreciseNumber(Reader r ) {
+		
+	}
+	
+	public AmusingPreciseNumber(int numb) {
+		int reset = 0;
+		if(numb < 0 ) {
+			numb = numb * -1;
+			reset = 1;
+		}
+		while(numb > 0) {
+			myNumbAfter.add(0, numb%10);
+			numb = numb/10;
+		}
+		if(reset == 1) {
+			myNumbAfter.set(0, myNumbAfter.get(0)*-1);
+		}
+	}
+	
+	public AmusingPreciseNumber(String numb) {
+		stringNumb = numb;
+	}
+	
+	public LinkedList<Integer> amusingPreciseNumber(AmusingPreciseNumber numb) {
+		for(int i = 0; i < numb.myStringNumb.size(); i++) {
+			while(!numb.myStringNumb.get(i).equals('.')) {
+				myNumbPrior.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+			}
+			i++;
+			myNumbAfter.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+		}
+		return myNumbPrior;
+	}
+	
+	public void add(AmusingPreciseNumber numb) {
+		LinkedList<Integer> additionB = new LinkedList<>();
+		LinkedList<Integer> additionA = new LinkedList<>();
+		for(int i = 0; i < numb.myStringNumb.size(); i++) {
+			while(!numb.myStringNumb.get(i).equals('.')) {
+				additionB.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+			}
+			i++;
+			additionA.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+		}
+
+	}
+	
+	
+}

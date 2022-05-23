@@ -1,0 +1,115 @@
+package com.example.test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+public class Guest_Controller extends menuItems{
+
+
+    @Autowired
+    Database db;
+
+    @GetMapping("/Guest/{id}")
+    Optional<Person> getGuest(@PathVariable Integer id){
+        return db.findById(id);
+    }
+
+    @RequestMapping("/guests")
+    List<Person> hello() {
+        return db.findAll();
+    }
+
+    @PostMapping("/guest")
+    Person createGuest(@RequestBody Person p){
+        db.save(p);
+        return p;
+    }
+
+
+
+    //do time of the day and what day it is
+    private  LocalDate currentDate = LocalDate.now();
+    private  LocalTime userInputTime = LocalTime.now();
+    private Guest guest;
+    private String day;
+    private int time;
+    private String address;
+    private String meal_type;
+    private String restaurant;
+    //tell chim to add method that lets the user select based on hour and day
+
+    public Guest_Controller(Guest guest){
+        super();
+        this.guest= guest;
+    }
+
+    public String getDay(){
+        return (super.getDayOfWeek()) ;
+    }
+
+    public String getHour(){
+        return (Integer.toString(super.getTime().getHour())) ;
+    }
+    public String getDate(){
+        return super.getTime().toString();
+    }
+
+
+
+    public void restaurant_select(String Restaurant){ //Storms, UDCC, Conversations,Friley Windows, Seasons
+    //super.menuItems(Restaurant);
+    restaurant = Restaurant;
+    }
+    public String getRestaurant(){
+    if(restaurant.isEmpty()){
+        return "You did not select a restaurant. Please select a restaurant.";
+    }
+    else{
+        return restaurant;
+    }
+    }
+    public String get_cost(){ //returns the order of what was purchased
+
+        return super.getOrderSummary() ; //this returns the cost of all the orders.
+    }
+    public void purchase(String item){ //this allows the guest user to purchase
+        super.updateConversationsItems();
+        super.updateFileyWindowsItems();
+        super.updateSeasonsItems();
+        super.updateUdccItems();
+        super.addItemsToCart(item);
+    }
+    public void set_address(String address){ //this returns the address of where you currently
+        this.guest.setAddress(address);
+        this.address=address;
+    }
+    public ArrayList<String> getOrderList(){ //
+        return super.getCart();
+    }
+    public String get_address(){
+        return this.guest.getAddress();
+    }
+    public void remove_item(String item){
+       super.removeItemFromCart(item);
+    }
+    public void setPhoneNumber(String number){
+        guest.setPhoneNumber(number);
+    }
+    public String getPhoneNumber(String number){
+        return guest.phone_number;
+    }
+    public String getUser(){
+        return guest.getUser();
+    }
+
+    public void get_map(){
+        //this will return the map of where the guest user is currently at
+    }
+
+
+}

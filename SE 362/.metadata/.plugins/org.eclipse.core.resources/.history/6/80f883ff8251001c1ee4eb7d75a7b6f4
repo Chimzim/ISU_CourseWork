@@ -1,0 +1,75 @@
+package coms362.cards.slapjack;
+
+import java.util.Collection;
+import java.util.Random;
+
+import coms362.cards.abstractcomp.Move;
+import coms362.cards.abstractcomp.Player;
+import coms362.cards.abstractcomp.Table;
+import coms362.cards.app.ViewFacade;
+import coms362.cards.events.remote.AddToPileRemote;
+import coms362.cards.events.remote.HideCardRemote;
+import coms362.cards.events.remote.RemoveFromPileRemote;
+import coms362.cards.events.remote.ShowCardRemote;
+import coms362.cards.events.remote.ShowPlayerScore;
+import coms362.cards.fiftytwo.P52Rules;
+import coms362.cards.model.Card;
+import coms362.cards.model.Location;
+import coms362.cards.model.Pile;
+
+public class SJMove implements Move {
+
+	private Card c;
+	private Player p;
+	private Pile fromPile;
+	private Pile toPile;
+	
+	public SJMove(Card c, Player p, Pile fromPile, Pile toPile) {
+		this.c = c;
+		this.p = p;
+		this.fromPile = fromPile;
+		this.toPile = toPile;
+	}
+	
+	@Override
+	public void apply(Table table) {
+		String playerPile = (p.getPlayerNum() == 1) ? SJRules.PLAYER1_PILE : SJRules.PLAYER2_PILE;
+		if(c.getRank() == 11 && c.isFaceUp()) {
+			System.out.println("HERE!");
+			Pile prize = table.getPile(SJRules.PRIZE_PILE);
+			Collection<Card> cards = prize.getCards();
+			for(Card c : cards) {
+				table.removeFromPile(SJRules.PRIZE_PILE, c);
+				c.setFaceUp(false);
+				table.addToPile(playerPile, c);
+				table.addToScore(p, 1);
+			}
+
+		}else if(c.isFaceUp()){
+		    playerPile = (p.getPlayerNum() == 1) ? SJRules.PLAYER2_PILE : SJRules.PLAYER1_PILE;
+			Pile prize = table.getPile(SJRules.PRIZE_PILE);
+			System.out.println("HERE!");
+			System.out.println(prize.getCards().size());
+			for (Card c : prize.getCards()) {
+				table.removeFromPile(SJRules.PRIZE_PILE, c);
+				c.setFaceUp(false);
+				table.addToPile(playerPile, c);
+				table.addToScore(p, 1);
+			}
+		}else {
+			table.removeFromPile(playerPile, c);
+			c.setFaceUp(true);
+			table.addToPile(SJRules.PRIZE_PILE, c);
+		}
+		Random random = table.getRandom();
+		table.getPile(SJRules.PRIZE_PILE).moveTo(new Location(random.nextInt(400), random.nextInt(400)));
+	}
+	
+	public void apply(ViewFacade view) {
+		view.send(new HideCardRemote(c));
+		view.send(new RemoveFromPileRemote(fromPile, c));
+		view.send(new AddToPileRemote(toPile, c));
+		view.send(new ShowCardRemote(c));
+		view.send(new ShowPlayerScore(p, null));
+	}
+}

@@ -1,0 +1,187 @@
+package edu.iastate.cs228.hw3;
+
+import java.awt.Rectangle;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class ExamYerrrr {
+	//question 1
+	public static ArrayList<Integer> lengths(ArrayList<String> list) {
+		ArrayList<Integer> toReturn = new ArrayList<Integer>();
+		for(int i = 0; i < list.size(); i++) {
+			toReturn.add(list.get(i).length());
+		}
+		return toReturn;
+	}
+	//question 2
+	public static void reverse(int[] arr) {
+		int leftHalf = arr.length/2;
+		int rightHalf = (arr.length - leftHalf);
+		int j = 0;
+		int i = 0;
+		int iterations = rightHalf/2;
+		while(i < arr.length) {
+			if(i < leftHalf/2) {
+				int temp = arr[i];
+				arr[i] = arr[leftHalf-1-i];
+				arr[leftHalf-1-i] = temp;
+			}
+			if(i >= leftHalf && iterations >= 0) {
+				int temp = arr[i];
+				arr[i] = arr[arr.length-j-1];
+				arr[arr.length-j-1] = temp;
+				iterations--;
+				j++;
+				}
+		}
+	}
+	//question 3
+	public static Boolean allButOnePrime(Rectangle[] rectangles) {
+		int moreThanOne = 0;
+		for(int i = 0; i < rectangles.length; i++) {
+			if(!hasPrimeArea(rectangles[i])) {
+				moreThanOne++;
+			}
+			if(moreThanOne > 1) {
+				return false;
+			}
+		}
+		return true;
+	}
+	//question 4
+	public static Rectangle[] onlyPrimeAreas(Rectangle[] rectangles) {
+		int sizeOfMine = 0;
+		for(int i = 0; i < rectangles.length; i++) {
+			if(hasPrimeArea(rectangles[i])) {
+				sizeOfMine++;
+			}
+		}
+		sizeOfMine = 0;
+		Rectangle[] Mine = new Rectangle[sizeOfMine];
+		
+		for(int i = 0; i < rectangles.length; i++) {
+			if(hasPrimeArea(rectangles[i])) {
+				Mine[sizeOfMine] = rectangles[i];
+				sizeOfMine++;
+			}
+		}
+		return Mine;
+	}
+	//question 5 this one is the same i got as others 
+	public static void mysterySort(int[] a) {
+		boolean finished;
+		
+		do { 
+			finished = true;
+			for(int i = 1; i < a.length; i++) {
+				if(a[i-1] > a[i]) {
+					int temp = a[i];
+					a[i] = a[i-1];
+					a[i-1] = temp;
+				}
+			}
+		} while(!finished);
+	}
+	//question 6
+	public static ArrayList<Integer> factorization(int n) {
+		ArrayList<Integer> numbers = new ArrayList<Integer>();
+		int myNumber = n;
+		int value = 2;
+		while(smallerFactor(myNumber) != -1) {
+			if(myNumber % value == 0) {
+				myNumber = myNumber / value;
+				numbers.add(value);
+			}
+			else {
+				value++;
+			}
+		}
+		if(smallerFactor(myNumber) == -1) {
+			numbers.add(myNumber);
+		}
+		return numbers;
+	}
+	//last question 
+	public static ArrayList<SimpleDate> readFiles(String file) throws FileNotFoundException {
+		if(file == null) {
+			throw new FileNotFoundException();
+		}
+		ArrayList<SimpleDate> myDates = new ArrayList<SimpleDate>();
+		File f = new File(file);
+		Scanner in = new Scanner(f);
+		while(in.hasNextLine()) {
+			Scanner in2 = new Scanner(in.nextLine());
+			int count = 0;
+			String Day = null, Month;
+			int date = 0, year = 0;
+			if(count == 0) {
+				Day = in2.next();
+				count++;
+			}
+			else if(count == 1) {
+				date = in2.nextInt();
+				count++;
+			}
+			else if(count == 2) {
+				Month = in2.next();
+				count++;
+			}
+			else {
+				year = in2.nextInt();
+				count = 0;
+			}
+			myDates.add(SimpleDate(date, Month, year, Day));
+			in2.close();
+		}
+		in.close();
+		return myDates;
+	}
+	
+	private static SimpleDate SimpleDate(int date, String month, int year, String day) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	private static int smallerFactor(int myNumber) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	private static boolean hasPrimeArea(Rectangle rectangle) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public static void main(String[] args) {
+		ArrayList<String> myList = new ArrayList<String>();
+		myList.add("Chimzim");
+		myList.add("Ogbondah");
+		myList.add("ant");
+		myList.add("apple");
+		myList.add("lily");
+		System.out.println(lengths(myList));
+		
+		int[] myArray = new int[10];
+		for(int i = 0; i < myArray.length; i++) {
+			myArray[i] = i*i;
+		}
+		reverse(myArray);
+		for(int i = 0; i < myArray.length; i++) {
+			System.out.println(myArray[i]);
+		}
+		System.out.println(factorization1(4));
+	}
+	public static ArrayList<Integer> factorization1(int n) {
+		int myNumber = 2;
+		ArrayList<Integer> temp = new ArrayList<Integer>();
+		if(n % myNumber != 0) {
+			return temp;
+		}
+		temp.add(myNumber);
+		n /= myNumber;
+		factorization1(n);
+		return temp;
+	}
+	
+}

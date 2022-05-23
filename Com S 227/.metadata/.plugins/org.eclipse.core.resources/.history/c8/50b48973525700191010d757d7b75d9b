@@ -1,0 +1,205 @@
+package hw3;
+import java.util.ArrayList;
+import java.util.Scanner;
+import api.Instruction;
+import api.SymbolTable;
+import api.NVPair;
+
+public class CS227Asm {
+	private SymbolTable ComputerLabel = new SymbolTable();
+	private SymbolTable ComputerData = new SymbolTable();
+	private ArrayList<Instruction> ComputerInstruction = new ArrayList<Instruction>();
+	private ArrayList<String> rawData;
+	int keyAdress;
+	/**
+
+	 * Constructs an assembler for the given assembly language program, given as an ArrayList of strings (one per line of the program). Initially both symbol tables and the instruction stream are empty.
+
+	 * @param program
+
+	 */
+
+	public CS227Asm(java.util.ArrayList<java.lang.String> program) {
+		rawData = program;
+	}
+
+	/**
+
+	 * Returns the symbol table for data (variables).
+
+	 * @return
+
+	 */
+	public SymbolTable getData() {
+		return ComputerData;
+	}
+	/**
+
+	 * Returns the symbol table for labels (jump targets).
+
+	 * @return
+
+	 */
+	public SymbolTable getLabels() {
+		return ComputerLabel;
+	}
+	/**
+	 * Returns the instruction stream. The index of each instruction in the list is its memory location in the generated code.
+
+	 * @return
+
+	 */
+
+	public java.util.ArrayList<Instruction> getInstructionStream(){
+		return ComputerInstruction;
+	}
+	/**
+
+	 * Assembles the source program represented by this assembler instance and returns the generated machine code and data as an array of strings.
+
+	 * @return
+
+	 */
+	public java.util.ArrayList<java.lang.String> assemble(){
+		parseData();
+		 parseLabels();
+		 parseInstructions();
+		 setOperandValues();
+		 addLabelAnnotations();
+		 return writeCode();
+	}
+	/**
+
+	 * Creates the symbol table for the data section of this assembler's program.
+
+	 */
+	public void parseData() {
+		String dataSet = "";
+		for(int i = 0; i < rawData.size(); i++) {
+			dataSet = rawData.get(i);
+			Scanner in = new Scanner(dataSet);
+			String dataName = in.next();
+			if(!dataName.equals("data:")){
+				if(!dataName.equals("labels:")) {
+					int dataValue = in.nextInt();
+					ComputerData.add(dataName, dataValue);
+				}
+		 	}
+			if(dataName.equals("labels:")) {
+				keyAdress = i;
+				break;
+			}
+		}
+	}
+	/**
+
+	 * Creates the symbol table for the label section of this assembler's program, leaving all label values as zeros.
+
+	 */
+	public void parseLabels() {
+		String dataName = "";
+		for(int i = keyAdress; i < rawData.size(); i++) {
+			String dataSet = rawData.get(i);
+			Scanner in = new Scanner(dataSet);
+			if(!dataSet.equals("labels:")){
+				dataName = in.next();
+				if(!dataName.equals("instructions:")) {
+					ComputerLabel.add(dataName, 0);
+				}
+		 	}
+			if(dataName.equals("instructions:")) {
+				keyAdress = i;
+				break;
+			}
+		}
+
+	}
+
+	/**
+
+	 * Creates instruction stream from the instruction section of this assembler's program and fills in label addresses in the symbol table for labels.
+
+	 */
+
+	public void parseInstructions() {
+		int countForInstructions = 0;
+		for(int i = keyAdress; i < rawData.size(); i++) {
+			String dataSet = rawData.get(i);
+			if(!dataSet.equals("instructions:")) {
+				if(ComputerLabel.containsName(dataSet)) {
+					ComputerLabel.findByName(dataSet).setValue(countForInstructions);
+				}
+				else {
+				Instruction data = new Instruction(dataSet);
+				ComputerInstruction.add(data);
+				countForInstructions++;
+				}
+			}
+			}
+	}
+
+	/**
+
+	 * Fills in the correct operand value for all instructions (either a data address or jump target address, depending on the instruction).
+
+	 */
+
+	public void setOperandValues() {
+		int length = ComputerInstruction.size();
+		for(int i = 0; i < ComputerInstruction.size(); i++) {
+			String tempName = ComputerInstruction.get(i).getOperandString();
+		if(ComputerInstruction.get(i).requiresJumpTarget()) {
+			NVPair temp = ComputerLabel.findByName(tempName);
+			int value = temp.getValue();
+			ComputerInstruction.get(i).setOperand(value);
+			}
+		if(ComputerInstruction.get(i).requiresDataAddress()) {
+			NVPair temp = ComputerData.findByName(tempName);
+			int value = temp.getValue();
+			ComputerInstruction.get(i).setOperand(value+length);
+			}
+		} 
+	}
+
+	/**
+
+	 * For each instruction in the instruction stream that is a jump target, adds the label to the instruction's description. (See the method addLabelToDescription in the Instruction class.)
+
+	 */
+
+	public void addLabelAnnotations() {
+		for(int i = 0; i < ComputerLabel.size(); i++) {
+			int pointer = ComputerLabel.getByIndex(i).getValue();
+			String labelName = ComputerLabel.getByIndex(i).getName();
+			ComputerInstruction.get(pointer).addLabelToDescription(labelName);
+		}
+	}
+
+	/**
+
+	 * Generates the machine code and data for this assembler's program, terminated by the string "-99999". Strings for instructions are produced by the Instruction method toString, and strings for data have the value formatted as a four-digit signed integer, followed by a space, followed by the variable name.
+
+	 * @return
+
+	 */
+
+	public java.util.ArrayList<java.lang.String> writeCode(){
+		ArrayList<String> ComputerCode = new ArrayList<String>();
+		int j = 0;
+		for(int i = 0; i < ComputerInstruction.size(); i++) {
+			ComputerCode.add(ComputerInstruction.get(i).toString());
+		}
+		while(j < ComputerData.size()) {
+			String Name = ComputerData.getByIndex(j).getName();
+			int dataValue = ComputerData.getByIndex(j).getValue();
+			String formating = String.format("+05%d %s", Name, dataValue);
+			ComputerCode.add(formating);
+			j += 1; 
+		}
+
+		return null;
+
+		
+
+	}
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root v="20140614">
+	<indexer>
+		<existential enabled="true"/>
+		<dataflow enabled="true"/>
+		<mapAllFiles enabled="true"/>
+		<useConfigDiscoveredFromBuild enabled="true"/>
+		<autoDiscoverAdditionalIncludePaths enabled="true"/>
+	</indexer>
+</root>

@@ -1,0 +1,69 @@
+package com.example.test;
+
+import static org.junit.Assert.assertThat;
+
+import java.util.ArrayList;
+
+import javax.crypto.KeyGenerator;
+import javax.crypto.SecretKey;
+
+import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+
+@RunWith(SpringRunner.class)
+public class mockitoTest {
+	
+	private Controller testController;
+	
+	private KeyGenerator testKey = KeyGenerator.getInstance("AES");
+	private SecretKey testSecKey = testKey.generateKey();
+	private byte[] testEncrypt;
+	
+	private crypto testCrypto = new crypto("Demo 3 testing encrypting and deycrypting", testSecKey);
+	
+	@Test
+	public void testMenuSetup() {
+		testController.menuItems("Conversations");
+		ArrayList<String> tacoPizza = new ArrayList<String>();
+		tacoPizza.add("Taco Pizza");
+		testController.addItemsToCart("Taco Pizza");
+		
+		assert(testController.getCart()).equals(tacoPizza);
+	}
+	
+	@Test
+	public void testMessageEncrpt() {
+		testEncrypt = testCrypto.Encryption();
+		
+		assert(testEncrypt).equals("[B@61a52fbd");
+		
+	}
+	
+	@Test
+	public void testMessageDecryption() {
+		String testing = testCrypto.Decryption(testEncrypt);
+		
+		assert(testing).matches("Demo 3 testing encrypting and deycrypting");
+		
+	}
+	
+	@Test
+	public void testRemoveItemFromCart() {
+		testController.removeItemFromCart("Taco Pizza");
+		
+		assert(testController.getCart()).isEmpty();
+	}
+	
+	@Test 
+	public void testCancelOrder() {
+		testController.addItemsToCart("Chicken Strips");
+		testController.addItemsToCart("Sunrise Burger");
+		testController.addItemsToCart("Salad");
+		
+		testController.cancelOrder();
+		
+		assert(testController.getCart()).isEmpty();
+		assert(testController.getOrderSummary()).isEmpty();
+		
+	}
+}

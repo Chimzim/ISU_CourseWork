@@ -1,0 +1,43 @@
+package cs228hw1.stats;
+
+import java.util.ArrayList;
+
+public class StdDeviation<T> implements StatObject {
+	private ArrayList<T> standardDev = new ArrayList<T>();
+	private String description;
+	@Override
+	public void SetDescription(String d) {
+		// TODO Auto-generated method stub
+		description = d;
+	}
+
+	@Override
+	public String GetDescription() {
+		// TODO Auto-generated method stub
+		return description;
+	}
+
+	@Override
+	public ArrayList GetResult() throws RuntimeException {
+		// TODO Auto-generated method stub
+		if(standardDev.equals(null) || standardDev.size() == 0) {
+			throw new RuntimeException();
+		}
+		return null;
+	}
+
+	@Override
+	public void SetData(ArrayList data) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < data.size(); i++) {
+			standardDev.add( (T)data.get(i));
+		}
+	}
+
+	@Override
+	public ArrayList GetData() {
+		// TODO Auto-generated method stub
+		return standardDev;
+	}
+
+}

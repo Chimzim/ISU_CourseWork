@@ -1,0 +1,599 @@
+package com.example.test;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.ZoneId;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Random;
+
+/**
+ * This class allows for basic ordering services with ISU dining through Menus which are contained in HashMaps. The various methods allow the user to use these services
+ * @author Chimzim Ogbondah
+ *
+ */
+public class menuItems {
+	/**
+	 * Storms - Hash map that will hold the items for Storms (String) and their Price (double)
+	 * FrileyWindows - Hash map that will hold the items for Friley Windows (String) and their Price (double)
+	 * UnionDrive - Hash map that will hold the items for UDCC (String) and their Price (double)
+	 * SeasonsDining - Hash map that will hold the items for Seasons Dining Center (String) and their Price (double)
+	 * Conversations - Hash map that will hold the items for Conversations Dining Center (String) and their Price (double)
+	 * orderPrecedence - HashMap that holds how long each item will take to make
+	 */
+    private  HashMap<String, Double> Storms = new HashMap<String, Double>();
+    private  HashMap<String, Double> FrileyWindows = new HashMap<String, Double>();
+    private  HashMap<String, Double> UnionDrive = new HashMap<String, Double>();
+    private  HashMap<String, Double> SeasonsDining = new HashMap<String, Double>();
+    private  HashMap<String, Double> Conversations = new HashMap<String, Double>();
+    private  HashMap<String, Integer> orderPrecedence = new HashMap<String, Integer>();
+    /**
+     * time - LocalTime variable that helps tell the current time
+     * central - Zone identifier for central time
+     * date - The current Date based on central time
+     */
+    private LocalTime time = LocalTime.now();
+    private ZoneId central = ZoneId.of("CST");
+    private LocalDate date = LocalDate.now(central);
+    /**
+     * isClosed - Boolean variable that will be true if the Dining Center is closed and false if it is open
+     * timeOfDay - String that helps with setting the Dining Center menu. Will be either Breakfast, Lunch or Dinner
+     * dayOfWeek - String that holds the current Day of the week
+     * myRand - Random number generator to act as other customers ordering food
+     * inStock - integer value used to determine how long the order will take based on quantity currently available
+     */
+    private Boolean isClosed; 
+    private String timeOfDay = "Lunch", dayOfWeek = "Sunday";
+    private Random myRand = new Random();
+    private int inStock = 0;
+    /**
+     * cart - ArrayList of type Strings that holds all the items that have been added to the users cart
+     * orderTotal - Double values that will be total with tax of everything the user order
+     * orderSummary - String that acts as the users receipt for their order
+     * orderingFrom - String that holds the current restaurant the user is ordering from
+     * placedAt - A string that holds the time the order was placed at
+     * orderTime - Integer value that holds the time it will take make the order plus 10 minutes for delivery
+     */
+    private ArrayList<String> cart = new ArrayList<String>();
+    private Double orderTotal;
+    private String orderSummary = "", orderingFrom = "", placedAt = "";
+    private int orderTime = 10;
+	
+    /**
+     * Constructor for the menuItems class. Creates the correct menu to be set up based on the DinningCenter leaving all others to be null
+     * Calls the functions updateTimeOfDay() which will set the timeOfDay which is used in setting up the menu
+     * Calls updateDayOfWeek() which updates the string dayOfWeek to be the current day
+     * Calls isClosed which checks to see if you can order from the desired dining center based on the current time and day
+     * @param DiningCenter - The dining center being order from
+     */
+    public menuItems(String DiningCenter) {
+    	updateTimeOfDay();
+    	updateDayOfWeek();
+    	isClosed();
+        orderingFrom = DiningCenter;
+        orderTotal = 0.0;
+        orderSummary = "";
+        if(orderingFrom == "Storms") {
+            updateSeasonsItems();
+            orderSummary = "Thank you for ordering from Storms Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Conversations") {
+            updateConversationsItems();
+            orderSummary = "Thank you for ordering from Conversations Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Udcc") {
+            updateUdccItems();
+            orderSummary = "Thank you for ordering from Union Drive Community Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Friley Windows") {
+            updateFileyWindowsItems();
+            orderSummary = "Thank you for ordering from Friley-Windows Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else {
+           updateSeasonsItems();
+            orderSummary = "Thank you for ordering from Seasons Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }
+    }
+    
+    /**
+     * Checks to see if isClosed is true or False. If false clears the menu (HashMap) otherwise creates the menu based off the time of day
+     */
+    public void updateStormsItems() {
+        //first we will add items Stroms Dining Center
+        if(isClosed) {
+            Storms.clear();
+            //Alert?
+        }
+        else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            Storms.clear();
+            //Then adds new menu items corresponding with what should be served
+            Storms.put("Wings", 8.99);
+            Storms.put("BLT Sandwhich", 6.99);
+            Storms.put("Buffalo Chicken Sandwhich", 6.99);
+            Storms.put("Pepperoni Pizza", 5.99);
+            Storms.put("Sausage Pizza", 4.99);
+            Storms.put("Cheese Pizza", 4.99);
+            Storms.put("Salad", 7.99);
+            Storms.put("Pasta", 7.99);
+            Storms.put("Chicken Alferdo", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            Storms.clear();
+            Storms.put("Waffle", 5.99);
+            Storms.put("Pancakes", 5.99);
+            Storms.put("Eggs and Bacon", 5.99);
+            Storms.put("Toast and Jam", 3.99);
+            Storms.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    /**
+     *Checks to see if isClosed is true or false. If true clears the menu (HashMap) otherwise creates the menu based on the timeOfDay
+     */
+    public void updateFileyWindowsItems() {
+    	if(isClosed) {
+    		FrileyWindows.clear();
+    		//Alert?
+    	}
+    	else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            FrileyWindows.clear();
+            //Then adds new menu items corresponding with what should be served
+            FrileyWindows.put("Wild rice", 8.99);
+            FrileyWindows.put("Chicken breast", 6.99);
+            FrileyWindows.put("Halal", 6.99);
+            FrileyWindows.put("Pepperoni Pizza", 5.99);
+            FrileyWindows.put("Sausage Pizza", 4.99);
+            FrileyWindows.put("3 Cheese Pizza", 4.99);
+            FrileyWindows.put("Salad", 7.99);
+            FrileyWindows.put("Pasta", 7.99);
+            FrileyWindows.put("Roll with Butter", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            FrileyWindows.clear();
+            FrileyWindows.put("Waffle", 5.99);
+            FrileyWindows.put("Pancakes", 5.99);
+            FrileyWindows.put("Eggs and Bacon", 5.99);
+            FrileyWindows.put("Toast and Jam", 3.99);
+            FrileyWindows.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    /**
+     * Checks to see if isClosed is true or false. If true clears the menu (HashMap) otherwise creates the menu based on the timeOfDay
+     */
+    public void updateSeasonsItems() {
+    	if(isClosed) {
+    		SeasonsDining.clear();
+    	}
+    	else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            SeasonsDining.clear();
+            //Then adds new menu items corresponding with what should be served
+            SeasonsDining.put("Chicken Nuggets", 8.99);
+            SeasonsDining.put("Turkey Sandwich", 6.99);
+            SeasonsDining.put("Cheeseburger", 6.99);
+            SeasonsDining.put("Pepperoni Pizza", 5.99);
+            SeasonsDining.put("Sausage Pizza", 4.99);
+            SeasonsDining.put("Cheese Pizza", 4.99);
+            SeasonsDining.put("Salad", 7.99);
+            SeasonsDining.put("Pasta", 7.99);
+        } else if(timeOfDay == "Breakfast") {
+            SeasonsDining.clear();
+            SeasonsDining.put("Waffle", 5.99);
+            SeasonsDining.put("Pancakes", 5.99);
+            SeasonsDining.put("Eggs and Bacon", 5.99);
+            SeasonsDining.put("Toast and Jam", 3.99);
+            SeasonsDining.put("Breakfast Sandwich", 6.99);
+        }
+    }
+    
+    /**
+     * Checks to see if isClosed is true or false. If true clears the menu (HashMap) otherwise creates the menu based on the timeOfDay
+     */
+    public void updateUdccItems() {
+    	if(isClosed) {
+    		UnionDrive.clear();
+    		//Alert/
+    	}
+        if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            UnionDrive.clear();
+            //Then adds new menu items corresponding with what should be served
+            UnionDrive.put("BLT Sandwhich", 6.99);
+            UnionDrive.put("Street Tacos", 6.99);
+            UnionDrive.put("Pepperoni Pizza", 5.99);
+            UnionDrive.put("Sausage Pizza", 4.99);
+            UnionDrive.put("Cheese Pizza", 4.99);
+            UnionDrive.put("Salad", 7.99);
+            UnionDrive.put("Pasta with Shrimp", 7.99);
+            UnionDrive.put("Pasta with Meatballs", 7.99);
+            UnionDrive.put("Chicken Alferdo", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            UnionDrive.clear();
+            UnionDrive.put("Waffle", 5.99);
+            UnionDrive.put("Pancakes", 5.99);
+            UnionDrive.put("Eggs and Bacon", 5.99);
+            UnionDrive.put("Toast and Jam", 3.99);
+            UnionDrive.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    /**
+     * Checks to see if isClosed is true or false. If true clears the menu (HashMap) otherwise creates the menu based on the timeOfDay
+     */
+    public void updateConversationsItems() {
+        if (timeOfDay == "Lunch" || timeOfDay == "Dinner") {
+            //Clears the menu of all items in it before
+            Conversations.clear();
+            //Then adds new menu items corresponding with what should be served
+            Conversations.put("Sunrise Burger", 6.99);
+            Conversations.put("Chicken Strips", 6.99);
+            Conversations.put("Chicken Patty", 7.99);
+            Conversations.put("Taco Pizza", 14.99);
+            Conversations.put("Sausage Pizza", 4.99);
+            Conversations.put("Cheese Pizza", 4.99);
+            Conversations.put("Salad", 7.99);
+            Conversations.put("Chocolate IceCream", 7.99);
+            Conversations.put("Vanilla IceCream", 7.99);
+            Conversations.put("Hash browns", 10.99);
+        } else if (timeOfDay == "Breakfast") {
+            Conversations.clear();
+            Conversations.put("Waffle", 5.99);
+            Conversations.put("Pancakes", 5.99);
+            Conversations.put("Eggs and Bacon", 5.99);
+            Conversations.put("Toast and Jam", 3.99);
+            Conversations.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    //Allows the user to add items to their Cart via the option Selected in the application
+    /**
+     * This method takes in the parameter toAdd and based off orderFrom will get the price of the item to add from the menu and add it to the order total
+     * It then adds the item (string) to the cart
+     * @param toAdd - String of what the user wants to add to their cart
+     */
+    public void addItemsToCart(String toAdd) {
+        if(orderingFrom == "Conversations") {
+            orderTotal += Conversations.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Storms") {
+            orderTotal += Storms.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Friley Windows") {
+            orderTotal += FrileyWindows.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Season Dinning Center") {
+            orderTotal += SeasonsDining.get(toAdd);
+            cart.add(toAdd);
+        }else {
+           orderTotal += UnionDrive.get(toAdd);
+           cart.add(toAdd);
+        }
+        setOrderPrecedence(toAdd);
+    }
+    
+    //removes and item from the cart and then removes the price of the item from the orderTotal as well
+    /**
+     * Takes in toRemove (String) and checks to see if the item is in the cart setting isRemoved to true or false
+     * It then removed the price of the item from the cart.
+     * @param toRemove
+     * @return isRemoved (true or false)
+     */
+    public boolean removeItemFromCart(String toRemove) {
+    	boolean isRemoved = cart.remove(toRemove);
+    	orderPrecedence.remove(toRemove);
+    	if(orderingFrom == "Conversations") {
+    		orderTotal -= Conversations.get(toRemove);
+    	}else if(orderingFrom == "Storms") {
+    		orderTotal -= Storms.get(toRemove);
+    	}else if(orderingFrom == "Friley Windows") {
+    		orderTotal -= FrileyWindows.get(toRemove);
+    	}else if(orderingFrom == "Seasons Dinning Center") {
+    		orderTotal -= SeasonsDining.get(toRemove);
+    	}else {
+    		orderTotal -= UnionDrive.get(toRemove);
+    	}
+    	return isRemoved;
+    }
+    
+    //Adds all the items from the users cart into the orderSummary and then adds Iowa Sales tax to the Final total 
+   /**
+    * This method gets the tax of the order based on Iowa sales tax (7%). it then adds that to the order and loops through the length
+    * of the cart adding each item to the String orderSummary in the form "item: item price" and then gives a new line
+    * Finally at the end it gives "Total: total cost" (total cost is $ of order)
+    * @return orderSummary (String)
+    */
+    public String getOrderSummary() {
+        Double tax = 0.0;
+        tax = orderTotal * 0.07;
+        orderTotal += tax;
+        for(int i = 0; i < cart.size(); i++) {
+        	if(orderingFrom == "Conversations") {
+        		orderSummary += cart.get(i) + ": " + Conversations.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Storms") {
+        		orderSummary += cart.get(i) + ": " + Storms.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Friley Windows" ) {
+        		orderSummary += cart.get(i) + ": " + FrileyWindows.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Seasons Dinning Center") {
+        		orderSummary += cart.get(i) + ": " + SeasonsDining.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else {
+        		orderSummary += cart.get(i) + ": " + UnionDrive.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}
+        }
+        orderSummary += "*************************************************\n";
+        orderSummary += "Total: " + orderTotal.toString();
+        placeOrder();
+        return orderSummary;
+      }
+    
+    //clears the cart, orderSummary and the orderTotal which will cancel the users order
+    /**
+     * This method cancels the users order by clearing the cart, making receipt (orderSummary) empty and then setting the order total to be 0.0
+     */
+    public void cancelOrder() {
+    	cart.clear();
+    	orderPrecedence.clear();
+    	orderTime = 10;
+    	placedAt = "";
+    	orderSummary = "";
+    	orderTotal = 0.0;
+    }
+    
+    /**
+     * This method returns the total cost of the users cart. Note tax is only added after the method getOrderSummary is called
+     * @return orderTotal 
+     */
+    public Double getOrderTotal() {
+    	return orderTotal;
+    }
+    
+    //returns the restaurant that the user is ordering from
+    /**
+     * Returns the current restaurant the user is ordering from
+     * @return orderingFrom
+     */
+    public String getRestaurant() {
+    	return orderingFrom;
+    }
+    
+    //returns all the items currently in the users cart
+    /**
+     * Returns the cart which holds all the names of everything the users has added thus far in the ordering process
+     * @return cart
+     */
+    public ArrayList<String> getCart() {
+    	return cart;
+    }
+    
+    //returns the day of the week
+    /**
+     * Returns the current day of the week
+     * @return dayOfWeek
+     */
+    public String getDayOfWeek() {
+    	return dayOfWeek;
+    }
+    
+    //updates the time of day so the right menu is taken
+    /**
+     * This method updates the timeOfDay String to be either Breakfast, Lunch or Dinner based on it being before Noon (Breakfast), After Noon but before 6 (Lunch), and the After 6 (Dinner)
+     */
+    public void updateTimeOfDay() {
+    	if(time.getHour() <= 12) {
+    		timeOfDay = "Breakfast";
+    	}else if(time.getHour() > 12 && time.getHour() < 18) {
+    		timeOfDay = "Lunch";
+    	}else {
+    		timeOfDay = "Dinner";
+    	}
+    }
+    
+    //keeps track of the day of the week
+    /**
+     * Sets the day of the week by using the date.getDayOfWeek() which returns a dayOfWeek. The value from this call determines the day with 1 - Monday, 7 - Sunday
+     */
+    public void updateDayOfWeek() {
+    	DayOfWeek today = date.getDayOfWeek();
+    	if(today.getValue() == 7) {
+    		dayOfWeek = "Sunday";
+    	}else if(today.getValue() == 1) {
+    		dayOfWeek = "Monday";
+    	}else if(today.getValue() == 2) {
+    		dayOfWeek = "Tuesday";
+    	}else if(today.getValue() == 3) {
+    		dayOfWeek = "Wednesday";
+    	}else if(today.getValue() == 4) {
+    		dayOfWeek = "Thursday";
+    	}else if(today.getValue() == 5) {
+    		dayOfWeek = "Friday";
+    	}else if(today.getValue() == 6) {
+    		dayOfWeek = "Saturday";
+    	}
+    }
+    
+    //returns the current time
+    /**
+     * Returns the Time variable used in keeping track of the current time
+     * @return time
+     */
+    public LocalTime getTime() {
+    	return time;
+    }
+    
+    /**
+     * Date variable used in keeping track of the current day of the week
+     * @return date
+     */
+    public LocalDate getDate() {
+    	return date;
+    }
+    
+    /**
+     * This method returns the time the order was placed at in the form 00:00 using military time
+     * @return placedAt
+     */
+    public String getTimeOfOrder() {
+    	return placedAt;
+    }
+    
+    /**
+     * This method returns the estimated time it will take for the order to arrive to the user
+     * @return orderTime
+     */
+    public int getDeliveryTime() {
+    	return orderTime;
+    }
+    
+    //delegates if ordering From the restaurant is still possible or not
+    /**
+     * Checks to see if the current restaurant (orderingFrom) is closed or Not.
+     * Sets boolean variable isClosed to be false and then goes through its check to see if it should be set to true because the Dining Center is closed
+     */
+    public void isClosed() {
+    	isClosed = false;
+    	if(orderingFrom == "Conversations") {
+    		if(time.getHour() > 21) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Storms") {
+    		if(dayOfWeek == "Saturday") {
+    			isClosed = true;
+    		}else if(time.getHour() > 20 && time.getMinute() >= 30) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Friley Windows") {
+    		if(time.getHour() > 22) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Seasons Dinning Center") {
+    		if(time.getHour() > 22) {
+    			isClosed = true;
+    		}
+    	}else {
+    		if(time.getHour() > 17 && time.getMinute() > 30) {
+    			isClosed = true;
+    		}
+    	}
+    }
+    
+    /**
+     * This method takes in the item that was just added to the cart and based off of what was order sets the time it takes to prepare the item in order Precedence hash map
+     * @param item - the item most recently added to the cart
+     */
+    public void setOrderPrecedence(String item) {
+    	inStock = myRand.nextInt(3);
+    	if(item == "Sausage Pizza" || item == "Cheese Pizza" || item == "3 Cheese Pizza" || item == "Taco Pizza") {
+    		if(inStock == 0) {
+    			orderPrecedence.put(item, 10);
+    		}else if(inStock == 1) {
+    			orderPrecedence.put(item, 6);
+    		}else {
+    			orderPrecedence.put(item, 3);
+    		}
+    	}
+    	else if(item == "Wings" || item == "Chicken Patty" || item == "Chicken Strips" || item == "Chicekn Breast" || item == "Chicken Nuggets") {
+    		if(inStock == 0) {
+    			orderPrecedence.put(item, 12);
+    		}
+    		else if(inStock == 1) {
+    			orderPrecedence.put(item, 9);
+    		}else {
+    			orderPrecedence.put(item, 6);
+    		}
+    	}
+    	else if(item == "Street Tacos" || item == "Cheeseburger" || item == "Sunrise Burger") {
+    		if(inStock == 0) {
+    			orderPrecedence.put(item, 11);
+    		}
+    		else if(inStock == 1) {
+    			orderPrecedence.put(item, 8);
+    		}else {
+    			orderPrecedence.put(item, 5);
+    		}
+    	}
+    	else if(item == "BLT Sandwhich" || item == "Turkey Sandwhich" || item == "Buffalo Chicken Sandwhich") {
+    		orderPrecedence.put(item, 8); //these items need to be made from scratch every time
+    	}
+    	else if(timeOfDay == "Breakfast") { // these items need to be made from scratch every time
+    		orderPrecedence.put(item, 9);
+    	}
+    	else if(item == "Pasta" || item == "Pasta with Shrimp" || item == "Pasta with Meatballs") {
+    		if(inStock == 0) {
+    			orderPrecedence.put(item, 13);
+    		} else if(inStock == 1) {
+    			orderPrecedence.put(item, 8);
+    		}else {
+    			orderPrecedence.put(item, 3);
+    		}
+    	}
+    	else {
+    		orderPrecedence.put(item, 6);
+    	}
+    }
+    
+    /**
+     * This method gives the estimated time to prepare an order based on the items in the cart and how long each item will take. It returns the amount of time the order will take to prepare plus the delivery time
+     * Orders can be made at the same time but once the user has 5 items or more it will add 6 minutes to the order to take in the fact that all the orders can't be made at the same time
+     * @return orderTime
+     */
+    public int placeOrder() {
+    	int tempVal = 0;
+
+    	if(cart.size() >= 5) {
+    		orderTime += 6;
+    	}
+    	for(int i = 0; i < orderPrecedence.size(); i++) {
+    		if(tempVal < orderPrecedence.get(cart.get(i))) {
+    			tempVal = orderPrecedence.get(cart.get(i));
+    		}
+    	}
+    	return orderTime;
+    }
+    
+    /**
+     * This method constructs a string with the time the order was placed at based on the current time
+     * @param currentTime - LocalTime variable which corresponds to the current time
+     * @return placedAt
+     */
+    public String calculateOrderTime(LocalTime currentTime) {
+    	for(int i = 0; i < 24; i++) {
+    		for(int j = 0; j < 60; j++) {
+    			if(currentTime.getHour() == i) {
+    				if(i < 10) {
+    					placedAt = "0"+Integer.toString(i)+":";
+    					if(currentTime.getMinute() == j) {
+    						if(j < 10) {
+    							placedAt += "0"+Integer.toString(j);
+    						}else {
+    							placedAt += Integer.toString(j);
+    						}
+    					}
+    				}else {
+    					placedAt = Integer.toString(i);
+    					if(currentTime.getMinute() == j) {
+    						if(j < 10) {
+    							placedAt += "0"+Integer.toString(j);
+    						}else {
+    							placedAt += Integer.toString(j);
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    	
+    	return placedAt;
+    }
+}

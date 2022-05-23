@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+repositories/http\:__download.eclipse.org_eclipse_updates_4.10/count=1
+repositories/http\:__download.eclipse.org_eclipse_updates_4.10/enabled=true
+repositories/http\:__download.eclipse.org_eclipse_updates_4.10/nickname=The Eclipse Project Updates
+repositories/http\:__download.eclipse.org_eclipse_updates_4.10/uri=http\://download.eclipse.org/eclipse/updates/4.10
+repositories/http\:__download.eclipse.org_releases_2018-12/count=1
+repositories/http\:__download.eclipse.org_releases_2018-12/enabled=true
+repositories/http\:__download.eclipse.org_releases_2018-12/nickname=2018-12
+repositories/http\:__download.eclipse.org_releases_2018-12/uri=http\://download.eclipse.org/releases/2018-12
+repositories/http\:__download.eclipse.org_releases_latest/count=1
+repositories/http\:__download.eclipse.org_releases_latest/enabled=false
+repositories/http\:__download.eclipse.org_releases_latest/nickname=Latest Eclipse Release
+repositories/http\:__download.eclipse.org_releases_latest/uri=http\://download.eclipse.org/releases/latest

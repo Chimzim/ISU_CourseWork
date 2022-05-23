@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._deploy.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._java.jnlp.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._javafx-swt.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._javaws.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._jdk.deploy.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._jdk.javaws.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._jdk.plugin.dom.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._jdk.plugin.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._jrt-fs.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._plugin-legacy.jar"/>
+	<classpathentry kind="lib" path="__MACOSX/jre-9.0.4/lib/._plugin.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/java.jnlp.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/javafx-swt.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/jdk.deploy.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/jdk.javaws.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/jdk.plugin.dom.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/jdk.plugin.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/jrt-fs.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/plugin-legacy.jar"/>
+	<classpathentry kind="lib" path="jre-9.0.4/lib/plugin.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

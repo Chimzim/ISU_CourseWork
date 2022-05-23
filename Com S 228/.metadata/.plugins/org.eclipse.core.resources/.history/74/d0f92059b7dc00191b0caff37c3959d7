@@ -1,0 +1,5 @@
+package cs228hw1.stats;
+
+public interface StatObject {
+
+}

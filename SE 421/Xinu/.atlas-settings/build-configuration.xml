@@ -1,0 +1,4062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root v="20140314">
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dswrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_echo.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="remove.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="mkarp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dot2ip.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rwhoind.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/mark.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/freemem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/unmount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttywrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfsflush.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ibnew.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="access.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfgetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="setdev.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="write.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_reboot.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sndrarp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ptclear.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ibget.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="arpinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_net.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ibclear.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="chprio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="xdone.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/clkint.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="close.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/scount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dfdsrch.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="mdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ready.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_unmou.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="udpsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="read.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_mount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_mem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/pcount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_net.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dskbcpy.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/send.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/namrepl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ip_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="wait.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyoin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="nqalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_routes.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="signal.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rwhod.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_create.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netnum.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ascdate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ctxsw.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ibfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/naminit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sdelete.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="nammap.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/shell.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getpid.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="pdelete.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="tdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_mv.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dskqopt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="signaln.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethrstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/seek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dscntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ibput.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="namopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttycntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="devdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfgetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sendf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_mount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="test.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rwho.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="arp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="pinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ipsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_echo.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netout.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/kill.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sleep10.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfmkpac.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="addarg.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/setclkr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/suspend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/qdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="udpnxtp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/open.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/psend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_exit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/mount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethinter.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dudir.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_reboot.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/ascdate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsinter.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/lexan.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_mem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="preceive.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_exit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_cat.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/receive.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/route.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/close.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_bpool.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ionull.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/login.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_cp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sndrarp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/resume.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ckmode.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/udpecho.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyiin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sdelete.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_date.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/adump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="gettime.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getname.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/setdev.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rwhod.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dudir.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/write.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_close.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netutil.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/read.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="suspend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/freebuf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dfalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="pcount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethrstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_bpool.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="recvtim.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttygetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/poolinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getstk.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/kprintf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="init.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="mount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dginit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/setnok.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttycntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_snap.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/pdelete.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dskenq.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="unmount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ndump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/xdone.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="psend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/pinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfsnewd.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="scount.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sleep10.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfmkpac.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgmcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="kill.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sendf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getnet.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ibget.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_dg.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="bpdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getaddr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/recvclr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/pcreate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getitem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethwstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/netin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfsetup.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="resched.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_uptime.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="putc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ssclock.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="newqueue.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/insertd.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_ps.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="blkequ.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="initialize.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_rls.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyoin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/queue.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="seek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ip_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ibput.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgparse.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_create.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/icmp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_help.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dskqopt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/arp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_sleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="insertd.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getprio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="iblfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="netout.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_ps.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_who.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getbuf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfgetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgmopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/preceive.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="userret.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getitem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/init.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/unsleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="netdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="setnok.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_kill.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getpid.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttygetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/conf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_rls.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="udpecho.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ioerr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="route.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ionull.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_sleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dumkfs.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getpath.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_help.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="freebuf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="screate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dscntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rename.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/prdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/namopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethinter.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="icmp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_who.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/initialize.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_devs.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="create.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="qdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_rm.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="pcreate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ssclock.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="insert.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ibclear.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/control.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/test.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ioinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/nqalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgparse.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="netinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_kill.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ready.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/mkarp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="poolinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="resume.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rarp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ip2name.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_rf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/remove.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="blkcopy.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/clkinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_snap.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sreset.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ibfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_devs.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfsdfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_uptime.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfwrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/nammap.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dskenq.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dskstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="mkpool.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/wait.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="wakeup.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsksync.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/screate.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getutim.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="preset.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getmem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsseek.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/arpfind.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getnet.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rwhoind.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getaddr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ckmode.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ethinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dskbcpy.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="clkint.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rwho.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_rf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dfdsrch.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/mdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="conf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="send.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethwstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfgetc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/signal.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rename.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="prdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/devdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_cp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgmopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttywrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/mkpool.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/insert.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/access.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ioerr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_cat.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dswrite.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="control.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getprio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="login.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/iblfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsinter.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfsetup.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lexan.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/arpinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyputc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/resched.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="arpfind.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/putc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ibnew.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getutim.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="queue.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/panic.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dsksync.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/preset.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="unsleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="netin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/blkequ.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/addarg.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/sreset.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dot2ip.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/bpdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/userret.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="open.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="recvclr.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sleep.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/newqueue.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ipsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ethread.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dumkfs.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/blkcopy.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/recvtim.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getmem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/create.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ptclear.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="naminit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rfclose.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ip2name.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_rm.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="adump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ndump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ttyinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getname.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_close.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_unmou.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getpath.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/rfopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getbuf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_dg.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/tdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="lfsdfree.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/ttyiin.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="ioinit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="mark.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/udpnxtp.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="freemem.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="kprintf.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_mv.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dskstrt.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/shell/x_date.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/shell/../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/wakeup.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfsnewd.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="receive.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="shell.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dgmcntl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="rarp_in.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dfalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/gettime.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgalloc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="x_routes.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="namrepl.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="netnum.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dginit.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/dsopen.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="dgdump.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/udpsend.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/getstk.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/lfsflush.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="getc.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/signaln.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+	<entry cmd="gcc" sourceKind="C">
+		<path kind="RELATIVE" rawPath="sys/chprio.c"/>
+		<option kind="IGNORED" cmd="-O"/>
+		<option kind="UNHANDLED_ERROR" cmd="-w"/>
+		<option kind="STOP_BEFORE_LINKING" cmd="-c"/>
+		<option kind="INCLUDE_PATH" cmd="-I">
+			<path kind="RELATIVE" rawPath="sys/../h"/>
+		</option>
+	</entry>
+</root>

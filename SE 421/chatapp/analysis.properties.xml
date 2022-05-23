@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<properties>
+   <jars>
+      <applications/>
+      <libraries>
+         <jar path="/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/lib/jrt-fs.jar"/>
+      </libraries>
+      <runtimes/>
+   </jars>
+</properties>

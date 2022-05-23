@@ -1,0 +1,126 @@
+package com.example.test;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+
+@RestController
+public class User_Controller {
+
+
+	/**
+     * connects to the user repository
+     */
+    @Autowired
+    User_Repository db;
+    
+    menuItems myMenu;
+    String recipt = "";
+
+    /**
+     * returns the user based on the ID
+     * @param id
+     * @return
+     */
+    @GetMapping("/User/{id}")
+    Optional<User> getGuest(@PathVariable Integer id) {
+        return db.findById(id);
+    }
+
+    /**
+     * returns all the users in the database
+     * @return
+     */
+    @RequestMapping("/users")
+    List<User> hello1() {
+        return db.findAll();
+    }
+
+    /**
+     * creates a user and returns the user that was made
+     * @param p
+     * @return
+     */
+    @PostMapping("/user")
+    User createUser(@RequestBody User p) {
+        db.save(p);
+        return p;
+    }
+    
+    public void setDiningCenter(String diningCenter) {
+    	myMenu = new menuItems(diningCenter);
+    }
+    
+    public void addItemToCart(String item) {
+    	myMenu.addItemsToCart(item);
+    }
+    
+    public boolean removeItemFromCart(String item) {
+    	return myMenu.removeItemFromCart(item);
+    }
+    
+    public void cancelOrder() {
+    	myMenu.cancelOrder();
+    }
+    
+    public void PlaceOrder() {
+    	recipt = myMenu.getOrderSummary();
+    }
+    
+    
+    
+    
+    @GetMapping("/User/{id}")
+    void setDeliveryTime(@PathVariable Integer id) {
+    	List<User> temp = db.findAll();
+    	for(int i = 0; i < temp.size(); i++) {
+    		if(temp.get(i).id == id) {
+    			temp.get(i).EstimatedDeliveryTime(myMenu.getDeliveryTime());
+    		}
+    	}
+    }
+    
+    @PostMapping("/user")
+    void setTime(@PathVariable Integer id) {
+    	List<User> temp = db.findAll();
+    	for(int i = 0; i < temp.size(); i++) {
+    		if(temp.get(i).id == id) {
+    			temp.get(i).setLocalTime(myMenu.getTime());
+    		}
+    	}
+    }
+    
+    @PostMapping("/user")
+    void setTimeOfOrder(@PathVariable Integer id) {
+    	List<User> temp = db.findAll();
+    	for(int i = 0; i < temp.size(); i++) {
+    		if(temp.get(i).id == id) {
+    			temp.get(i).PlaceOrder(myMenu.getTimeOfOrder());
+    		}
+    	}
+    }
+    
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

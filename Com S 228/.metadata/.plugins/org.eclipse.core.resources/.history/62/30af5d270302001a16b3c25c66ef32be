@@ -1,0 +1,577 @@
+package cs228hw2.test;
+
+import java.io.Reader;
+import java.util.LinkedList;
+
+public class AmusingPreciseNumber {
+	AmusingPreciseNumber myNumber;
+	LinkedList<Integer> myNumbPrior = new LinkedList<>();
+	LinkedList<Integer> myNumbAfter = new LinkedList<>();
+	LinkedList<Character> myStringNumb = new LinkedList<>();
+	
+	String stringNumb;
+	public AmusingPreciseNumber(Reader r ) {
+		
+	}
+	
+	public AmusingPreciseNumber(int numb) {
+		int reset = 0;
+		if(numb < 0 ) {
+			numb = numb * -1;
+			reset = 1;
+		}
+		while(numb > 0) {
+			myNumbPrior.add(0, numb%10);
+			numb = numb/10;
+		}
+		if(reset == 1) {
+			myNumbPrior.set(0, myNumbPrior.get(0)*-1);
+		}
+	}
+	
+	public AmusingPreciseNumber(String numb) {
+		stringNumb = numb;
+	}
+	
+	public AmusingPreciseNumber(AmusingPreciseNumber numb) {
+		int negative = 0;
+		int i = 0;
+			while(!numb.myStringNumb.get(i).equals('.')) {
+				if(numb.myStringNumb.get(i) == '-') {
+					negative = 1;
+					i++;
+				}
+				if(negative == 1) {
+					myNumbPrior.add(Character.getNumericValue(numb.myStringNumb.get(i)*-1));
+				i++;
+				}
+				else {
+					myNumbPrior.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+					i++;
+			}
+		}
+			i++;
+			while(i < numb.myStringNumb.size()) {
+				myNumbAfter.add(Character.getNumericValue(numb.myStringNumb.get(i)));
+				i++;
+			}
+		
+	}
+	
+	public void add(AmusingPreciseNumber numb) {
+		LinkedList<Integer> additionB = new LinkedList<>();
+		LinkedList<Integer> additionA = new LinkedList<>();
+		boolean negative = false;
+		if(myNumbPrior.size() > additionB.size()) {
+			while(myNumbPrior.size() != additionB.size()) {
+				additionB.add(0, 0);
+			}
+		}
+		if(myNumbPrior.size() < additionB.size()) {
+			while(myNumbPrior.size() != additionB.size()) {
+				myNumbPrior.add(0,0);
+			}
+		}
+		if(myNumbAfter.size() > additionA.size()) {
+			while(myNumbAfter.size() != additionA.size()) {
+				additionA.add(0);
+			}
+		}
+		if(myNumbAfter.size() < additionA.size()) {
+			while(myNumbAfter.size() != additionA.size()) {
+				myNumbAfter.add(0);
+			}
+		}
+		if(additionB.get(0) < 0 && myNumbPrior.get(0) > 0) {
+			if(additionB.get(0)*-1 > myNumbPrior.get(0)) {
+				negative = true;
+				additionB.set(0, additionB.get(0)*-1);
+			}
+			for(int i = myNumbAfter.size()-1; i >= 0; i--) {
+				if(myNumbAfter.get(i) > additionA.get(i) && i != 0) {
+					additionA.set(i, additionA.get(i)+10);
+					additionA.set(i-1, additionA.get(i-1)-1);
+				}
+				else if(myNumbAfter.get(i) > additionA.get(i) && i == 0) {
+					additionA.set(i, additionA.get(i)+10);
+					additionB.set(additionB.size()-1, additionB.get(additionB.size()-1)-1);
+				}
+				myNumbAfter.set(i, additionA.get(i)-myNumbAfter.get(i));
+			}
+			for(int i = myNumbPrior.size()-1; i >= 0; i--) {
+				if(myNumbAfter.get(i) > additionB.get(i) && i != 0) {
+					additionB.set(i, additionB.get(i)+10);
+					additionB.set(i-1, additionB.get(i-1)-1);
+				}
+				myNumbPrior.set(i, additionA.get(i)-myNumbPrior.get(i));
+			}
+			myNumbPrior.set(0, myNumbPrior.get(0)*-1);
+		}
+		else if(additionB.get(0) > 0 && myNumbPrior.get(0) < 0) {
+			if(additionB.get(0) < myNumbPrior.get(0)*-1) {
+				negative = true;
+			}
+			for(int i = myNumbAfter.size()- 1; i >= 0; i--) {
+				if(additionA.get(i) > myNumbAfter.get(i) && i != 0) {
+					myNumbAfter.set(i, myNumbAfter.get(i)+10);
+					myNumbAfter.set(i-1, myNumbAfter.get(i-1)-1);
+				}
+				else if(additionA.get(i) > myNumbAfter.get(i) && i == 0) {
+					myNumbAfter.set(i, myNumbAfter.get(i)+10);
+					myNumbPrior.set(myNumbPrior.size()-1, myNumbPrior.get(myNumbPrior.size()-1)-1);
+				}
+				myNumbPrior.set(i, myNumbAfter.get(i)-additionA.get(i));
+			}
+			for(int i = myNumbPrior.size()- 1; i >= 0; i--) {
+				if(additionB.get(i) > myNumbPrior.get(i) && i != 0) {
+					myNumbPrior.set(i, myNumbPrior.get(i)+10);
+					myNumbPrior.set(i-1, myNumbPrior.get(i-1)-1);
+				}
+				myNumbPrior.set(i, myNumbPrior.get(i)-additionB.get(i));
+			}
+			myNumbPrior.set(0, myNumbPrior.get(0)*-1);
+		}
+		else if(additionB.get(0) > 0 && myNumbPrior.get(0) < 0) {
+			if(additionB.get(0) > myNumbPrior.get(0)*-1) {
+				for(int i = myNumbAfter.size()-1; i >= 0; i--) {
+					if(myNumbAfter.get(i) > additionA.get(i) && i != 0) {
+						additionA.set(i, additionA.get(i)+10);
+						additionA.set(i-1, additionA.get(i-1)-1);
+					}
+					else if(myNumbAfter.get(i) > additionA.get(i) && i == 0) {
+						additionA.set(i, additionA.get(i)+10);
+						additionB.set(additionB.size()-1, additionB.get(additionB.size()-1)-1);
+					}
+					myNumbAfter.set(i, additionA.get(i)-myNumbAfter.get(i));
+				}
+				for(int i = myNumbPrior.size()-1; i >= 0; i--) {
+					if(myNumbPrior.get(i) > additionB.get(i) && i != 0) {
+						additionB.set(i, additionB.get(i)+10);
+						additionB.set(i-1, additionB.get(i-1)-1);
+					}
+					myNumbPrior.set(i, additionB.get(i)-myNumbPrior.get(i));
+				}
+			}
+		}
+		else if(additionB.get(0) < 0 && myNumbPrior.get(0) > 0) {
+			if(additionB.get(0)*-1 < myNumbPrior.get(0)) {
+				for(int i = myNumbAfter.size()-1; i >= 0; i--) {
+					if(additionA.get(i) > myNumbAfter.get(i) && i != 0) {
+						myNumbAfter.set(i, myNumbAfter.get(i)+10);
+						myNumbAfter.set(i-1, myNumbAfter.get(i-1)-1);
+					}
+					else if(additionA.get(i) > myNumbAfter.get(i) && i == 0) {
+						myNumbAfter.set(i, myNumbAfter.get(i)+10);
+						myNumbPrior.set(myNumbPrior.size()-1, myNumbPrior.get(myNumbPrior.size()-1)-1);
+					}
+					myNumbAfter.set(i, myNumbAfter.get(i)-additionA.get(i));
+				}
+				for(int i = myNumbPrior.size()-1; i >= 0; i--) {
+					if(additionB.get(i) > myNumbPrior.get(i)) {
+						myNumbPrior.set(i, myNumbPrior.get(i)+10);
+						myNumbPrior.set(i-1, myNumbPrior.get(i-1)-1);
+					}
+					myNumbPrior.set(i, myNumbPrior.get(i)-additionB.get(i));
+				}
+			}
+		}
+		else {
+			for(int i = myNumbAfter.size()-1; i >= 0; i--) {
+				myNumbAfter.set(i, myNumbAfter.get(i)+additionA.get(i));
+				if(myNumbAfter.get(i) >= 10 && i != 0) {
+					myNumbAfter.set(i, myNumbAfter.get(i)%10);
+					myNumbAfter.set(i-1, myNumbAfter.get(i)+1);
+				}
+				else if(myNumbAfter.get(i) >= 10 && i == 0) {
+					myNumbAfter.set(i, myNumbAfter.get(i)%10);
+					myNumbPrior.set(myNumbPrior.size()-1, myNumbPrior.get(myNumbPrior.size()-1)+1);
+				}
+			}
+			for(int i = myNumbPrior.size()-1; i >= 0; i--) {
+				myNumbPrior.set(i, myNumbAfter.get(i)+additionA.get(i));
+				if(myNumbAfter.get(i) >= 10 && i != 1) {
+					myNumbPrior.set(i, myNumbAfter.get(i)%10);
+					myNumbPrior.set(i-1, myNumbAfter.get(i)+1);
+				}
+				else if(myNumbAfter.get(i) >= 10 && i == 1) {
+					if(myNumbPrior.get(0) < 0) {
+						myNumbPrior.set(i, myNumbAfter.get(i)%10);
+						myNumbPrior.set(i-1, myNumbAfter.get(i)-1);
+						negative = true;
+					}
+					else {
+						myNumbPrior.set(i, myNumbAfter.get(i)%10);
+						myNumbPrior.set(i-1, myNumbAfter.get(i)+1);
+					}
+				}
+				else if(myNumbAfter.get(i) >= 10 && i == 0) {
+					myNumbPrior.set(i, myNumbAfter.get(i)%10);
+					if(negative == true) {
+						myNumbPrior.add(0, -1);
+					}
+					else {
+						myNumbPrior.add(0, 1);
+					}
+				}
+			}
+		}
+	}
+
+	public static AmusingPreciseNumber add(AmusingPreciseNumber numb1, AmusingPreciseNumber numb2) {
+		AmusingPreciseNumber Number1 = new AmusingPreciseNumber(numb1);
+		AmusingPreciseNumber Number2 = new AmusingPreciseNumber(numb2);
+		boolean negative = false;
+	
+		if(Number1.myNumbPrior.size() > Number2.myNumbPrior.size()) {
+			while(Number2.myNumbPrior.size() != Number1.myNumbPrior.size()) {
+				Number2.myNumbPrior.add(0, 0);
+			}
+		}
+		if(Number1.myNumbPrior.size() < Number2.myNumbPrior.size()) {
+			while(Number1.myNumbPrior.size() != Number2.myNumbPrior.size()) {
+				Number1.myNumbPrior.add(0,0);
+			}
+		}
+		if(Number1.myNumbAfter.size() > Number2.myNumbAfter.size()) {
+			while(Number1.myNumbAfter.size() != Number2.myNumbAfter.size()) {
+				Number2.myNumbAfter.add(0,0);
+			}
+		}
+		if(Number1.myNumbAfter.size() < Number2.myNumbAfter.size()) {
+			while(Number2.myNumbAfter.size() != Number1.myNumbAfter.size()) {
+				Number1.myNumbAfter.add(0,0);
+			}
+		}
+		if(Number1.myNumbPrior.get(0) < 0 && Number2.myNumbPrior.get(0) > 0) {
+			if(Number1.myNumbAfter.get(0)*-1 > Number2.myNumbAfter.get(0)) {
+				Number1.myNumbPrior.set(0, Number1.myNumbPrior.get(0)*-1);
+				for(int i = Number2.myNumbAfter.size()-1; i >= 0; i--) {
+					if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i != 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+						Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i-1)-1);
+					}
+					else if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i == 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+						Number1.myNumbPrior.set(Number1.myNumbPrior.size()-1, Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)-1);
+					}
+					Number2.myNumbAfter.set(i, Number1.myNumbAfter.get(i)-Number2.myNumbAfter.get(i));
+				}
+				for(int i = Number2.myNumbPrior.size()-1; i >= 0; i--) {
+					if(Number2.myNumbAfter.get(i) > Number1.myNumbPrior.get(i) && i != 0) {
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+10);
+						Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i-1)-1);
+					}
+					Number2.myNumbPrior.set(i, Number1.myNumbAfter.get(i)-Number2.myNumbPrior.get(i));
+				}
+				Number2.myNumbPrior.set(0, Number2.myNumbPrior.get(0)*-1);
+				}
+		}
+		else if(Number1.myNumbPrior.get(0) > 0 && Number2.myNumbPrior.get(0) < 0) {
+			if(Number1.myNumbPrior.get(0) < Number2.myNumbPrior.get(0)*-1) {
+				for(int i = Number2.myNumbAfter.size()- 1; i >= 0; i--) {
+					if(Number1.myNumbAfter.get(i) > Number2.myNumbAfter.get(i) && i != 0) {
+						Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+						Number2.myNumbAfter.set(i-1, Number2.myNumbAfter.get(i-1)-1);
+					}
+					else if(Number1.myNumbAfter.get(i) > Number2.myNumbAfter.get(i) && i == 0) {
+						Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+						Number2.myNumbPrior.set(Number2.myNumbPrior.size()-1, Number2.myNumbPrior.get(Number2.myNumbPrior.size()-1)-1);
+					}
+					Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)-Number1.myNumbAfter.get(i));
+				}
+				for(int i = Number2.myNumbPrior.size()- 1; i >= 0; i--) {
+					if(Number1.myNumbPrior.get(i) > Number2.myNumbPrior.get(i) && i != 0) {
+						Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)+10);
+						Number2.myNumbPrior.set(i-1, Number2.myNumbPrior.get(i-1)-1);
+					}
+					Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)-Number1.myNumbPrior.get(i));
+				}
+				Number2.myNumbPrior.set(0, Number2.myNumbPrior.get(0)*-1);
+				}
+		}
+		else if(Number1.myNumbPrior.get(0) > 0 && Number2.myNumbPrior.get(0) < 0) {
+			if(Number1.myNumbPrior.get(0) > Number2.myNumbPrior.get(0)*-1) {
+				for(int i = Number2.myNumbAfter.size()-1; i >= 0; i--) {
+					if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i != 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+						Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i-1)-1);
+					}
+					else if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i == 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+						Number1.myNumbPrior.set(Number1.myNumbPrior.size()-1, Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)-1);
+					}
+					Number2.myNumbAfter.set(i, Number1.myNumbAfter.get(i)-Number2.myNumbAfter.get(i));
+				}
+				for(int i = Number2.myNumbPrior.size()-1; i >= 0; i--) {
+					if(Number2.myNumbPrior.get(i) > Number1.myNumbPrior.get(i) && i != 0) {
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+10);
+						Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i-1)-1);
+					}
+					Number2.myNumbPrior.set(i, Number1.myNumbPrior.get(i)-Number2.myNumbPrior.get(i));
+				}
+			}
+		}
+		else if(Number1.myNumbPrior.get(0) < 0 && Number2.myNumbPrior.get(0) > 0) {
+			if(Number1.myNumbPrior.get(0)*-1 < Number2.myNumbPrior.get(0)) {
+				for(int i = Number2.myNumbAfter.size()-1; i >= 0; i--) {
+					if(Number1.myNumbAfter.get(i) > Number2.myNumbAfter.get(i) && i != 0) {
+						Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+						Number2.myNumbAfter.set(i-1, Number2.myNumbAfter.get(i-1)-1);
+					}
+					else if(Number1.myNumbAfter.get(i) > Number2.myNumbAfter.get(i) && i == 0) {
+						Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+						Number2.myNumbPrior.set(Number2.myNumbPrior.size()-1, Number2.myNumbPrior.get(Number2.myNumbPrior.size()-1)-1);
+					}
+					Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)-Number1.myNumbAfter.get(i));
+				}
+				for(int i = Number2.myNumbPrior.size()-1; i >= 0; i--) {
+					if(Number1.myNumbPrior.get(i) > Number2.myNumbPrior.get(i)) {
+						Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)+10);
+						Number2.myNumbPrior.set(i-1, Number2.myNumbPrior.get(i-1)-1);
+					}
+					Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)-Number1.myNumbPrior.get(i));
+				}
+			}
+		}
+		else {
+			for(int i = Number2.myNumbAfter.size()-1; i >= 0; i--) {
+				Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+Number1.myNumbAfter.get(i));
+				if(Number2.myNumbAfter.get(i) >= 10 && i != 0) {
+					Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)%10);
+					Number2.myNumbAfter.set(i-1, Number2.myNumbAfter.get(i)+1);
+				}
+				else if(Number2.myNumbAfter.get(i) >= 10 && i == 0) {
+					Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)%10);
+					Number2.myNumbPrior.set(Number2.myNumbPrior.size()-1, Number2.myNumbPrior.get(Number2.myNumbPrior.size()-1)+1);
+				}
+			}
+			for(int i = Number2.myNumbPrior.size()-1; i >= 0; i--) {
+				Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)+Number1.myNumbAfter.get(i));
+				if(Number2.myNumbAfter.get(i) >= 10 && i != 1) {
+					Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)%10);
+					Number2.myNumbPrior.set(i-1, Number2.myNumbAfter.get(i)+1);
+				}
+				else if(Number2.myNumbAfter.get(i) >= 10 && i == 1) {
+					if(Number2.myNumbPrior.get(0) < 0) {
+						Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)%10);
+						Number2.myNumbPrior.set(i-1, Number2.myNumbAfter.get(i)-1);
+						negative = true;
+					}
+					else {
+						Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)%10);
+						Number2.myNumbPrior.set(i-1, Number2.myNumbAfter.get(i)+1);
+					}
+				}
+					else if(Number2.myNumbAfter.get(i) >= 10 && i == 0) {
+					Number2.myNumbPrior.set(i, Number2.myNumbAfter.get(i)%10);
+					if(negative == true) {
+						Number2.myNumbPrior.add(0, -1);
+					}
+					else {
+						Number2.myNumbPrior.add(0, 1);
+					}
+					}
+				}
+			}
+		return Number2;
+		}
+		public static AmusingPreciseNumber abs(AmusingPreciseNumber numb)  {
+			AmusingPreciseNumber temp = new AmusingPreciseNumber(numb);
+			if(temp.myNumbPrior.get(0) > 0) {
+				return temp;
+			}
+			else {
+				temp.myNumbPrior.set(0, temp.myNumbPrior.get(0)*-1); 
+				return temp;
+			}
+		}
+		public static AmusingPreciseNumber negate(AmusingPreciseNumber numb) {
+			AmusingPreciseNumber temp = new AmusingPreciseNumber(numb);
+			if(temp.myNumbPrior.get(0) < 0) {
+				return temp;
+			}
+			else {
+				temp.myNumbPrior.set(0, temp.myNumbPrior.get(0)*-1);
+				return temp;
+			}
+		}
+		
+		public void abs() { 
+			if(myNumbPrior.get(0) < 0) {
+				myNumbPrior.set(0, myNumbPrior.get(0)*-1);
+			}
+		}
+		
+		public void negate() {
+			if(myNumbPrior.get(0) > 0) {
+				myNumbPrior.set(0,  myNumbPrior.get(0)*-1);
+			}
+		}
+		public static AmusingPreciseNumber subtract(AmusingPreciseNumber numb1, AmusingPreciseNumber numb2) {
+			AmusingPreciseNumber Number1 = new AmusingPreciseNumber(numb1);
+			AmusingPreciseNumber Number2 = new AmusingPreciseNumber(numb2);
+			boolean negative = false;
+		
+			if(Number1.myNumbPrior.size() > Number2.myNumbPrior.size()) {
+				while(Number2.myNumbPrior.size() != Number1.myNumbPrior.size()) {
+					Number2.myNumbPrior.add(0, 0);
+				}
+			}
+			if(Number1.myNumbPrior.size() < Number2.myNumbPrior.size()) {
+				while(Number1.myNumbPrior.size() != Number2.myNumbPrior.size()) {
+					Number1.myNumbPrior.add(0,0);
+				}
+			}
+			if(Number1.myNumbAfter.size() > Number2.myNumbAfter.size()) {
+				while(Number1.myNumbAfter.size() != Number2.myNumbAfter.size()) {
+					Number2.myNumbAfter.add(0,0);
+				}
+			}
+			if(Number1.myNumbAfter.size() < Number2.myNumbAfter.size()) {
+				while(Number2.myNumbAfter.size() != Number1.myNumbAfter.size()) {
+					Number1.myNumbAfter.add(0,0);
+				}
+			}
+			//where the subtraction starts
+			if(Number1.myNumbPrior.get(0) < 0 && Number2.myNumbPrior.get(0) > 0) {
+				Number1.myNumbPrior.set(0, Number1.myNumbPrior.get(0)*-1);
+				for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+					Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+Number2.myNumbAfter.get(i));
+					if(Number1.myNumbAfter.get(i) >= 10 && i > 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)%10);
+						Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i)+1);
+					}
+					else if(Number1.myNumbAfter.get(i) >= 10 && i == 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)%10);
+						Number1.myNumbPrior.set(Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1), Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)+1);
+					}
+				}
+					for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+Number2.myNumbPrior.get(i));
+						if(Number1.myNumbPrior.get(i) >= 10 && i > 0) {
+							Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)%10);
+							Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i)+1);
+						}
+						else if(Number1.myNumbPrior.get(i) >= 10 && i == 0) {
+							Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)%10);
+							Number1.myNumbPrior.add(0,1);
+						}
+					}
+					Number1.myNumbPrior.set(0, Number1.myNumbPrior.get(0)*-1);
+				}
+	
+			else if(Number1.myNumbPrior.get(0) > 0 && Number2.myNumbPrior.get(0) < 0) {
+				Number2.myNumbPrior.set(0, Number2.myNumbPrior.get(0)*-1);
+				for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+					Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+Number2.myNumbAfter.get(i));
+					if(Number1.myNumbAfter.get(i) >= 10 && i > 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)%10);
+						Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i)+1);
+					}
+					else if(Number1.myNumbAfter.get(i) >= 10 && i == 0) {
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)%10);
+						Number1.myNumbPrior.set(Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1), Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)+1);
+					}
+				}
+				for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+					Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+Number2.myNumbPrior.get(i));
+					if(Number1.myNumbPrior.get(i) >= 10 && i > 0) {
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)%10);
+						Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i)+1);
+					}
+					else if(Number1.myNumbPrior.get(i) >= 10 && i == 0 ) {
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)%10);
+						Number1.myNumbPrior.add(0,1);
+					}
+				}
+			}
+			else if(Number1.myNumbPrior.get(0) > 0 && Number2.myNumbPrior.get(0) > 0) {
+				if(Number1.myNumbPrior.get(0) > Number2.myNumbPrior.get(0)) {
+					for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+						if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i > 0) {
+							Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+							Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i-1)-1);
+						}
+						else if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i == 0) {
+							Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+							Number1.myNumbPrior.set(Number1.myNumbPrior.size()-1, Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)-1);
+						}
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)-Number2.myNumbAfter.get(i));
+					}
+					for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+						if(Number2.myNumbPrior.get(i) > Number1.myNumbPrior.get(i)) {
+							Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+10);
+							Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i-1)-1);
+						}
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i) - Number2.myNumbPrior.get(i));
+					}
+				}
+				else { 
+					for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+						if(Number2.myNumbAfter.get(i) < Number1.myNumbAfter.get(i) && i > 0) {
+							Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+							Number2.myNumbAfter.set(i-1, Number2.myNumbAfter.get(i-1)-1);
+						}
+						else if(Number2.myNumbAfter.get(i) < Number1.myNumbAfter.get(i) && i == 0) {
+							Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+							Number2.myNumbPrior.set(Number2.myNumbPrior.size()-1, Number2.myNumbPrior.get(Number2.myNumbPrior.size()-1)-1);
+						}
+						Number1.myNumbAfter.set(i, Number2.myNumbAfter.get(i)-Number1.myNumbAfter.get(i));
+					}
+					for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+						if(Number2.myNumbPrior.get(i) > Number1.myNumbPrior.get(i)) {
+							Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)+10);
+							Number2.myNumbPrior.set(i-1, Number2.myNumbPrior.get(i-1)-1);
+						}
+						Number1.myNumbPrior.set(i, Number2.myNumbPrior.get(i) - Number1.myNumbPrior.get(i));
+					}
+					}
+				}
+			else if(Number1.myNumbPrior.get(0) < 0 && Number2.myNumbPrior.get(0) < 0) {
+				Number1.myNumbPrior.set(0, Number1.myNumbPrior.get(0)*-1);
+				Number2.myNumbPrior.set(0, Number2.myNumbPrior.get(0)*-1);
+				if(Number1.myNumbPrior.get(0) > Number2.myNumbPrior.get(0)) {
+					for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+						if(Number2.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i > 0) {
+							Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+							Number1.myNumbAfter.set(i-1, Number1.myNumbAfter.get(i-1)-1);
+						}
+						else if(Number1.myNumbAfter.get(i) > Number1.myNumbAfter.get(i) && i == 0) {
+							Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)+10);
+							Number1.myNumbPrior.set(Number1.myNumbPrior.size()-1, Number1.myNumbPrior.get(Number1.myNumbPrior.size()-1)-1);
+						}
+						Number1.myNumbAfter.set(i, Number1.myNumbAfter.get(i)-Number2.myNumbAfter.get(i));	
+				}
+					for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+						if(Number2.myNumbPrior.get(i) > Number1.myNumbPrior.get(i)) {
+							Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i)+10);
+							Number1.myNumbPrior.set(i-1, Number1.myNumbPrior.get(i-1)-1);
+						}
+						Number1.myNumbPrior.set(i, Number1.myNumbPrior.get(i) - Number2.myNumbPrior.get(i));
+					}
+					Number1.myNumbPrior.set(0, Number1.myNumbPrior.get(0)*-1);
+				}
+				else {
+					for(int i = Number1.myNumbAfter.size()-1; i >= 0; i--) {
+						if(Number2.myNumbAfter.get(i) < Number1.myNumbAfter.get(i) && i > 0) {
+							Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+							Number2.myNumbAfter.set(i-1, Number2.myNumbAfter.get(i-1)-1);
+						}
+						else if(Number2.myNumbAfter.get(i) < Number1.myNumbAfter.get(i) && i == 0) {
+							Number2.myNumbAfter.set(i, Number2.myNumbAfter.get(i)+10);
+							Number2.myNumbPrior.set(Number2.myNumbPrior.size()-1, Number2.myNumbPrior.get(Number2.myNumbPrior.size()-1)-1);
+						}
+						Number1.myNumbAfter.set(i, Number2.myNumbAfter.get(i)-Number1.myNumbAfter.get(i));
+					}
+					for(int i = Number1.myNumbPrior.size()-1; i >= 0; i--) {
+						if(Number2.myNumbPrior.get(i) > Number1.myNumbPrior.get(i)) {
+							Number2.myNumbPrior.set(i, Number2.myNumbPrior.get(i)+10);
+							Number2.myNumbPrior.set(i-1, Number2.myNumbPrior.get(i-1)-1);
+						}
+						Number1.myNumbPrior.set(i, Number2.myNumbPrior.get(i) - Number1.myNumbPrior.get(i));
+					}
+				}
+			}
+			}
+		}
+	

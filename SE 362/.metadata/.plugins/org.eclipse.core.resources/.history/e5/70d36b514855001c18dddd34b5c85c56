@@ -1,0 +1,64 @@
+package coms362.cards.slapjack;
+
+import coms362.cards.abstractcomp.Move;
+import coms362.cards.abstractcomp.Player;
+import coms362.cards.abstractcomp.Table;
+import coms362.cards.app.ViewFacade;
+import coms362.cards.events.remote.AddToPileBottomRemote;
+import coms362.cards.events.remote.AddToPileRemote;
+import coms362.cards.events.remote.HideCardRemote;
+import coms362.cards.events.remote.RemoveFromPileRemote;
+import coms362.cards.events.remote.ShowCardRemote;
+import coms362.cards.events.remote.ShowPlayerScore;
+import coms362.cards.fiftytwo.P52Rules;
+import coms362.cards.model.Card;
+import coms362.cards.model.Location;
+import coms362.cards.model.Pile;
+
+public class SJMovePrize implements Move{
+	
+	private Card c;
+	private Player p;
+	private Pile fromPile;
+	private Pile toPile;
+	private Pile temp = null;
+	
+	public SJMovePrize(Card c, Player p, Pile fromPile, Pile toPile) {
+		this.c = c;
+		this.p = p;
+		this.fromPile = fromPile;
+		this.toPile = toPile;
+	}
+	
+	@Override
+	public void apply(Table table) {
+			String playerPile = "player" + p.getPlayerNum() + "Pile";
+			temp = new Pile("temp", new Location(0,0));
+			
+			for (Card c : fromPile.getCards()) {
+				table.addToPile(playerPile, c);
+				temp.addCard(c);
+				c.setFaceUp(false);
+				table.addToScore(p, 1);
+			}
+			
+			
+			for (Card c : temp.getCards()) {
+				table.removeFromPile(SJRules.PRIZE_PILE, c);
+			}
+	}
+	
+	public void apply(ViewFacade view) {
+		
+		for(Card c : temp.getCards()) {
+			view.send(new HideCardRemote(c));
+			view.send(new RemoveFromPileRemote(fromPile, c));
+			view.send(new AddToPileBottomRemote(toPile, c));
+			view.send(new ShowCardRemote(c));
+			view.send(new ShowPlayerScore(p, null));
+		}
+		temp = null;
+	}
+	
+	
+}

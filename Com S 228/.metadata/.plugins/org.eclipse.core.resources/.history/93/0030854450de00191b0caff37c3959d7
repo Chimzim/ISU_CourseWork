@@ -1,0 +1,37 @@
+package cs228hw1.stats;
+
+import java.util.ArrayList;
+
+public class StdDeviation<T> implements StatObject {
+
+	@Override
+	public void SetDescription(String d) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String GetDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList GetResult() throws RuntimeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void SetData(ArrayList data) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ArrayList GetData() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

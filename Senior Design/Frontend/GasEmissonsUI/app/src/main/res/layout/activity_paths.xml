@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".paths">
+
+    <FrameLayout
+        android:id="@+id/frame_layout_path"
+        android:layout_width="411dp"
+        android:layout_height="549dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/savePath"
+        android:layout_width="87dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoMessagePath1"
+        android:layout_width="270dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="4dp"
+        android:text="Click on the map to add points to the path, Points will connect in the order they were placed.\nClick on a marker and select Delete to remove it"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.009"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DeleteP"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView3"
+            android:layout_width="421dp"
+            android:layout_height="79dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="595dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="2dp"
+            app:menu="@menu/navigation_menu" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

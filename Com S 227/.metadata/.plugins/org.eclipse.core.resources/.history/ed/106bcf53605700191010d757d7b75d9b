@@ -1,0 +1,25 @@
+package hw3;
+import java.util.ArrayList;
+import java.util.Scanner;
+import api.Instruction;
+import api.SymbolTable;
+import api.NVPair;
+import java.io.File;
+import java.io.*;
+import java.io.FileNotFoundException;
+public class AsmFileUtil {
+	private ArrayList<String> fileCode = new ArrayList<String>();
+	public static void assembleAndWriteFile(java.lang.String filename, boolean annotated) {
+		
+	}
+	
+	public static java.util.ArrayList<java.lang.String> assembleFromFile(java.lang.String filename) {
+		File f = new File(filename);
+		Scanner in = new Scanner(f);
+		
+	}
+	
+	public static int[] createMemoryImageFromFile(java.lang.String filename) {
+		
+	}
+}

@@ -1,0 +1,26 @@
+package pictochatTesting;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class TestChecck {
+	
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:/IowaState/SE319/SeleniumWebDriver/chromedriver.exe");
+		WebDriver myDriver = new ChromeDriver();
+		String baseUrl = "www.google.com";
+		String expectedTitle = "Google";
+		String actualTitle = "";
+		
+		myDriver.get(baseUrl);
+		actualTitle = myDriver.getTitle();
+		
+		if(actualTitle.contentEquals(expectedTitle)) {
+			System.out.println("Test Passed!");
+		}else {
+			System.out.println("Test Failed!");
+		}
+		
+		myDriver.close();
+	}
+
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+
+<h1><b>Page 2</h1>
+<h2><b>Table 1</h1>
+
+<p>Which of the following in not a fruit?</p>
+<table style="width:1000%">
+ <tr>
+  <th>
+    <form>
+     <label for="a">A.</label>
+     <img src="https://pixnio.com/free-images/flora-plants/fruits/strawberries-pictures/strawberry-fruit-406x544.jpg" alt="strawberry">
+     <input type="radio" id="a" name="a" value="false">
+    </form>
+  </th>
+  <th>
+   <form> 
+    <label for="b">B.</label>
+    <img src="https://pixnio.com/free-images/2017/11/15/2017-11-15-08-57-55-1200x801.jpg" alt="flower>
+    <input type="radio" id="b" name="b" value="true">
+   </form>
+  </th>
+</tr>
+ <tr>
+  <th>
+    <form>
+     <label for="c">C.</label>
+     <img src="https://pixnio.com/free-images/2018/12/08/2018-12-08-16-01-13-1200x900.jpg" alt="banana">
+     <input type="radio" id="c" name="c" value="false">
+    </form>
+  </th>
+  <th>
+   <form> 
+    <label for="d">D.</label>
+    <img src="https://pixnio.com/free-images/2019/12/12/2019-12-12-10-59-22-1200x800.jpg" alt="orange">
+    <input type="radio" id="d" name="d" value="false">
+   </form>
+  </th>
+</tr>
+</table>
+
+<p>Note that the radio button gets enabled for exactly one of the four options</p>
+<a href=file:"HW1/Hw1.html"Back</a>
+</body>
+</html>

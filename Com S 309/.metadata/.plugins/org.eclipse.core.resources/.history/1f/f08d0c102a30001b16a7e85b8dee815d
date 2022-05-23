@@ -1,0 +1,169 @@
+package com.example.test;
+
+import java.awt.Button;
+import java.awt.event.MouseListener;
+import java.io.IOException;
+import java.text.NumberFormat;
+import java.time.LocalTime;
+import java.util.HashMap;
+
+import javax.management.Notification;
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+
+
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+@ServerEndpoint(value = "/User/{id}")
+public class NotificationSocket {
+    
+	private HashMap<User, Session> userToSession = new HashMap<User, Session>(); 
+	private HashMap<Session, User> sessionToUser = new HashMap<Session, User>();
+	private User currentUser;
+    int count = 0, deliveryTime, hour, mins, timeLeft = 0;
+	private LocalTime currentTime;
+	private boolean isPhoneNumber = true;
+	private String messageToSend = "", timeOfOrder = "", diningCenter = "";
+	private String promptMessage = "Thank you for ordering from ISU delivery\nPlease enter enter your phone number register with your account for more order information";
+	
+	
+
+	@OnOpen
+	public void onOpen(Session sess, @PathParam("id") User user) throws IOException {
+		
+		//stores the user connected information
+		currentUser = user;
+		userToSession.put(currentUser, sess);
+		sessionToUser.put(sess, currentUser);
+		
+		//Send the message to user prompting them to enter in there phone number or order number to get details about it
+		sess.getBasicRemote().sendText(promptMessage);
+		
+	}
+	
+	@OnClose
+	public void onClose(Session session) {
+		//remove user from session
+		User temp = sessionToUser.get(session);
+		sessionToUser.remove(session);
+		userToSession.remove(temp);
+	}
+	
+	@OnMessage
+	public void onMessage(Session current, String message) throws IOException {	
+		if(count == 0) {
+			isPhoneNumber = verifyPhoneNumber(message);
+			if(isPhoneNumber) {
+				getOrderInformation(sessionToUser.get(current), "3:00");
+				current.getBasicRemote().sendText(messageToSend);
+				count++;
+				current.getBasicRemote().sendText(promptMessage);
+			}else {
+				MessageHandling();
+				current.getBasicRemote().sendText(messageToSend);
+			}
+		} else if(count >= 1 && message.toLowerCase().equals("update me on my order")){
+			MessageHandling();
+			current.getBasicRemote().sendText(messageToSend);
+			count++;
+		}else {
+			MessageHandling();
+			current.getBasicRemote().sendText(messageToSend);
+		}
+	}
+	
+	
+	public boolean verifyPhoneNumber(String number) {
+		boolean isNumber = true;
+		int phoneNumber = 0;
+		for(int i = 0; i < number.length()-1; i++) {
+			String temp = number.substring(i, i+1);
+			try {
+				phoneNumber += (Math.pow(10.0, 10.0-i)*Integer.parseInt(temp));
+			}catch(NumberFormatException e) {
+				isNumber = false;
+			}
+		}
+		return isNumber;
+	}
+	
+	public void MessageHandling() {
+		if(count == 0 && !isPhoneNumber) {
+			messageToSend = "Looks like you didnt enter a valid phone number. Please enter the phone number registered with the account to get order information";
+		}else if(count == 0 && isPhoneNumber) {
+			messageToSend = "Your order from " + diningCenter + " was placed at "+ timeOfOrder;
+			setOrderTime();
+			messageToSend += "\nYour order will be ready at " + Integer.toString(hour) +":"+ Integer.toString(mins);
+			promptMessage = "Please type 'update me on my order' to recieve updates on the current status of your order";
+		}else if(count >= 1) {
+			int timeLeft = prepTimeLeft(hour, mins);
+			messageToSend = statusOfOrder(timeLeft);
+			messageToSend += " Your Delivery is estimated to arrive at "+ Integer.toString(hour)+":"+Integer.toString(mins);
+		}else {
+			messageToSend = "Your Delivery is estimated to arrive at "+ Integer.toString(hour)+":"+Integer.toString(mins);
+		}
+	}
+	
+	public void getOrderInformation(User user, String timeOfOrder) {
+		diningCenter = "Storms"; //FixMe to correct 
+		currentTime = LocalTime.now();
+		this.timeOfOrder = timeOfOrder;
+		deliveryTime = 30;
+	}
+	
+	public void setOrderTime() {
+		String temp = timeOfOrder.substring(0, 2);
+		for(int i = 0; i < 24; i++) {
+			for(int j = 0; j < 60; j++) {
+				if(i == Integer.parseInt(temp)) {
+					hour = i;
+					temp = timeOfOrder.substring(4,6);
+					if(j == Integer.parseInt(temp)) {
+						mins = j;
+					}
+				}
+			}
+		}
+		mins += deliveryTime;
+		if(mins >= 60) {
+			mins = 0;
+			hour += 1;
+		}
+	}
+	
+	public int prepTimeLeft(int Hour, int Minute) {
+		if(currentTime.getHour() >= Hour) {
+			if(currentTime.getMinute() >= Minute) {
+				return 0;
+			}else {
+				return Minute - currentTime.getMinute();
+			}
+		}else {
+			int temp = Hour - currentTime.getHour();
+			temp = temp*60; //this converts hours to mins
+			int temp2 = (60 - currentTime.getMinute()) + Minute;
+			return temp - temp2;
+		}
+	}
+	
+	public String statusOfOrder(int time) {
+		int temp = deliveryTime - time - 10;
+		
+		if(temp > 0 && temp <= 5) {
+			return "Your order is being prepared as we speak";
+		}else if(temp > 5 && temp <= 10) {
+			return "Your order is currently in the oven as we speak";
+		}else if(temp > 10 && temp < (time - 10)) {
+			return "Your order is currently being quality checked";
+		}else {
+			return "Your order is out for delivery";
+		}
+	}
+}

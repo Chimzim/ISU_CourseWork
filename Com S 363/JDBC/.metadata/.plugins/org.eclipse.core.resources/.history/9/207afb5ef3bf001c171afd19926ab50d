@@ -1,0 +1,66 @@
+package coms363;
+
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.sql.*;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+
+/**
+ * 
+ * @author Chimzim Ogbondah
+ *
+ */
+public class tweetsdb {
+	public static String[] loginDialog() {
+		// asking for a username and password to access the database.
+		
+		String loginResults[] = new String[2];
+		JPanel panel = new JPanel(new GridBagLayout());
+		GridBagConstraints cs = new GridBagConstraints();
+
+		cs.fill = GridBagConstraints.HORIZONTAL;
+
+		JLabel lbUsername = new JLabel("Database Username: ");
+		cs.gridx = 0;
+		cs.gridy = 0;
+		cs.gridwidth = 1;
+		panel.add(lbUsername, cs);
+
+		JTextField textFieldUsername = new JTextField(20);
+		cs.gridx = 1;
+		cs.gridy = 0;
+		cs.gridwidth = 2;
+		panel.add(textFieldUsername, cs);
+
+		JLabel lbPassword = new JLabel("Database Password: ");
+		cs.gridx = 0;
+		cs.gridy = 1;
+		cs.gridwidth = 1;
+		panel.add(lbPassword, cs);
+
+		JPasswordField passfieldPassword = new JPasswordField(20);
+		cs.gridx = 1;
+		cs.gridy = 1;
+		cs.gridwidth = 2;
+		panel.add(passfieldPassword, cs);
+		panel.setBorder(new LineBorder(Color.ORANGE));
+
+		String[] options = new String[] { "OK", "Cancel" };
+		int ioption = JOptionPane.showOptionDialog(null, panel, "Login", JOptionPane.OK_OPTION,
+				JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+		
+		// store the database username in the first slot.
+		// store the database password in the second slot.
+		
+		if (ioption == 0) // pressing OK button
+		{
+			loginResults[0] = textFieldUsername.getText();
+			loginResults[1] = new String(passfieldPassword.getPassword());
+		}
+		return loginResults;
+	}
+}

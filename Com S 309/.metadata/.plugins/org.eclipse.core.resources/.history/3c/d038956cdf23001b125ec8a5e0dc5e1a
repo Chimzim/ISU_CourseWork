@@ -1,0 +1,85 @@
+package com.example.test;
+
+import java.awt.Button;
+import java.awt.event.MouseListener;
+import java.io.IOException;
+import java.text.NumberFormat;
+import java.util.HashMap;
+
+import javax.management.Notification;
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+
+
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+@ServerEndpoint(value = "/User/{id}")
+public class NotificationSocket extends Guest_Controller{
+
+	private HashMap<Guest, Session> userToSession = new HashMap<Guest, Session>(); 
+	private HashMap<Session, Guest> sessionToUser = new HashMap<Session, Guest>();
+	Notification toSend; 
+	Guest userGuest;
+	int count = 0;
+	private String welcomeMessage = "Thank you for ordering from ISU delivery\nPlease enter enter your order number or phone number register with your account for more order information";
+	
+	public NotificationSocket(Guest guest) {
+		super(guest);
+		// TODO Auto-generated constructor stub
+	}
+
+	@OnOpen
+	public void onOpen(Session sess, @PathParam("id") Guest userGuest) throws IOException {
+		
+		//stores the user connected information
+		this.userGuest = userGuest;
+		userToSession.put(userGuest, sess);
+		sessionToUser.put(sess, userGuest);
+		
+		//Send the message to user prompting them to enter in there phone number or order number to get details about it
+		sess.getBasicRemote().sendText(welcomeMessage);
+		
+	}
+	
+	@OnClose
+	public void onClose(Session session) {
+		//remove user from session
+		Guest temp = sessionToUser.get(session);
+		sessionToUser.remove(session);
+		userToSession.remove(temp);
+	}
+	
+	@OnMessage
+	public void onMessage(Session current, String message) {
+		int phoneNumber = 0;
+		if(count == 0) {
+			for(int i = 0; i < message.length()-1; i++) {
+				String temp = message.substring(i, i+1);
+				try {
+					phoneNumber += (Math.pow(10.0, 10.0-i)*Integer.parseInt(temp));
+					if() {
+						
+					}
+				}catch(NumberFormatException e) {
+					
+				}
+			}
+		} else {
+			
+		}
+	}
+	
+	private void sendNotificationMessage() throws IOException {
+	//	toSend = new Notification("Your order was successfully placed", pressed, 1);
+		Session temp = userToSession.get(userGuest);
+		temp.getBasicRemote().sendText(toSend.getMessage());
+		
+	}
+}

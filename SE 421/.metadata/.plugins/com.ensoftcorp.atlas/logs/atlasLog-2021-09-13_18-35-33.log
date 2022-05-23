@@ -1,0 +1,813 @@
+2021-09-13 18:35:33 INFO  - Initializing Atlas logger for 'com.ensoftcorp.atlas.3.7.1.202103181345'
+2021-09-13 18:35:33 INFO  - Logging level: RELEASE
+2021-09-13 18:35:33 INFO  - EnSoft Plugins: com.ensoftcorp.abp.3.7.1.202103181345,com.ensoftcorp.abp.common.3.7.1.202103181345,com.ensoftcorp.atlas.3.7.1.202103181345,com.ensoftcorp.atlas.c.core.3.7.1.202103181345,com.ensoftcorp.atlas.c.ui.3.7.1.202103181345,com.ensoftcorp.atlas.core.3.7.1.202103181345,com.ensoftcorp.atlas.db.3.7.1.202103181345,com.ensoftcorp.atlas.db.common.3.7.1.202103181345,com.ensoftcorp.atlas.db.implementation.3.7.1.202103181345,com.ensoftcorp.atlas.epl.3.7.1.202103181345,com.ensoftcorp.atlas.java.core.3.7.1.202103181345,com.ensoftcorp.atlas.java.help.3.7.1.202103181345,com.ensoftcorp.atlas.java.ui.3.7.1.202103181345,com.ensoftcorp.atlas.jimple.core.3.7.1.202103181345,com.ensoftcorp.atlas.jimple.ui.3.7.1.202103181345,com.ensoftcorp.atlas.scala-lang.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.c.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.core.3.7.1.202103181345,com.ensoftcorp.atlas.teleport.java.3.7.1.202103181345,com.ensoftcorp.atlas.ui.3.7.1.202103181345,com.ensoftcorp.atlas.ui.shell.3.7.1.202103181345,com.ensoftcorp.atlas.version.jre.3.7.1.202103181345,com.ensoftcorp.open.batik.1.11.0.202103181345,com.ensoftcorp.open.c.commons.3.7.0.202103162030,com.ensoftcorp.open.c.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.commons.3.7.0.202103162030,com.ensoftcorp.open.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.java.commons.3.7.0.202103162030,com.ensoftcorp.open.java.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.jimple.commons.3.7.0.202103162030,com.ensoftcorp.open.jimple.commons.ui.3.7.0.202103162030,com.ensoftcorp.open.pcg.3.7.0.202103162030,com.ensoftcorp.open.pcg.ui.3.7.0.202103162030,com.ensoftcorp.open.slice.3.7.0.202103162030,com.ensoftcorp.open.slice.ui.3.7.0.202103162030
+2021-09-13 18:35:33 INFO  - Free|Total|Max memory: 144.58 MB|297.0 MB|4096.0 MB (49% free)
+2021-09-13 18:35:33 INFO  - 
+****** System environment: ******
+=::=::\
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\chimz\AppData\Roaming
+COMPUTERNAME=DESKTOP-JPS83P3
+ChocolateyInstall=C:\ProgramData\chocolatey
+ChocolateyLastPathUpdate=132437223347585837
+ComSpec=C:\WINDOWS\system32\cmd.exe
+CommonProgramFiles=C:\Program Files\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+DriverData=C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\chimz
+LOCALAPPDATA=C:\Users\chimz\AppData\Local
+LOGONSERVER=\\DESKTOP-JPS83P3
+NUMBER_OF_PROCESSORS=8
+OS=Windows_NT
+OneDrive=C:\Users\chimz\OneDrive
+OneDriveConsumer=C:\Users\chimz\OneDrive
+OnlineServices=Online Services
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+PROCESSOR_ARCHITECTURE=AMD64
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+PROCESSOR_LEVEL=23
+PROCESSOR_REVISION=1100
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+Path=C:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin/client;C:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/jre/bin;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\;C:\Users\chimz\AppData\Local\Microsoft\WindowsApps;;C:\Users\chimz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chimz\AppData\Roaming\npm;C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse;
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+RegionCode=NA
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\chimz\AppData\Local\Temp
+TMP=C:\Users\chimz\AppData\Local\Temp
+USERDOMAIN=DESKTOP-JPS83P3
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-JPS83P3
+USERNAME=chimz
+USERPROFILE=C:\Users\chimz
+__COMPAT_LAYER=DetectorsAppHealth
+platformcode=KV
+windir=C:\WINDOWS
+****** (end System environment) ******
+
+2021-09-13 18:35:33 INFO  - 
+****** System properties: ******
+applicationXMI=org.eclipse.ui.workbench/LegacyIDE.e4xmi
+awt.toolkit=sun.awt.windows.WToolkit
+ds.delayed.keepInstances=true
+ds.delayed.keepInstances.default=true
+eclipse.application=org.eclipse.ui.ide.workbench
+eclipse.buildId=4.12.0.I20190605-1800
+eclipse.commands=-os
+win32
+-ws
+win32
+-arch
+x86_64
+-showsplash
+C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+-launcher
+C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\eclipsec.exe
+-name
+Eclipsec
+--launcher.library
+C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.1.1000.v20190125-2016\eclipse_1801.dll
+-startup
+C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+--launcher.appendVmargs
+-product
+org.eclipse.epp.package.committers.product
+-atlas.bundleDistribution
+true
+-vm
+C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin\client\jvm.dll
+
+eclipse.home.location=file:/C:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/
+eclipse.launcher=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\eclipsec.exe
+eclipse.launcher.name=Eclipsec
+eclipse.p2.data.area=@config.dir/../p2/
+eclipse.p2.profile=epp.package.committers
+eclipse.product=org.eclipse.epp.package.committers.product
+eclipse.startTime=1631568975417
+eclipse.stateSaveDelayInterval=30000
+eclipse.vm=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin\client\jvm.dll
+eclipse.vmargs=-Dosgi.requiredJavaVersion=1.8
+-Dosgi.instance.area.default=@user.home/eclipse-workspace
+-XX:+UseG1GC
+-XX:+UseStringDeduplication
+--add-modules=ALL-SYSTEM
+-Dosgi.requiredJavaVersion=1.8
+-Dosgi.dataAreaRequiresExplicitInit=true
+-Xms256m
+-Xmx4g
+--add-modules=ALL-SYSTEM
+-Djava.class.path=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+
+equinox.init.uuid=true
+file.encoding=Cp1252
+file.separator=\
+gosh.args=--nointeractive
+java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment
+java.awt.printerjob=sun.awt.windows.WPrinterJob
+java.class.path=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins/org.eclipse.equinox.launcher_1.5.400.v20190515-0925.jar
+java.class.version=55.0
+java.home=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre
+java.io.tmpdir=C:\Users\chimz\AppData\Local\Temp\
+java.library.path=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python38\Scripts\;C:\Python38\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\chimz\AppData\Local\Programs\Python\Python37\;C:\Users\chimz\AppData\Local\Microsoft\WindowsApps;;C:\Users\chimz\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\chimz\AppData\Roaming\npm;.
+java.runtime.name=OpenJDK Runtime Environment
+java.runtime.version=11.0.4+11
+java.specification.name=Java Platform API Specification
+java.specification.vendor=Oracle Corporation
+java.specification.version=11
+java.vendor=AdoptOpenJDK
+java.vendor.url=https://adoptopenjdk.net/
+java.vendor.url.bug=https://github.com/AdoptOpenJDK/openjdk-build/issues
+java.vendor.version=AdoptOpenJDK
+java.version=11.0.4
+java.version.date=2019-07-16
+java.vm.info=mixed mode
+java.vm.name=OpenJDK 64-Bit Client VM
+java.vm.specification.name=Java Virtual Machine Specification
+java.vm.specification.vendor=Oracle Corporation
+java.vm.specification.version=11
+java.vm.vendor=AdoptOpenJDK
+java.vm.version=11.0.4+11
+jdk.debug=release
+line.separator=
+
+org.apache.commons.logging.Log=org.apache.commons.logging.impl.NoOpLog
+org.eclipse.equinox.launcher.splash.handle=1182034
+org.eclipse.equinox.launcher.splash.location=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+org.eclipse.equinox.simpleconfigurator.configUrl=file:org.eclipse.equinox.simpleconfigurator/bundles.info
+org.eclipse.swt.internal.deviceZoom=100
+org.osgi.framework.executionenvironment=OSGi/Minimum-1.0, OSGi/Minimum-1.1, OSGi/Minimum-1.2, JavaSE/compact1-1.8, JavaSE/compact2-1.8, JavaSE/compact3-1.8, JRE-1.1, J2SE-1.2, J2SE-1.3, J2SE-1.4, J2SE-1.5, JavaSE-1.6, JavaSE-1.7, JavaSE-1.8, JavaSE-9, JavaSE-10, JavaSE-11
+org.osgi.framework.language=en
+org.osgi.framework.os.name=Windows10
+org.osgi.framework.os.version=10.0.0
+org.osgi.framework.processor=x86-64
+org.osgi.framework.storage=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\configuration
+org.osgi.framework.system.capabilities=osgi.ee; osgi.ee="OSGi/Minimum"; version:List<Version>="1.0, 1.1, 1.2", osgi.ee; osgi.ee="JRE"; version:List<Version>="1.0, 1.1", osgi.ee; osgi.ee="JavaSE"; version:List<Version>="1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact1"; version:List<Version>="1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact2"; version:List<Version>="1.8, 9.0, 10.0, 11.0",osgi.ee; osgi.ee="JavaSE/compact3"; version:List<Version>="1.8, 9.0, 10.0, 11.0"
+org.osgi.framework.system.packages=com.sun.java.accessibility.util, com.sun.management, com.sun.net.httpserver, com.sun.net.httpserver.spi, com.sun.nio.file, com.sun.nio.sctp, com.sun.security.auth, com.sun.security.auth.callback, com.sun.security.auth.login, com.sun.security.auth.module, com.sun.security.jgss, java.applet, java.awt, java.awt.color, java.awt.datatransfer, java.awt.desktop, java.awt.dnd, java.awt.event, java.awt.font, java.awt.geom, java.awt.im, java.awt.im.spi, java.awt.image, java.awt.image.renderable, java.awt.print, java.beans, java.beans.beancontext, java.io, java.lang, java.lang.annotation, java.lang.instrument, java.lang.invoke, java.lang.management, java.lang.module, java.lang.ref, java.lang.reflect, java.math, java.net, java.net.http, java.net.spi, java.nio, java.nio.channels, java.nio.channels.spi, java.nio.charset, java.nio.charset.spi, java.nio.file, java.nio.file.attribute, java.nio.file.spi, java.rmi, java.rmi.activation, java.rmi.dgc, java.rmi.registry, java.rmi.server, java.security, java.security.acl, java.security.cert, java.security.interfaces, java.security.spec, java.sql, java.text, java.text.spi, java.time, java.time.chrono, java.time.format, java.time.temporal, java.time.zone, java.util, java.util.concurrent, java.util.concurrent.atomic, java.util.concurrent.locks, java.util.function, java.util.jar, java.util.logging, java.util.prefs, java.util.regex, java.util.spi, java.util.stream, java.util.zip, javax.accessibility, javax.annotation.processing, javax.crypto, javax.crypto.interfaces, javax.crypto.spec, javax.imageio, javax.imageio.event, javax.imageio.metadata, javax.imageio.plugins.bmp, javax.imageio.plugins.jpeg, javax.imageio.plugins.tiff, javax.imageio.spi, javax.imageio.stream, javax.lang.model, javax.lang.model.element, javax.lang.model.type, javax.lang.model.util, javax.management, javax.management.loading, javax.management.modelmbean, javax.management.monitor, javax.management.openmbean, javax.management.relation, javax.management.remote, javax.management.remote.rmi, javax.management.timer, javax.naming, javax.naming.directory, javax.naming.event, javax.naming.ldap, javax.naming.spi, javax.net, javax.net.ssl, javax.print, javax.print.attribute, javax.print.attribute.standard, javax.print.event, javax.rmi.ssl, javax.script, javax.security.auth, javax.security.auth.callback, javax.security.auth.kerberos, javax.security.auth.login, javax.security.auth.spi, javax.security.auth.x500, javax.security.cert, javax.security.sasl, javax.smartcardio, javax.sound.midi, javax.sound.midi.spi, javax.sound.sampled, javax.sound.sampled.spi, javax.sql, javax.sql.rowset, javax.sql.rowset.serial, javax.sql.rowset.spi, javax.swing, javax.swing.border, javax.swing.colorchooser, javax.swing.event, javax.swing.filechooser, javax.swing.plaf, javax.swing.plaf.basic, javax.swing.plaf.metal, javax.swing.plaf.multi, javax.swing.plaf.nimbus, javax.swing.plaf.synth, javax.swing.table, javax.swing.text, javax.swing.text.html, javax.swing.text.html.parser, javax.swing.text.rtf, javax.swing.tree, javax.swing.undo, javax.tools, javax.transaction.xa, javax.xml, javax.xml.catalog, javax.xml.crypto, javax.xml.crypto.dom, javax.xml.crypto.dsig, javax.xml.crypto.dsig.dom, javax.xml.crypto.dsig.keyinfo, javax.xml.crypto.dsig.spec, javax.xml.datatype, javax.xml.namespace, javax.xml.parsers, javax.xml.stream, javax.xml.stream.events, javax.xml.stream.util, javax.xml.transform, javax.xml.transform.dom, javax.xml.transform.sax, javax.xml.transform.stax, javax.xml.transform.stream, javax.xml.validation, javax.xml.xpath, jdk.dynalink, jdk.dynalink.beans, jdk.dynalink.linker, jdk.dynalink.linker.support, jdk.dynalink.support, jdk.jfr, jdk.jfr.consumer, jdk.management.jfr, jdk.nashorn.api.scripting, jdk.nashorn.api.tree, jdk.net, jdk.nio, netscape.javascript, org.ietf.jgss, org.w3c.dom, org.w3c.dom.bootstrap, org.w3c.dom.css, org.w3c.dom.events, org.w3c.dom.html, org.w3c.dom.ls, org.w3c.dom.ranges, org.w3c.dom.stylesheets, org.w3c.dom.traversal, org.w3c.dom.views, org.w3c.dom.xpath, org.xml.sax, org.xml.sax.ext, org.xml.sax.helpers, sun.misc, sun.reflect
+org.osgi.framework.uuid=027a26cf-34e7-4c52-a2d6-0f3cac4c310f
+org.osgi.framework.vendor=Eclipse
+org.osgi.framework.version=1.9.0
+org.osgi.supports.framework.extension=true
+org.osgi.supports.framework.fragment=true
+org.osgi.supports.framework.requirebundle=true
+os.arch=amd64
+os.name=Windows 10
+os.version=10.0
+osgi.arch=x86_64
+osgi.bundles=reference:file:org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar,reference:file:org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar,reference:file:org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar,reference:file:org.eclipse.equinox.simpleconfigurator_1.3.200.v20181101-1115.jar@1:start
+osgi.bundles.defaultStartLevel=4
+osgi.compatibility.bootdelegation=true
+osgi.compatibility.bootdelegation.default=true
+osgi.configuration.area=file:/C:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/configuration/
+osgi.dataAreaRequiresExplicitInit=true
+osgi.framework=file:/c:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi_3.14.0.v20190517-1309.jar
+osgi.framework.extensions=reference:file:org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar,reference:file:org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar,reference:file:org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar
+osgi.framework.shape=jar
+osgi.framework.useSystemProperties=true
+osgi.frameworkClassPath=., file:c:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.compatibility.state_1.1.500.v20190516-1407.jar, file:c:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.nl_de_4.12.0.v20190713060001.jar, file:c:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/plugins/org.eclipse.osgi.nl_ja_4.12.0.v20190713060001.jar
+osgi.install.area=file:/C:/Users/chimz/Downloads/EnSoft-Atlas-win64+SDKPlus-3.7.1/EnSoft-Atlas-win64+SDKPlus-3.7.1/eclipse/
+osgi.instance.area=file:/C:/IowaState/Software Engineering/SE 421/
+osgi.instance.area.default=file:/C:/Users/chimz/eclipse-workspace/
+osgi.logfile=C:\IowaState\Software Engineering\SE 421\.metadata\.log
+osgi.nl=en_US
+osgi.os=win32
+osgi.requiredJavaVersion=1.8
+osgi.splashLocation=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\\plugins\org.eclipse.epp.package.common_4.12.0.20190614-1200\splash.bmp
+osgi.splashPath=platform:/base/plugins/org.eclipse.platform
+osgi.syspath=c:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\plugins
+osgi.tracefile=C:\IowaState\Software Engineering\SE 421\.metadata\trace.log
+osgi.ws=win32
+path.separator=;
+sun.arch.data.model=64
+sun.boot.library.path=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse\jre\bin
+sun.cpu.endian=little
+sun.cpu.isalist=amd64
+sun.desktop=windows
+sun.io.unicode.encoding=UnicodeLittle
+sun.jnu.encoding=Cp1252
+sun.management.compiler=HotSpot 64-Bit Client Compiler
+sun.os.patch.level=
+sun.stderr.encoding=cp437
+sun.stdout.encoding=cp437
+user.country=US
+user.dir=C:\Users\chimz\Downloads\EnSoft-Atlas-win64+SDKPlus-3.7.1\EnSoft-Atlas-win64+SDKPlus-3.7.1\eclipse
+user.home=C:\Users\chimz
+user.language=en
+user.name=chimz
+user.script=
+user.timezone=America/Chicago
+user.variant=
+****** (end System properties) ******
+
+2021-09-13 18:35:33 INFO  - AtlasCommands: DISABLE_NATIVE_MEMORY = false,BUNDLE_DISTRO = true
+2021-09-13 18:35:33 DEBUG - DEBUG - Atlas Started
+2021-09-13 18:35:33 DEBUG - DEBUG - Atlas Started
+2021-09-13 18:36:04 WARN  - Eclipse Status: While loading class "com.ensoftcorp.atlas.ui.dialogs.ManageIndexingSettingsDialog$_c$1", thread "Thread[Memory Update,6,main]" timed out waiting (30207ms) for thread "Thread[main,6,main]" to finish starting bundle "com.ensoftcorp.atlas.ui_3.7.1.202103181345 [28]". To avoid deadlock, thread "Thread[Memory Update,6,main]" is proceeding but "com.ensoftcorp.atlas.ui.dialogs.ManageIndexingSettingsDialog$_c$1" may not be fully initialized.
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; osgi.identity="com.ensoftcorp.atlas.ui"; type="osgi.bundle"; version:Version="3.7.1.202103181345"; singleton:="true" [id=28] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:345)
+	at org.eclipse.osgi.container.Module.start(Module.java:414)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.ensoftcorp.atlas.ui.dialogs.ManageIndexingSettingsDialog$_c.run(Unknown Source)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 30 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:342)
+	... 12 more
+Caused by: org.eclipse.osgi.framework.util.ThreadInfoReport: Thread dump
+
+ThreadId: 1 ThreadName: main ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: 
+    java.util.concurrent.locks.ReentrantLock$NonfairSync@6c357769
+    java.util.concurrent.locks.ReentrantLock$NonfairSync@217638f5
+    java.util.concurrent.locks.ReentrantLock$NonfairSync@2574854d
+    java.util.concurrent.locks.ReentrantLock$NonfairSync@1ca3bd6f
+  Monitors Locked: 
+    org.eclipse.core.internal.expressions.TypeExtensionManager@2e6c6c46
+  Stack Trace: 
+    org.eclipse.swt.internal.win32.OS.WaitMessage(Native Method)
+    org.eclipse.swt.widgets.Display.sleep(Display.java:4547)
+    org.eclipse.jface.window.Window.runEventLoop(Window.java:824)
+    org.eclipse.jface.window.Window.open(Window.java:799)
+    com.ensoftcorp.atlas.ui.util.UIUtil$3.run(Unknown Source)
+    com.ensoftcorp.atlas.ui.util.UIUtil.runOnUIThread(Unknown Source)
+    com.ensoftcorp.atlas.ui.util.UIUtil.displayManageProjectSettingsDialog(Unknown Source)
+    com.ensoftcorp.atlas.ui.Activator.start(Unknown Source)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+    java.base@11.0.4/java.security.AccessController.doPrivileged(Native Method)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+    org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+    org.eclipse.osgi.container.Module.doStart(Module.java:598)
+    org.eclipse.osgi.container.Module.start(Module.java:462)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+    java.base@11.0.4/java.lang.ClassLoader.loadClass(Unknown Source)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+    org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+    org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+    org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+    org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+    org.eclipse.ui.internal.registry.ViewDescriptor.createView(ViewDescriptor.java:61)
+    org.eclipse.ui.internal.ViewReference.createPart(ViewReference.java:103)
+    org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPart(CompatibilityPart.java:300)
+    org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:338)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/java.lang.reflect.Method.invoke(Unknown Source)
+    org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+    org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+    org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
+    org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+    org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:411)
+    org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:333)
+    org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:202)
+    org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:91)
+    org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:60)
+    org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+    org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:132)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+    org.eclipse.e4.ui.workbench.renderers.swt.ElementReferenceRenderer.createWidget(ElementReferenceRenderer.java:73)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.StackRenderer.showTab(StackRenderer.java:1294)
+    org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+    org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$$Lambda$296/0x0000000023aff440.handleEvent(Unknown Source)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler$$Lambda$198/0x000000001fa200a8.run(Unknown Source)
+    org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+    org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+    org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+    org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+    org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+    org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+    org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+    org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+    org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+    org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+    org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+    org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+    org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+    org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElementGen(ElementContainerImpl.java:170)
+    org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:188)
+    org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:110)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:693)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+    org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+    org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+    org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:140)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+    org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:51)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:82)
+    org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.lambda$0(LazyStackRenderer.java:75)
+    org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer$$Lambda$296/0x0000000023aff440.handleEvent(Unknown Source)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler.lambda$0(UIEventHandler.java:38)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler$$Lambda$198/0x000000001fa200a8.run(Unknown Source)
+    org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:236)
+    org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:146)
+    org.eclipse.swt.widgets.Display.syncExec(Display.java:4580)
+    org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:219)
+    org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:38)
+    org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+    org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+    org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+    org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+    org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+    org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+    org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+    org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+    org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+    org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:152)
+    org.eclipse.e4.ui.model.application.ui.advanced.impl.PerspectiveStackImpl.setSelectedElement(PerspectiveStackImpl.java:1)
+    org.eclipse.ui.internal.WorkbenchPage.setPerspective(WorkbenchPage.java:4049)
+    org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:873)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/java.lang.reflect.Method.invoke(Unknown Source)
+    org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+    org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1001)
+    org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+    org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+    org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:83)
+    org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1523)
+    org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1494)
+    org.eclipse.mylyn.internal.reviews.ui.ActiveReviewManager.<init>(ActiveReviewManager.java:113)
+    org.eclipse.mylyn.internal.reviews.ui.ReviewsUiPlugin.start(ReviewsUiPlugin.java:44)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+    java.base@11.0.4/java.security.AccessController.doPrivileged(Native Method)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+    org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+    org.eclipse.osgi.container.Module.doStart(Module.java:598)
+    org.eclipse.osgi.container.Module.start(Module.java:462)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+    org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:470)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+    java.base@11.0.4/java.lang.ClassLoader.loadClass(Unknown Source)
+    java.base@11.0.4/java.lang.Class.getDeclaredConstructors0(Native Method)
+    java.base@11.0.4/java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+    java.base@11.0.4/java.lang.Class.getConstructor0(Unknown Source)
+    java.base@11.0.4/java.lang.Class.getConstructor(Unknown Source)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:825)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:778)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+    org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+    org.eclipse.osgi.container.Module.doStart(Module.java:598)
+    org.eclipse.osgi.container.Module.start(Module.java:462)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+    java.base@11.0.4/java.lang.ClassLoader.loadClass(Unknown Source)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+    org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+    org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+    org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+    org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+    org.eclipse.mylyn.internal.tasks.ui.util.TasksUiExtensionReader.readTaskEditorPageFactory(TasksUiExtensionReader.java:214)
+    org.eclipse.mylyn.internal.tasks.ui.util.TasksUiExtensionReader.initStartupExtensions(TasksUiExtensionReader.java:95)
+    org.eclipse.mylyn.internal.tasks.ui.TasksUiPlugin.start(TasksUiPlugin.java:555)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:842)
+    org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+    java.base@11.0.4/java.security.AccessController.doPrivileged(Native Method)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:834)
+    org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:791)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1013)
+    org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:365)
+    org.eclipse.osgi.container.Module.doStart(Module.java:598)
+    org.eclipse.osgi.container.Module.start(Module.java:462)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+    java.base@11.0.4/java.lang.ClassLoader.loadClass(Unknown Source)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:620)
+    org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+    org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:934)
+    org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+    org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+    org.eclipse.core.internal.expressions.PropertyTesterDescriptor.instantiate(PropertyTesterDescriptor.java:99)
+    org.eclipse.core.internal.expressions.TypeExtension.findTypeExtender(TypeExtension.java:100)
+    org.eclipse.core.internal.expressions.TypeExtension.findTypeExtender(TypeExtension.java:133)
+    org.eclipse.core.internal.expressions.TypeExtension.findTypeExtender(TypeExtension.java:133)
+    org.eclipse.core.internal.expressions.TypeExtension.findTypeExtender(TypeExtension.java:133)
+    org.eclipse.core.internal.expressions.TypeExtensionManager.getProperty(TypeExtensionManager.java:122)
+    org.eclipse.core.internal.expressions.TestExpression.evaluate(TestExpression.java:100)
+    org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.isCoreExpressionVisible(ContributionsAnalyzer.java:290)
+    org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.isVisible(ContributionsAnalyzer.java:264)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord.computeVisibility(ToolBarContributionRecord.java:154)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarContributionRecord.updateVisibility(ToolBarContributionRecord.java:73)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer$2.changed(ToolBarManagerRenderer.java:510)
+    org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:109)
+    org.eclipse.e4.core.internal.contexts.EclipseContext.runAndTrack(EclipseContext.java:346)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processAddition(ToolBarManagerRenderer.java:502)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.generateContributions(ToolBarManagerRenderer.java:478)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.processContribution(ToolBarManagerRenderer.java:447)
+    org.eclipse.e4.ui.workbench.renderers.swt.ToolBarManagerRenderer.createWidget(ToolBarManagerRenderer.java:405)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:1015)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:675)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.subscribeChildrenHandler(PartRenderingEngine.java:311)
+    jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+    java.base@11.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/java.lang.reflect.Method.invoke(Unknown Source)
+    org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:58)
+    org.eclipse.e4.core.di.internal.extensions.EventObjectSupplier$DIEventHandler.handleEvent(EventObjectSupplier.java:92)
+    org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:205)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:203)
+    org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+    org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+    org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:151)
+    org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:132)
+    org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:75)
+    org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:44)
+    org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:55)
+    org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:63)
+    org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:424)
+    org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+    org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:356)
+    org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:340)
+    org.eclipse.e4.ui.internal.workbench.ContributionsAnalyzer.processAddition(ContributionsAnalyzer.java:456)
+    org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.addTrimContributions(TrimBarRenderer.java:171)
+    org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:143)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:560)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:544)
+    org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:687)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:689)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:781)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:752)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:746)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:730)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1099)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1062)
+    org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+    org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:635)
+    org.eclipse.ui.internal.Workbench$$Lambda$141/0x000000001ed84ca8.run(Unknown Source)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+    org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+    org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:155)
+    org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    java.base@11.0.4/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.base@11.0.4/java.lang.reflect.Method.invoke(Unknown Source)
+    app//org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:660)
+    app//org.eclipse.equinox.launcher.Main.basicRun(Main.java:597)
+    app//org.eclipse.equinox.launcher.Main.run(Main.java:1468)
+
+ThreadId: 2 ThreadName: Reference Handler ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+    java.base@11.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+    java.base@11.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+ThreadId: 3 ThreadName: Finalizer ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@4bcb25a5 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+ThreadId: 4 ThreadName: Signal Dispatcher ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 5 ThreadName: Attach Listener ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 8 ThreadName: Common-Cleaner ThreadState: TIMED_WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@4a149f7c LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+    java.base@11.0.4/java.lang.Thread.run(Unknown Source)
+    java.base@11.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+
+ThreadId: 17 ThreadName: Active Thread: Equinox Container: 027a26cf-34e7-4c52-a2d6-0f3cac4c310f ThreadState: TIMED_WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4b5d0b94 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+    java.base@11.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.base@11.0.4/java.lang.Thread.run(Unknown Source)
+
+ThreadId: 19 ThreadName: Framework Event Dispatcher: Equinox Container: 027a26cf-34e7-4c52-a2d6-0f3cac4c310f ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@40416235 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 20 ThreadName: Start Level: Equinox Container: 027a26cf-34e7-4c52-a2d6-0f3cac4c310f ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@52b59195 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 21 ThreadName: Refresh Thread: Equinox Container: 027a26cf-34e7-4c52-a2d6-0f3cac4c310f ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@3c341bc0 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 24 ThreadName: Bundle File Closer ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@1f16a679 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 33 ThreadName: SCR Component Actor ThreadState: WAITING
+  Blocked On: java.util.LinkedList@548d2f64 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+    java.base@11.0.4/java.lang.Thread.run(Unknown Source)
+
+ThreadId: 35 ThreadName: Worker-JM ThreadState: WAITING
+  Blocked On: java.util.ArrayList@2aca2559 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:62)
+
+ThreadId: 38 ThreadName: EMF Reference Cleaner ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@363cd1db LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+
+ThreadId: 39 ThreadName: Worker-0 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@1c339c0b LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 40 ThreadName: Provisioning Event Dispatcher ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@21f866e6 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 41 ThreadName: Worker-1 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@1c339c0b LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 43 ThreadName: Gogo shell ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5a636f6d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+    java.base@11.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.base@11.0.4/java.lang.Thread.run(Unknown Source)
+
+ThreadId: 48 ThreadName: Java indexing ThreadState: WAITING
+  Blocked On: org.eclipse.jdt.internal.core.search.indexing.IndexManager@a01dff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.Object.wait(Unknown Source)
+    org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+    java.base@11.0.4/java.lang.Thread.run(Unknown Source)
+
+ThreadId: 50 ThreadName: Atlas Logging ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@a52d97c LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+    java.base@11.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.base@11.0.4/java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    com.ensoftcorp.atlas.core.log.Log$_b.run(Unknown Source)
+
+ThreadId: 51 ThreadName: Thread-8 ThreadState: TIMED_WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@687f4186 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.u$2.run(Unknown Source)
+
+ThreadId: 52 ThreadName: Graph Element Cleanup Thread ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@292643e3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.k$_c.b(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.k$1.run(Unknown Source)
+
+ThreadId: 53 ThreadName: Thread-9 ThreadState: TIMED_WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@2d5cef73 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.u$2.run(Unknown Source)
+
+ThreadId: 54 ThreadName: Graph Element Cleanup Thread ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@31594a9d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.base@11.0.4/java.lang.Object.wait(Native Method)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.base@11.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.k$_c.b(Unknown Source)
+    com.ensoftcorp.atlas.core.internal.db.EA014.k$1.run(Unknown Source)
+
+ThreadId: 55 ThreadName: Memory Update ThreadState: RUNNABLE
+  Blocked On: org.eclipse.osgi.internal.container.EquinoxReentrantLock@55790c97[Locked by thread main]
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.management@11.0.4/sun.management.ThreadImpl.dumpThreads0(Native Method)
+    java.management@11.0.4/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+    java.management@11.0.4/sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.getThreadDump(ThreadInfoReport.java:30)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.<init>(ThreadInfoReport.java:23)
+    org.eclipse.osgi.container.Module.lockStateChange(Module.java:342)
+    org.eclipse.osgi.container.Module.start(Module.java:414)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:493)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:330)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:396)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:474)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:423)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:415)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+    java.base@11.0.4/java.lang.ClassLoader.loadClass(Unknown Source)
+    com.ensoftcorp.atlas.ui.dialogs.ManageIndexingSettingsDialog$_c.run(Unknown Source)
+	... 13 more

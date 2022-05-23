@@ -1,0 +1,91 @@
+package coms362.cards.slapjack;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Random;
+
+import coms362.cards.abstractcomp.Move;
+import coms362.cards.abstractcomp.Player;
+import coms362.cards.abstractcomp.Table;
+import coms362.cards.app.ViewFacade;
+import coms362.cards.events.remote.CreateButtonRemote;
+import coms362.cards.events.remote.CreatePileRemote;
+import coms362.cards.events.remote.SetBottomPlayerTextRemote;
+import coms362.cards.events.remote.SetGameTitleRemote;
+import coms362.cards.events.remote.SetupTable;
+import coms362.cards.fiftytwo.DealButton;
+import coms362.cards.fiftytwo.P52Rules;
+import coms362.cards.model.Card;
+import coms362.cards.model.Location;
+import coms362.cards.model.Pile;
+
+public class SJInitCmd implements Move {
+	
+	private Table table;
+	private Map<Integer, Player> players;
+	private String title;
+	
+	public SJInitCmd(Map<Integer, Player> players, String game, Table table) {
+		this.players = players;
+		this.title = game;
+		this.table = table;
+	}
+
+	@Override
+	public void apply(Table table) {
+		System.out.println("Reached SJInit");
+		Pile pileOne = new Pile(SJRules.PLAYER1_PILE, new Location(500,359));
+		//Pile pileTwo = new Pile(SJRules.PLAYER2_PILE, new Location(500,359));
+		ArrayList<Card> cards = new ArrayList<>();
+		
+		boolean faceUp = false;
+		
+        try {
+            for (String suit : Card.suits) {
+                for (int i = 1; i <= 13; i++) {
+                    Card card = new Card();
+                    card.setSuit(suit);
+                    card.setRank(i);
+                    card.setRotate(0);
+                    card.setX(500);
+                    card.setY(100);
+                    card.setFaceUp(faceUp);
+                    
+                    //pile.addCard(card);
+                    cards.add(card);
+                    
+                    
+                }
+            }
+            Collections.shuffle(cards);
+            
+            for(int i = 0; i < 26; i++) {
+            	pileOne.addCard(cards.get(i));
+            }
+            
+           
+            
+            table.addPile(pileOne);
+            //table.addPile(pileTwo);
+            table.addPile(new Pile(SJRules.DISCARD_PILE, new Location(500,359)));
+            
+            
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+	@Override
+	public void apply(ViewFacade view) {
+		view.send(new SetupTable());
+		view.send(new SetGameTitleRemote(title));
+		
+		view.send(new CreatePileRemote(table.getPile(SJRules.PLAYER1_PILE)));
+		//view.send(new CreatePileRemote(table.getPile(SJRules.PLAYER2_PILE)));
+		view.send(new CreatePileRemote(table.getPile(SJRules.DISCARD_PILE)));
+		SJDealButton sjdealButton = new SJDealButton("DEAL", new Location(0, 0));
+		view.register(sjdealButton); //so we can find it later. 
+		view.send(new CreateButtonRemote(sjdealButton));
+	}
+}

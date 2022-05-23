@@ -1,0 +1,125 @@
+package cs228hw4.game;
+
+import java.awt.Color;
+import java.io.File;
+
+
+import cs228hw4.game.GalaxyState;
+import cs228hw4.game.SystemState;
+
+
+public class MyAgent implements Agent{
+	private String lastName, firstName, ID, username;
+	private Color myColor = null, Ocolor = null;
+	private AgentAction[] myActions;
+	private SystemState options;
+	
+	public MyAgent() {
+		firstName = "Chimzim";
+		lastName = "Ogbondah";
+		ID = "273362113";
+		username = "cogbondah";
+	}
+	
+	@Override
+	public String getFirstName() {
+		// TODO Auto-generated method stub
+		return firstName;
+	}
+
+	@Override
+	public String getLastName() {
+		// TODO Auto-generated method stub
+		return lastName;
+	}
+
+	@Override
+	public String getStuID() {
+		// TODO Auto-generated method stub
+		return ID;
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return username;
+	}
+
+	@Override
+	public String getAgentName() {
+		// TODO Auto-generated method stub
+		return username;
+	}
+
+	@Override
+	public File getAgentImage() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean inTournament() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public AgentAction[] getCommandTurnTournament(GalaxyState g, int energyLevel) {
+		// TODO Auto-generated method stub
+		return getCommandTurnGrading(g,energyLevel);
+	}
+
+	@Override
+	public AgentAction[] getCommandTurnGrading(GalaxyState g, int energyLevel) {
+		// TODO Auto-generated method stub
+		myActions = new AgentAction[3];
+		int currentEnergy = energyLevel;
+		options = null;
+		String move = "";
+		int key = 0;
+		SystemState[] neighbors = options.getNeighbors();
+		int[] travel = options.getTravelCost();
+		int least = travel[0];
+		
+		move = neighbors[key].getName();
+		for(int i = 0; i < 3; i++) {
+			if(options.getOwner() != myColor) {
+				if(options.getCostToCapture() < currentEnergy) {
+					myActions[i] = new Agent.Capture(options.getCostToCapture());
+				}
+				else if(i <= 1 && options.getCostToCapture() < currentEnergy) {
+					myActions[i] = new Agent.Capture(options.getCostToCapture());
+					i++;
+					myActions[i] = new Agent.ContinueCapture();
+				}
+			}
+			else if(options.getOwner().equals(myColor)) {
+				myActions[i] = new Agent.Fortify(currentEnergy/2);	
+				}
+			else if(currentEnergy < 2) {
+				for(int j = 1; j < travel.length-1; j++) {
+					if(least > travel[j]) {
+						least = travel[j];
+						key = j;
+					}
+				}
+				move = neighbors[key].getName();
+				myActions[i] = new Agent.Move(move);
+			}
+		}
+		return myActions;
+	}
+
+	@Override
+	public void setColor(Color c) {
+		// TODO Auto-generated method stub
+		myColor = c;
+	}
+
+	@Override
+	public void setOpponentColor(Color c) {
+		// TODO Auto-generated method stub
+		Ocolor = c;
+	}
+
+}

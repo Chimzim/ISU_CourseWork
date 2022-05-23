@@ -1,0 +1,22 @@
+{
+  "name": "task1",
+  "version": "1.0.0",
+  "description": "Lab Activity 4 - Task 1",
+  "main": "index.js",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server": "live-server public/",
+    "build_task1": "babel src/task_1.js --out-file=public/bundle.js --presets=env,react --watch",
+    "build_task2": "babel src/task_2.js --out-file=public/bundle.js --presets=env,react --watch",
+    "build_task23": "babel src/task_23.js --out-file=public/bundle.js --presets=env,react --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}

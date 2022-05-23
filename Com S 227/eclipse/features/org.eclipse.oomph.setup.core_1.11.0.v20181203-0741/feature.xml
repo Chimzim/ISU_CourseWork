@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Copyright (c) 2014-2017 Eike Stepper (Loehne, Germany) and others.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the Eclipse Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.eclipse.org/legal/epl-v20.html
+
+  Contributors:
+    Eike Stepper - initial API and implementation
+-->
+<feature
+      id="org.eclipse.oomph.setup.core"
+      label="%featureName"
+      version="1.11.0.v20181203-0741"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright url="%copyrightURL">
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://download.eclipse.org/oomph/updates"/>
+      <discovery label="%updateSiteName" url="http://download.eclipse.org/oomph/updates"/>
+   </url>
+
+   <plugin
+         id="org.eclipse.oomph.setup"
+         download-size="314"
+         install-size="1402"
+         version="1.10.0.v20180914-1031"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.setup.edit"
+         download-size="141"
+         install-size="308"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.setup.core"
+         download-size="278"
+         install-size="600"
+         version="1.11.0.v20181203-0741"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.setup.sync"
+         download-size="99"
+         install-size="317"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.setup.p2"
+         download-size="38"
+         install-size="75"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.setup.p2.edit"
+         download-size="24"
+         install-size="42"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.preferences"
+         download-size="80"
+         install-size="177"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.jreinfo"
+         download-size="32"
+         install-size="56"
+         version="1.10.0.v20180706-1242"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.oomph.jreinfo.win32.x86_64"
+         os="win32"
+         arch="x86_64"
+         download-size="23"
+         install-size="58"
+         version="1.4.0.v20180706-1242"
+         fragment="true"/>
+
+   <plugin
+         id="org.eclipse.oomph.extractor.lib"
+         download-size="22"
+         install-size="35"
+         version="1.5.0.v20180706-1242"
+         unpack="false"/>
+
+</feature>

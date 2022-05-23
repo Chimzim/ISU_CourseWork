@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1636994853688" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="org.eclipse.cdt" url="features/org.eclipse.cdt_9.8.0.201906071757/" version="9.8.0.201906071757">
+</feature>
+<feature id="org.eclipse.help" plugin-identifier="org.eclipse.help.base" url="features/org.eclipse.help_2.2.600.v20190605-1800/" version="2.2.600.v20190605-1800">
+</feature>
+<feature id="org.eclipse.help.source" url="features/org.eclipse.help.source_2.2.600.v20190605-1800/" version="2.2.600.v20190605-1800">
+</feature>
+<feature id="org.eclipse.mylyn.bugzilla_feature" plugin-identifier="org.eclipse.mylyn.tasks.core" url="features/org.eclipse.mylyn.bugzilla_feature_3.24.2.v20180905-0003/" version="3.24.2.v20180905-0003">
+</feature>
+<feature id="org.eclipse.cdt.gnu.build" url="features/org.eclipse.cdt.gnu.build_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.buildship" plugin-identifier="org.eclipse.buildship.branding" url="features/org.eclipse.buildship_3.1.0.v20190501-0832/" version="3.1.0.v20190501-0832">
+</feature>
+<feature id="org.eclipse.wst.xml_core.feature" url="features/org.eclipse.wst.xml_core.feature_3.13.0.v201903222120/" version="3.13.0.v201903222120">
+</feature>
+<feature id="org.eclipse.egit" url="features/org.eclipse.egit_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="org.eclipse.mylyn_feature" plugin-identifier="org.eclipse.mylyn.tasks.core" url="features/org.eclipse.mylyn_feature_3.24.2.v20180905-0003/" version="3.24.2.v20180905-0003">
+</feature>
+<feature id="org.eclipse.wst.common_core.feature" url="features/org.eclipse.wst.common_core.feature_3.10.100.v201904082145/" version="3.10.100.v201904082145">
+</feature>
+<feature id="com.ensoftcorp.open.java.commons.feature" url="features/com.ensoftcorp.open.java.commons.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.ecf.core.ssl.feature" url="features/org.eclipse.ecf.core.ssl.feature_1.1.200.v20190502-0212/" version="1.1.200.v20190502-0212">
+</feature>
+<feature id="com.ensoftcorp.atlas.c.feature" plugin-identifier="com.ensoftcorp.atlas.c.core" url="features/com.ensoftcorp.atlas.c.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.cdt.platform" url="features/org.eclipse.cdt.platform_9.8.0.201906071757/" version="9.8.0.201906071757">
+</feature>
+<feature id="org.eclipse.mylyn.commons.identity" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.identity_1.16.0.v20180904-2231/" version="1.16.0.v20180904-2231">
+</feature>
+<feature id="org.eclipse.babel.nls_tools.cdt_de" url="features/org.eclipse.babel.nls_tools.cdt_de_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="org.eclipse.cdt.gdb.source" plugin-identifier="org.eclipse.cdt.gdb" url="features/org.eclipse.cdt.gdb.source_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.babel.nls_eclipse_de" url="features/org.eclipse.babel.nls_eclipse_de_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="org.eclipse.cdt.gnu.debug.source" url="features/org.eclipse.cdt.gnu.debug.source_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui.source" url="features/org.eclipse.equinox.p2.user.ui.source_2.4.400.v20190516-1504/" version="2.4.400.v20190516-1504">
+</feature>
+<feature id="org.eclipse.oomph.p2" url="features/org.eclipse.oomph.p2_1.12.0.v20190527-1611/" version="1.12.0.v20190527-1611">
+</feature>
+<feature id="com.ensoftcorp.open.slice.feature" url="features/com.ensoftcorp.open.slice.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.jgit.http.apache" url="features/org.eclipse.jgit.http.apache_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="org.eclipse.mylyn.commons.notifications" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.notifications_1.16.0.v20180904-2231/" version="1.16.0.v20180904-2231">
+</feature>
+<feature id="org.eclipse.rcp" url="features/org.eclipse.rcp_4.12.0.v20190605-1801/" version="4.12.0.v20190605-1801">
+</feature>
+<feature id="org.eclipse.cvs" url="features/org.eclipse.cvs_1.4.900.v20190605-1800/" version="1.4.900.v20190605-1800">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.feature" url="features/org.eclipse.ecf.filetransfer.feature_3.14.5.v20190423-0614/" version="3.14.5.v20190423-0614">
+</feature>
+<feature id="com.fasterxml.jackson.databind.feature" url="features/com.fasterxml.jackson.databind.feature_2.9.2.202103162030/" version="2.9.2.202103162030">
+</feature>
+<feature id="org.eclipse.wst.xml_userdoc.feature" url="features/org.eclipse.wst.xml_userdoc.feature_3.11.0.v201903222120/" version="3.11.0.v201903222120">
+</feature>
+<feature id="org.eclipse.mylyn.commons.repositories.http" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.repositories.http_1.16.0.v20180904-2231/" version="1.16.0.v20180904-2231">
+</feature>
+<feature id="org.eclipse.cdt.source" url="features/org.eclipse.cdt.source_9.8.0.201906071757/" version="9.8.0.201906071757">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature.source" url="features/org.eclipse.equinox.p2.core.feature.source_1.6.200.v20190516-1504/" version="1.6.200.v20190516-1504">
+</feature>
+<feature id="org.eclipse.jdt" url="features/org.eclipse.jdt_3.18.0.v20190605-1800/" version="3.18.0.v20190605-1800">
+</feature>
+<feature id="org.eclipse.emf.common" url="features/org.eclipse.emf.common_2.16.0.v20190528-0845/" version="2.16.0.v20190528-0845">
+</feature>
+<feature id="org.benf.cfr.feature" url="features/org.benf.cfr.feature_0.138.0.202103162030/" version="0.138.0.202103162030">
+</feature>
+<feature id="org.eclipse.egit.mylyn" plugin-identifier="org.eclipse.egit" url="features/org.eclipse.egit.mylyn_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="org.eclipse.babel.nls_tools.cdt_ja" url="features/org.eclipse.babel.nls_tools.cdt_ja_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="org.eclipse.platform.source" url="features/org.eclipse.platform.source_4.12.0.v20190605-1801/" version="4.12.0.v20190605-1801">
+</feature>
+<feature id="org.eclipse.pde.source" url="features/org.eclipse.pde.source_3.14.0.v20190605-1800/" version="3.14.0.v20190605-1800">
+</feature>
+<feature id="com.ensoftcorp.atlas.scalaide.feature" plugin-identifier="com.ensoftcorp.atlas.ui.shell" url="features/com.ensoftcorp.atlas.scalaide.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.oomph.setup" url="features/org.eclipse.oomph.setup_1.13.0.v20190531-1228/" version="1.13.0.v20190531-1228">
+</feature>
+<feature id="com.ensoftcorp.atlas.java.feature" plugin-identifier="com.ensoftcorp.atlas.java.core" url="features/com.ensoftcorp.atlas.java.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.emf.ecore" url="features/org.eclipse.emf.ecore_2.18.0.v20190528-0845/" version="2.18.0.v20190528-0845">
+</feature>
+<feature id="org.eclipse.equinox.p2.user.ui" url="features/org.eclipse.equinox.p2.user.ui_2.4.400.v20190516-1504/" version="2.4.400.v20190516-1504">
+</feature>
+<feature id="com.fasterxml.jackson.annotation.feature" url="features/com.fasterxml.jackson.annotation.feature_2.9.2.202103162030/" version="2.9.2.202103162030">
+</feature>
+<feature id="org.eclipse.cdt.native.source" url="features/org.eclipse.cdt.native.source_9.8.0.201903190044/" version="9.8.0.201903190044">
+</feature>
+<feature id="org.eclipse.jgit" url="features/org.eclipse.jgit_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="com.ensoftcorp.open.jimple.commons.feature" url="features/com.ensoftcorp.open.jimple.commons.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.mylyn.wikitext_feature" plugin-identifier="org.eclipse.mylyn.wikitext" url="features/org.eclipse.mylyn.wikitext_feature_3.0.29.201812180023/" version="3.0.29.201812180023">
+</feature>
+<feature id="org.eclipse.mylyn.gerrit.feature" plugin-identifier="org.eclipse.mylyn.reviews.core" url="features/org.eclipse.mylyn.gerrit.feature_2.15.0.v20180322-1946/" version="2.15.0.v20180322-1946">
+</feature>
+<feature id="org.eclipse.platform" url="features/org.eclipse.platform_4.12.0.v20190605-1801/" version="4.12.0.v20190605-1801">
+</feature>
+<feature id="org.eclipse.epp.logging.aeri.feature" url="features/org.eclipse.epp.logging.aeri.feature_2.0.7.v20180504-0806/" version="2.0.7.v20180504-0806">
+</feature>
+<feature id="org.eclipse.cdt.gnu.dsf.source" url="features/org.eclipse.cdt.gnu.dsf.source_9.8.0.201906031815/" version="9.8.0.201906031815">
+</feature>
+<feature id="org.eclipse.mylyn.discovery" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.discovery_3.24.2.v20180904-2231/" version="3.24.2.v20180904-2231">
+</feature>
+<feature id="org.eclipse.cdt.gnu.build.source" url="features/org.eclipse.cdt.gnu.build.source_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.e4.rcp.source" url="features/org.eclipse.e4.rcp.source_1.6.500.v20190605-1801/" version="1.6.500.v20190605-1801">
+</feature>
+<feature id="com.ensoftcorp.atlas.teleport.java.feature" plugin-identifier="com.ensoftcorp.atlas.teleport.java" url="features/com.ensoftcorp.atlas.teleport.java.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.e4.rcp" url="features/org.eclipse.e4.rcp_1.6.500.v20190605-1801/" version="1.6.500.v20190605-1801">
+</feature>
+<feature id="org.eclipse.mylyn.versions" plugin-identifier="org.eclipse.mylyn.versions.core" url="features/org.eclipse.mylyn.versions_1.16.0.v20170629-1738/" version="1.16.0.v20170629-1738">
+</feature>
+<feature id="org.eclipse.egit.gitflow.feature" plugin-identifier="org.eclipse.egit.gitflow" url="features/org.eclipse.egit.gitflow.feature_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="com.ensoftcorp.abp.feature" plugin-identifier="com.ensoftcorp.abp" url="features/com.ensoftcorp.abp.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.mylyn.wikitext.editors_feature" plugin-identifier="org.eclipse.mylyn.wikitext" url="features/org.eclipse.mylyn.wikitext.editors_feature_3.0.29.201812180023/" version="3.0.29.201812180023">
+</feature>
+<feature id="org.eclipse.equinox.p2.core.feature" url="features/org.eclipse.equinox.p2.core.feature_1.6.200.v20190516-1504/" version="1.6.200.v20190516-1504">
+</feature>
+<feature id="org.eclipse.wst.xml_ui.feature" plugin-identifier="org.eclipse.wst.xml.ui" url="features/org.eclipse.wst.xml_ui.feature_3.14.0.v201905291408/" version="3.14.0.v201905291408">
+</feature>
+<feature id="org.eclipse.rcp.source" url="features/org.eclipse.rcp.source_4.12.0.v20190605-1801/" version="4.12.0.v20190605-1801">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.ssl.feature" url="features/org.eclipse.ecf.filetransfer.ssl.feature_1.1.100.v20180301-0132/" version="1.1.100.v20180301-0132">
+</feature>
+<feature id="org.eclipse.userstorage" url="features/org.eclipse.userstorage_1.2.0.v20190308-0433/" version="1.2.0.v20190308-0433">
+</feature>
+<feature id="org.eclipse.babel.nls_technology.egit_de" url="features/org.eclipse.babel.nls_technology.egit_de_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="org.eclipse.cdt.build.crossgcc" url="features/org.eclipse.cdt.build.crossgcc_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.eclemma.feature" plugin-identifier="org.eclipse.eclemma.ui" url="features/org.eclipse.eclemma.feature_3.1.2.201903112331/" version="3.1.2.201903112331">
+</feature>
+<feature id="org.eclipse.mylyn.commons" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons_3.24.2.v20180904-2231/" version="3.24.2.v20180904-2231">
+</feature>
+<feature id="org.eclipse.epp.package.common.feature" url="features/org.eclipse.epp.package.common.feature_4.12.0.20190614-1200/" version="4.12.0.20190614-1200">
+</feature>
+<feature id="org.eclipse.wst.json_ui.feature" plugin-identifier="org.eclipse.wst.json.ui" url="features/org.eclipse.wst.json_ui.feature_1.1.5.v201904210526/" version="1.1.5.v201904210526">
+</feature>
+<feature id="org.eclipse.jdt.source" url="features/org.eclipse.jdt.source_3.18.0.v20190605-1800/" version="3.18.0.v20190605-1800">
+</feature>
+<feature id="org.eclipse.m2e.feature" plugin-identifier="org.eclipse.m2e.core" url="features/org.eclipse.m2e.feature_1.12.0.20190529-1916/" version="1.12.0.20190529-1916">
+</feature>
+<feature id="org.eclipse.equinox.p2.discovery.feature" url="features/org.eclipse.equinox.p2.discovery.feature_1.2.200.v20190129-1112/" version="1.2.200.v20190129-1112">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature" url="features/org.eclipse.equinox.p2.rcp.feature_1.4.400.v20190516-1504/" version="1.4.400.v20190516-1504">
+</feature>
+<feature id="ca.mcgill.sable.soot.feature" url="features/ca.mcgill.sable.soot.feature_3.1.0.202103181345/" version="3.1.0.202103181345">
+</feature>
+<feature id="org.eclipse.mylyn.reviews.feature" plugin-identifier="org.eclipse.mylyn.reviews.core" url="features/org.eclipse.mylyn.reviews.feature_2.15.0.v20180905-0015/" version="2.15.0.v20180905-0015">
+</feature>
+<feature id="org.eclipse.mylyn.hudson" plugin-identifier="org.eclipse.mylyn.builds.core" url="features/org.eclipse.mylyn.hudson_1.16.0.v20180403-2055/" version="1.16.0.v20180403-2055">
+</feature>
+<feature id="org.eclipse.epp.mpc" plugin-identifier="org.eclipse.epp.mpc.ui" url="features/org.eclipse.epp.mpc_1.7.7.v20190521-1752/" version="1.7.7.v20190521-1752">
+</feature>
+<feature id="com.ensoftcorp.open.pcg.feature" url="features/com.ensoftcorp.open.pcg.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.mylyn.git" plugin-identifier="org.eclipse.mylyn.versions.core" url="features/org.eclipse.mylyn.git_1.16.0.v20170629-1738/" version="1.16.0.v20170629-1738">
+</feature>
+<feature id="com.ensoftcorp.atlas.teleport.c.feature" plugin-identifier="com.ensoftcorp.atlas.teleport.c" url="features/com.ensoftcorp.atlas.teleport.c.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.e4.core.tools.feature" url="features/org.eclipse.e4.core.tools.feature_4.12.0.v20190505-1221/" version="4.12.0.v20190505-1221">
+</feature>
+<feature id="org.eclipse.equinox.p2.rcp.feature.source" url="features/org.eclipse.equinox.p2.rcp.feature.source_1.4.400.v20190516-1504/" version="1.4.400.v20190516-1504">
+</feature>
+<feature id="org.eclipse.cdt.gdb" url="features/org.eclipse.cdt.gdb_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.wst.common_ui.feature" url="features/org.eclipse.wst.common_ui.feature_3.11.0.v201905071717/" version="3.11.0.v201905071717">
+</feature>
+<feature id="com.ensoftcorp.open.c.commons.feature" url="features/com.ensoftcorp.open.c.commons.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.cdt.platform.source" url="features/org.eclipse.cdt.platform.source_9.8.0.201906071757/" version="9.8.0.201906071757">
+</feature>
+<feature id="org.eclipse.pde" url="features/org.eclipse.pde_3.14.0.v20190605-1800/" version="3.14.0.v20190605-1800">
+</feature>
+<feature id="org.eclipse.mylyn.team_feature" plugin-identifier="org.eclipse.mylyn.context.core" url="features/org.eclipse.mylyn.team_feature_3.24.2.v20180905-0014/" version="3.24.2.v20180905-0014">
+</feature>
+<feature id="org.eclipse.cdt.gnu.dsf" url="features/org.eclipse.cdt.gnu.dsf_9.8.0.201906031815/" version="9.8.0.201906031815">
+</feature>
+<feature id="org.eclipse.epp.package.committers.feature" plugin-identifier="org.eclipse.epp.package.committers" url="features/org.eclipse.epp.package.committers.feature_4.12.0.20190614-1200/" version="4.12.0.20190614-1200">
+</feature>
+<feature id="org.eclipse.cdt.sdk" url="features/org.eclipse.cdt.sdk_9.8.0.201906071757/" version="9.8.0.201906071757">
+</feature>
+<feature id="org.eclipse.jgit.ssh.apache" url="features/org.eclipse.jgit.ssh.apache_5.4.0.201906121030-r/" version="5.4.0.201906121030-r">
+</feature>
+<feature id="org.eclipse.babel.nls_eclipse_ja" url="features/org.eclipse.babel.nls_eclipse_ja_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="org.eclipse.mylyn.commons.repositories" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.commons.repositories_1.16.0.v20180904-2231/" version="1.16.0.v20180904-2231">
+</feature>
+<feature id="org.eclipse.babel.nls_technology.egit_ja" url="features/org.eclipse.babel.nls_technology.egit_ja_4.12.0.v20190713060001/" version="4.12.0.v20190713060001">
+</feature>
+<feature id="com.ensoftcorp.atlas.jimple.feature" plugin-identifier="com.ensoftcorp.atlas.jimple.core" url="features/com.ensoftcorp.atlas.jimple.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="com.ensoftcorp.atlas.teleport.feature" plugin-identifier="com.ensoftcorp.atlas.teleport.core" url="features/com.ensoftcorp.atlas.teleport.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.mylyn.gerrit.dashboard.feature" url="features/org.eclipse.mylyn.gerrit.dashboard.feature_2.15.0.v20170629-2231/" version="2.15.0.v20170629-2231">
+</feature>
+<feature id="org.eclipse.mylyn.monitor" plugin-identifier="org.eclipse.mylyn.commons.core" url="features/org.eclipse.mylyn.monitor_3.24.2.v20180904-2231/" version="3.24.2.v20180904-2231">
+</feature>
+<feature id="org.json.simple.feature" url="features/org.json.simple.feature_1.1.0.202103162030/" version="1.1.0.202103162030">
+</feature>
+<feature id="com.fasterxml.jackson.core.feature" url="features/com.fasterxml.jackson.core.feature_2.9.2.202103162030/" version="2.9.2.202103162030">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature" url="features/org.eclipse.equinox.p2.extras.feature_1.4.400.v20190516-1504/" version="1.4.400.v20190516-1504">
+</feature>
+<feature id="org.eclipse.equinox.p2.extras.feature.source" url="features/org.eclipse.equinox.p2.extras.feature.source_1.4.400.v20190516-1504/" version="1.4.400.v20190516-1504">
+</feature>
+<feature id="com.ensoftcorp.open.commons.feature" url="features/com.ensoftcorp.open.commons.feature_3.7.0.202103162030/" version="3.7.0.202103162030">
+</feature>
+<feature id="org.eclipse.ecf.core.feature" url="features/org.eclipse.ecf.core.feature_1.5.3.v20190423-0625/" version="1.5.3.v20190423-0625">
+</feature>
+<feature id="org.eclipse.ecf.filetransfer.httpclient45.feature" url="features/org.eclipse.ecf.filetransfer.httpclient45.feature_1.0.0.v20190530-1947/" version="1.0.0.v20190530-1947">
+</feature>
+<feature id="org.jgrapht.feature" url="features/org.jgrapht.feature_1.0.1.202103162030/" version="1.0.1.202103162030">
+</feature>
+<feature id="com.ensoftcorp.atlas.feature" plugin-identifier="com.ensoftcorp.atlas.core" url="features/com.ensoftcorp.atlas.feature_3.7.1.202103181345/" version="3.7.1.202103181345">
+</feature>
+<feature id="org.eclipse.mylyn.builds" plugin-identifier="org.eclipse.mylyn.builds.core" url="features/org.eclipse.mylyn.builds_1.16.0.v20180905-1907/" version="1.16.0.v20180905-1907">
+</feature>
+<feature id="org.eclipse.mylyn.context_feature" plugin-identifier="org.eclipse.mylyn.context.core" url="features/org.eclipse.mylyn.context_feature_3.24.2.v20180905-0014/" version="3.24.2.v20180905-0014">
+</feature>
+<feature id="org.eclipse.wst.json_core.feature" url="features/org.eclipse.wst.json_core.feature_1.1.5.v201904210526/" version="1.1.5.v201904210526">
+</feature>
+<feature id="org.eclipse.cdt.gnu.debug" url="features/org.eclipse.cdt.gnu.debug_9.8.0.201903011325/" version="9.8.0.201903011325">
+</feature>
+<feature id="org.eclipse.cdt.native" url="features/org.eclipse.cdt.native_9.8.0.201903190044/" version="9.8.0.201903190044">
+</feature>
+<feature id="org.eclipse.oomph.setup.core" url="features/org.eclipse.oomph.setup.core_1.13.0.v20190531-1228/" version="1.13.0.v20190531-1228">
+</feature>
+</site>
+</config>

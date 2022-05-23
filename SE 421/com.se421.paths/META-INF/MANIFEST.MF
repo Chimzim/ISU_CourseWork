@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Path Counting
+Bundle-SymbolicName: com.se421.paths;singleton:=true
+Bundle-Version: 3.3.8.qualifier
+Bundle-Vendor: SE421
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ com.ensoftcorp.atlas.ui.shell,
+ com.ensoftcorp.atlas.ui,
+ com.ensoftcorp.atlas.core,
+ com.ensoftcorp.atlas.db;bundle-version="3.7.1"
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.se421.paths.Activator
+Automatic-Module-Name: com.se421.paths
+Export-Package: com.se421.paths.algorithms,
+ com.se421.paths.algorithms.counting,
+ com.se421.paths.algorithms.enumeration,
+ com.se421.paths.support

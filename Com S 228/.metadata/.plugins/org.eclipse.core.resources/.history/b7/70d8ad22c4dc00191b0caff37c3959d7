@@ -1,0 +1,52 @@
+package cs228hw1.stats;
+
+import java.util.ArrayList;
+
+public class Average implements StatObject <T extends Number> {
+	private ArrayList<Number> Data;
+	private String description;
+	public Average() {
+		Data = new ArrayList<Number>();
+	}
+	
+	@Override
+	public void SetDescription(String d) {
+		// TODO Auto-generated method stub
+		description = d;
+		
+	}
+
+	@Override
+	public String GetDescription() {
+		// TODO Auto-generated method stub
+		return description;
+	}
+
+	@Override
+	public ArrayList GetResult() throws RuntimeException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void SetData(ArrayList<T> data) {
+		// TODO Auto-generated method stub
+		for(int i = 0; i < data.size(); i++) {
+			Data.add(data.get(i));
+		}
+		
+		
+	}
+
+	@Override
+	public ArrayList GetData() {
+		// TODO Auto-generated method stub
+		double sum = 0.0;
+		for(int i =0; i < Data.size(); i++) {
+			sum += Data[i];
+		}
+		return sum/Data.size();
+	}
+	
+
+}

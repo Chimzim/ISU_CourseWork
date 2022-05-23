@@ -1,0 +1,2 @@
+Libraries folder containes all the custom libraries used in our Gas Emissions Robot. To use the libraries copy and paste them into your Arduino IDE workspace libraries folder
+then refresh the Arduino IDE.

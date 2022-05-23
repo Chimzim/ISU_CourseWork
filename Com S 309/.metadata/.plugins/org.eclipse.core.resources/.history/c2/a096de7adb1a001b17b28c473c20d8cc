@@ -1,0 +1,381 @@
+package com.example.test;
+
+import org.springframework.web.bind.annotation.*;
+import com.sun.glass.ui.MenuItem;
+import java.util.HashMap;
+import java.util.Hashtable;
+import org.springframework.beans.factory.annotation.Autowired;
+import java.util.Optional;
+import java.util.List;
+import java.util.ArrayList;
+import java.time.LocalTime;
+import java.util.Date;
+
+@RestController
+public class Controller{
+	
+    String po = "";
+    private JavaMailSender javaMailSender;
+    private  HashMap<String, Double> Storms = new HashMap<String, Double>();
+    private  HashMap<String, Double> FrileyWindows = new HashMap<String, Double>();
+    private  HashMap<String, Double> UnionDrive = new HashMap<String, Double>();
+    private  HashMap<String, Double> SeasonsDinning = new HashMap<String, Double>();
+    private  HashMap<String, Double> Conversations = new HashMap<String, Double>();
+    private ArrayList<String> cart = new ArrayList<String>();
+    private LocalTime time = new LocalTime();
+    private Date currentDate = new Date();
+    private Boolean isClosed; //will be used for alerting the user that a restuarnt is closed
+    
+    private String timeOfDay = "Breakfast", dayOfWeek = "Sunday";
+    private Double orderTotal;
+    private String orderSummary = "", orderingFrom = "";
+    
+    @Autowired
+    Database menu;
+    
+    @Autowired
+    Database db;
+    
+    @GetMapping("/person/{id}")
+    Optional<Person> getPerson(@PathVariable Integer id){
+        return db.findById(id);
+    }
+
+    @RequestMapping("/persons")
+    List<Person> hello() {
+        return db.findAll();
+    }
+
+    @PostMapping("/person")
+    Person createPerson(@RequestBody Person p){
+        db.save(p);
+        return p;
+    }
+    
+    /*
+     * All the code below corresponds to initilzing the different menu for their respective dinning center 
+     * It also adds items to the cart and keeps track of the total order
+     */
+    public void menuItems(String DinningCenter) {
+    	updateTimeOfDay();
+    	updateDayOfWeek();
+    	isClosed();
+        orderingFrom = DinningCenter;
+        orderTotal = 0.0;
+        orderSummary = "";
+        if(orderingFrom == "Storms") {
+            updateSeasonsItems();
+            orderSummary = "Thank you for ordering from Storms Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Conversations") {
+            updateConversationsItems();
+            orderSummary = "Thank you for ordering from Conversations Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Udcc") {
+            updateUdccItems();
+            orderSummary = "Thank you for ordering from Union Drive Community Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else if(orderingFrom == "Friley Windows") {
+            updateFileyWindowsItems();
+            orderSummary = "Thank you for ordering from Friley-Windows Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }else {
+           updateSeasonsItems();
+            orderSummary = "Thank you for ordering from Seasons Dining Center\n" +
+                    "*************************************************\n" +
+                    "The Following items have been added to your cart\n";
+        }
+    }
+    
+    public void updateStormsItems() {
+        //first we will add items Stroms Dinning Center
+        if(isClosed) {
+            Storms.clear();
+            //Alert?
+        }
+        else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            Storms.clear();
+            //Then adds new menu items correspoding with what should be served
+            Storms.put("Wings", 8.99);
+            Storms.put("BLT Sandwhich", 6.99);
+            Storms.put("Buffalo Chicken Sandwhich", 6.99);
+            Storms.put("Pepperoni Pizza", 5.99);
+            Storms.put("Sausage Pizza", 4.99);
+            Storms.put("Cheese Pizza", 4.99);
+            Storms.put("Salad", 7.99);
+            Storms.put("Pasta", 7.99);
+            Storms.put("Chicken Alferdo", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            Storms.clear();
+            Storms.put("Waffle", 5.99);
+            Storms.put("Pancakes", 5.99);
+            Storms.put("Eggs and Bacon", 5.99);
+            Storms.put("Toast and Jam", 3.99);
+            Storms.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    public void updateFileyWindowsItems() {
+    	if(isClosed) {
+    		FrileyWindows.clear();
+    		//Alert?
+    	}
+    	else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            FrileyWindows.clear();
+            //Then adds new menu items correspoding with what should be served
+            FrileyWindows.put("Wild rice", 8.99);
+            FrileyWindows.put("Chicken breast", 6.99);
+            FrileyWindows.put("Halal", 6.99);
+            FrileyWindows.put("Pepperoni Pizza", 5.99);
+            FrileyWindows.put("Sausage Pizza", 4.99);
+            FrileyWindows.put("3 Cheese Pizza", 4.99);
+            FrileyWindows.put("Salad", 7.99);
+            FrileyWindows.put("Pasta", 7.99);
+            FrileyWindows.put("Roll with Butter", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            FrileyWindows.clear();
+            FrileyWindows.put("Waffle", 5.99);
+            FrileyWindows.put("Pancakes", 5.99);
+            FrileyWindows.put("Eggs and Bacon", 5.99);
+            FrileyWindows.put("Toast and Jam", 3.99);
+            FrileyWindows.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    public void updateSeasonsItems() {
+    	if(isClosed) {
+    		SeasonsDinning.clear();
+    	}
+    	else if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            SeasonsDinning.clear();
+            //Then adds new menu items correspoding with what should be served
+            SeasonsDinning.put("Chicken Nuggets", 8.99);
+            SeasonsDinning.put("Turkey Sandwich", 6.99);
+            SeasonsDinning.put("Cheeseburger", 6.99);
+            SeasonsDinning.put("Pepperoni Pizza", 5.99);
+            SeasonsDinning.put("Sausage Pizza", 4.99);
+            SeasonsDinning.put("Cheese Pizza", 4.99);
+            SeasonsDinning.put("Salad", 7.99);
+            SeasonsDinning.put("Pasta", 7.99);
+        } else if(timeOfDay == "Breakfast") {
+            SeasonsDinning.clear();
+            SeasonsDinning.put("Waffle", 5.99);
+            SeasonsDinning.put("Pancakes", 5.99);
+            SeasonsDinning.put("Eggs and Bacon", 5.99);
+            SeasonsDinning.put("Toast and Jam", 3.99);
+            SeasonsDinning.put("Breakfast Sandwich", 6.99);
+        }
+    }
+    public void updateUdccItems() {
+    	if(isClosed) {
+    		UnionDrive.clear();
+    		//Alert/
+    	}
+        if(timeOfDay == "Lunch" || timeOfDay == "Dinner"){
+            //Clears the menu of all items in it before
+            UnionDrive.clear();
+            //Then adds new menu items correspoding with what should be served
+            UnionDrive.put("BLT Sandwhich", 6.99);
+            UnionDrive.put("Street Tacos", 6.99);
+            UnionDrive.put("Pepperoni Pizza", 5.99);
+            UnionDrive.put("Sausage Pizza", 4.99);
+            UnionDrive.put("Cheese Pizza", 4.99);
+            UnionDrive.put("Salad", 7.99);
+            UnionDrive.put("Pasta with Shrimp", 7.99);
+            UnionDrive.put("Pasta with Meatballs", 7.99);
+            UnionDrive.put("Chicken Alferdo", 10.99);
+        } else if(timeOfDay == "Breakfast") {
+            UnionDrive.clear();
+            UnionDrive.put("Waffle", 5.99);
+            UnionDrive.put("Pancakes", 5.99);
+            UnionDrive.put("Eggs and Bacon", 5.99);
+            UnionDrive.put("Toast and Jam", 3.99);
+            UnionDrive.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    public void updateConversationsItems() {
+        if (timeOfDay == "Lunch" || timeOfDay == "Dinner") {
+            //Clears the menu of all items in it before
+            Conversations.clear();
+            //Then adds new menu items correspoding with what should be served
+            Conversations.put("Sunrise Burger", 6.99);
+            Conversations.put("Chicken Strips", 6.99);
+            Conversations.put("Chicken Patty", 7.99);
+            Conversations.put("Taco Pizza", 5.99);
+            Conversations.put("Sausage Pizza", 4.99);
+            Conversations.put("Cheese Pizza", 4.99);
+            Conversations.put("Salad", 7.99);
+            Conversations.put("Chocolate IceCream", 7.99);
+            Conversations.put("Vanilla IceCream", 7.99);
+            Conversations.put("Hash browns", 10.99);
+        } else if (timeOfDay == "Breakfast") {
+            Conversations.clear();
+            Conversations.put("Waffle", 5.99);
+            Conversations.put("Pancakes", 5.99);
+            Conversations.put("Eggs and Bacon", 5.99);
+            Conversations.put("Toast and Jam", 3.99);
+            Conversations.put("Breakfast Sandwich", 6.99);
+        }
+    }
+
+    //Allows the user to add items to their Cart via the option Selected in the application
+    public void addItemsToCart(String toAdd) {
+        if(orderingFrom == "Conversations") {
+            orderTotal += Conversations.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Storms") {
+            orderTotal += Storms.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Friley Windows") {
+            orderTotal += FrileyWindows.get(toAdd);
+            cart.add(toAdd);
+        }else if(orderingFrom == "Season Dinning Center") {
+            orderTotal += SeasonsDinning.get(toAdd);
+            cart.add(toAdd);
+        }else {
+           orderTotal += UnionDrive.get(toAdd);
+           cart.add(toAdd);
+        }
+    }
+    
+    //remocies and item from the cart and then removes the price of the item from the orderTotal as well
+    public boolean removeItemFromCart(String toRemove) {
+    	boolean isRemoved = cart.remove(toRemove);
+    	if(orderingFrom == "Conversations") {
+    		orderTotal -= Conversations.get(toRemove);
+    	}else if(orderingFrom == "Storms") {
+    		orderTotal -= Storms.get(toRemove);
+    	}else if(orderingFrom == "Friley Windows") {
+    		orderTotal -= FrileyWindows.get(toRemove);
+    	}else if(orderingFrom == "Seasons Dinning Center") {
+    		orderTotal -= SeasonsDinning.get(toRemove);
+    	}else {
+    		orderTotal -= UnionDrive.get(toRemove);
+    	}
+    	return isRemoved;
+    }
+    
+    //Adds all the items from the users cart into the orderSummary and then adds Iowa Sales tax to the Final total 
+    public String getOrderSummary() {
+        Double tax = 0.0;
+        tax = orderTotal * 0.07;
+        orderTotal += tax;
+        for(int i = 0; i < cart.size(); i++) {
+        	if(orderingFrom == "Conversations") {
+        		orderSummary += cart.get(i) + ": " + Conversations.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Storms") {
+        		orderSummary += cart.get(i) + ": " + Storms.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Friley Windows" ) {
+        		orderSummary += cart.get(i) + ": " + FrileyWindows.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else if(orderingFrom == "Seasons Dinning Center") {
+        		orderSummary += cart.get(i) + ": " + SeasonsDinning.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}else {
+        		orderSummary += cart.get(i) + ": " + UnionDrive.get(cart.get(i)).toString();
+        		orderSummary += "\n";
+        	}
+        }
+        orderSummary += "*************************************************\n";
+        orderSummary += "Total: " + orderTotal.toString();
+        return orderSummary;
+      }
+    
+    //clears the cart, orderSummary and the orderTotal which will cancel the users order
+    public void cancelOrder() {
+    	cart.clear();
+    	orderSummary = "";
+    	orderTotal = 0.0;
+    }
+    
+    //returns the restuarnt that the user is ordering from
+    public String getRestauarnt() {
+    	return orderingFrom;
+    }
+    
+    //returns all the items currently in the users cart
+    public ArrayList<String> getCart() {
+    	return cart;
+    }
+    
+    //returns the day of the week
+    public String getDayOfWeek() {
+    	return dayOfWeek;
+    }
+    
+    //updates the time of day so the right menu is taken
+    public void updateTimeOfDay() {
+    	if(time.getHour() <= 12) {
+    		timeOfDay = "Breakfast";
+    	}else if(time.getHour() > 12 && time.getHour() < 18) {
+    		timeOfDay = "Lunch";
+    	}else {
+    		timeOfDay = "Dinner";
+    	}
+    }
+    
+    //keeps track of the day of the week
+    public void updateDayOfWeek() {
+    	int updating = currentDate.getDay();
+    	if(updating == 0) {
+    		dayOfWeek = "Sunday";
+    	}else if(updating == 1) {
+    		dayOfWeek = "Monday";
+    	}else if(updating == 2) {
+    		dayOfWeek = "Tuesday";
+    	}else if(updating == 3) {
+    		dayOfWeek = "Wednesday";
+    	}else if(updating == 4) {
+    		dayOfWeek = "Thursday";
+    	}else if(updating == 5) {
+    		dayOfWeek = "Friday";
+    	}else if(updating == 6) {
+    		dayOfWeek = "Saturday";
+    	}
+    }
+    
+    //returns the current time
+    public LocalTime getTime() {
+    	return time;
+    }
+    
+    //delegates if ordering From the restuarnt is still possible or not
+    public void isClosed() {
+    	isClosed = false;
+    	if(orderingFrom == "Conversations") {
+    		if(time.getHour() > 21) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Storms") {
+    		if(dayOfWeek == "Saturday") {
+    			isClosed = true;
+    		}else if(time.getHour() > 20 && time.getMinute() >= 30) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Friley Windows") {
+    		if(time.getHour() > 22) {
+    			isClosed = true;
+    		}
+    	}else if(orderingFrom == "Seasons Dinning Center") {
+    		if(time.getHour() > 22) {
+    			isClosed = true;
+    		}
+    	}else {
+    		if(time.getHour() > 17 && time.getMinute() > 30) {
+    			isClosed = true;
+    		}
+    	}
+    }
+
+}
+

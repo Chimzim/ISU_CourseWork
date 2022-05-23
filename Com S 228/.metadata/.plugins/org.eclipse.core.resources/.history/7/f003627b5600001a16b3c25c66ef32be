@@ -1,0 +1,9 @@
+package cs228hw2.test;
+
+public class testcases {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Node myNode = new Node(0, 1, 2);
+	}
+
+}

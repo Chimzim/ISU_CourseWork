@@ -1,0 +1,5 @@
+package edu.iastate.cs228.hw2;
+
+public enum Algorithm {
+
+}

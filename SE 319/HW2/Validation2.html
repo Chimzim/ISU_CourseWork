@@ -1,0 +1,35 @@
+<html> 
+<head>
+<script src="./Validation2.js"> </script>
+<title>
+      Contact information
+</title>
+</head>
+
+<body>
+<h1>
+Validation form 2
+</h1>
+<form id="personalInformation" action="" >
+  <fieldset>
+    <legend>Contact information</legend>
+    <p id="Email">
+      <label for="email">Email: </label> 
+      <input id="email" name="email" type ="text" required/>
+    </p>
+    <p id= "Phone">
+      <label for="phone">Phone number: </label> 
+      <input id="phone" name="phone" type="text" required/>
+      
+    </p>
+    <p id="Address">
+      <label for="address">Address: </label> 
+      <input id="address" name="address" type="text" required/>
+    </p>
+    <p>
+      <Button type="button" onClick="validation2()" id="submit" name="submit">Submit</Button>
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>

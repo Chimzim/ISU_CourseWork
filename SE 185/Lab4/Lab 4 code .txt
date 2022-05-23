@@ -1,0 +1,78 @@
+/*-----------------------------------------------------------------------------
+-                             SE 185 Lab 04
+-             Developed for 185-Rursch by T.Tran and K.Wang
+-   Name:
+-   Section:
+-   NetID:
+-   Date:
+-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+-                               Includes
+-----------------------------------------------------------------------------*/
+#include <stdio.h>
+#include <math.h>
+
+
+/*-----------------------------------------------------------------------------
+-                               Defines
+-----------------------------------------------------------------------------*/
+#define TRUE 1
+#define FALSE 0
+
+/*-----------------------------------------------------------------------------
+-                               Prototypes
+-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------
+-                             Implementation
+-----------------------------------------------------------------------------*/
+int close_to(double tolerance, double point, double value);
+double mag(double x, double y, double z);
+double TOPBOTTOM(double gx, double gy, double gz);
+double LEFTRIGHT(double gx, double gy, double gz);
+double UPANDDOWN(double gx, double gy, double gz);
+int main(void) {
+    int t, b1, b2, b3, b4;
+    double ax, ay, az, gx, gy, gz;
+
+
+    while (TRUE) {
+        scanf("%d, %lf, %lf, %lf, %lf, %lf, %lf, %d, %d, %d, %d", &t, &ax, &ay, &az, &gx, &gy, &gz, &b1, &b2, &b3, &b4 );
+
+        /* printf for observing values scanned in from ds4rd.exe, be sure to comment or remove in final program */
+        printf("Echoing output: %d, %lf, %lf, %lf, %lf, %lf, %lf, %d, %d, %d, %d \n", t, ax, ay, az, gx, gy, gz, b1, b2, b3, b4);
+
+        if ( 
+
+        //printf("At %d ms, the acceleration's magnitude was: %f\n", t, mag(ax, ay, az));
+
+    }
+
+    return 0;
+}
+
+/*CLose to function which allows for the top and bottoms for each point*/
+int close_to(double toloerance, double point, double value) {
+    double max_tol = point + toloerance; /* give the top tolerance for the point */
+    double min_tol = point - toloerance; /* give the bottom tolerance for the point */ 
+    if ( (min_tol<= value) && (value <= max_tol) )  { /* if else statement will determine the orientation of the controller based off the x , y, z values of and the tolerance */
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
+}
+/*Function to calculate the accelerations' magnitude */
+double mag(double x, double y, double z) {
+    //Step 8, uncomment and modify the next line
+    return (double)(sqrt(pow(x, 2) + pow(y, 2) + pow(z, 2)));
+}/*
+double TOPBOTTOM(double gx, double gy, double gz) {
+}
+double LEFTRIGHT(double gx, double gy, double gz) {
+}
+double UPANDDOWN(double gx, double gy, double gz) { 
+} */
+

@@ -1,0 +1,49 @@
+package project5;
+
+import balloon1.Balloon;
+import org.junit.Test;
+import org.junit.Before;
+import static org.junit.Assert.assertEquals;
+
+public class ballonExample {
+	private Balloon b;
+	
+	@Before
+	public void setup() {
+		b = new Balloon(10);
+	}
+	@Test
+	public void initialTest1() {
+		assertEquals(0, b.getRadius());
+	}
+	
+	@Test
+	public void initialTest2() {
+		assertEquals(false, b.isPopped());
+	}
+	
+	@Test
+	public void popBlowTest() {
+		b.blow(12);
+		assertEquals(0, b.getRadius());
+	}
+	
+	@Test
+	public void blowTest() {
+		b.blow(10);
+		assertEquals(10, b.getRadius());
+	}
+	
+	@Test
+	public void deflateTest() {
+		b.blow(10);
+		b.deflate();
+		assertEquals(0, b.getRadius());
+	}
+	
+	@Test 
+	public void popTest() {
+		b.pop();
+		assertEquals(true, b.isPopped());
+	}
+}

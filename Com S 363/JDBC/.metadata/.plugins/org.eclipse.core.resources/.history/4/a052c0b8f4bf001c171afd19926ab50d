@@ -1,0 +1,141 @@
+package coms363;
+
+
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.sql.*;
+
+import javax.swing.*;
+import javax.swing.border.LineBorder;
+
+/**
+ * 
+ * @author Chimzim Ogbondah
+ *
+ */
+public class tweetsdb {
+	public static String[] loginDialog() {
+		// asking for a username and password to access the database.
+		
+		String loginResults[] = new String[2];
+		JPanel panel = new JPanel(new GridBagLayout());
+		GridBagConstraints cs = new GridBagConstraints();
+
+		cs.fill = GridBagConstraints.HORIZONTAL;
+
+		JLabel lbUsername = new JLabel("Database Username: ");
+		cs.gridx = 0;
+		cs.gridy = 0;
+		cs.gridwidth = 1;
+		panel.add(lbUsername, cs);
+
+		JTextField textFieldUsername = new JTextField(20);
+		cs.gridx = 1;
+		cs.gridy = 0;
+		cs.gridwidth = 2;
+		panel.add(textFieldUsername, cs);
+
+		JLabel lbPassword = new JLabel("Database Password: ");
+		cs.gridx = 0;
+		cs.gridy = 1;
+		cs.gridwidth = 1;
+		panel.add(lbPassword, cs);
+
+		JPasswordField passfieldPassword = new JPasswordField(20);
+		cs.gridx = 1;
+		cs.gridy = 1;
+		cs.gridwidth = 2;
+		panel.add(passfieldPassword, cs);
+		panel.setBorder(new LineBorder(Color.ORANGE));
+
+		String[] options = new String[] { "OK", "Cancel" };
+		int ioption = JOptionPane.showOptionDialog(null, panel, "Login", JOptionPane.OK_OPTION,
+				JOptionPane.PLAIN_MESSAGE, null, options, options[0]);
+		
+		// store the database username in the first slot.
+		// store the database password in the second slot.
+		
+		if (ioption == 0) // pressing OK button
+		{
+			loginResults[0] = textFieldUsername.getText();
+			loginResults[1] = new String(passfieldPassword.getPassword());
+		}
+		return loginResults;
+	}
+	
+	public static void main(String[] args) {
+		// useSSL=false means plain text allowed
+		//String dbServer = "jdbc:mysql://localhost:3306/fooddb?useSSL=false";
+		// useSSL=true; data are encrypted when sending between DBMS and 
+		// this program
+		
+		String dbServer = "jdbc:mysql://localhost:3306/project?useSSL=true";
+		String userName = "";
+		String password = "";
+
+		String result[] = loginDialog();
+		userName = result[0];
+		password = result[1];
+
+		Connection conn=null;
+		Statement stmt=null;
+		if (result[0]==null || result[1]==null) {
+			System.out.println("Terminating: No username nor password is given");
+			return;
+		}
+		try {
+			// load JDBC driver
+			// must be in the try-catch-block
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			conn = DriverManager.getConnection(dbServer, userName, password);
+			
+			stmt = conn.createStatement();
+			String sqlQuery = "";
+
+			String option = "";
+			String instruction = "Enter 1: Find all food with chicken as ingredient." + "\n"
+					+ "Enter 2: For each food, list food name, total number of ingredients, and total amount of ingredients (gram)."
+					+ "\n" + "Enter 3: Find all food without green onion as ingredient." + "\n"
+					+ "Enter 4: Find all ingredients and amount of each ingredient of BBQ Chicken" + "\n"
+					+ "Enter 5: Enter new food" + "\n"
+					+ "Enter 6: Check whether an ingredient exists" + "\n"
+					+ "Enter 7: Quit Program";
+
+			while (true) {
+				option = JOptionPane.showInputDialog(instruction);
+				if (option.equals("1")) {
+					sqlQuery = "select distinct f.fname from food f inner join recipe r on r.fid = f.fid inner join ingredient i on i.iid = r.iid where i.iname = 'Chicken'";
+					runQuery(stmt, sqlQuery);
+				} else if (option.equals("2")) {
+					sqlQuery = "select f.fname, count(r.iid), sum(r.amount) from food f inner join recipe r on r.fid = f.fid inner join ingredient i on i.iid = r.iid group by f.fname";
+					runQuery(stmt, sqlQuery);
+				} else if (option.equals("3")) {
+					sqlQuery = "select f.fname from food f where f.fid not in (select r.fid from recipe r inner join ingredient i on i.iid = r.iid where i.iname = 'Green Onion');";
+					runQuery(stmt, sqlQuery);
+				} else if (option.equals("4")) {
+					sqlQuery = "select i.iname, r.amount from food f inner join recipe r on r.fid = f.fid inner join ingredient i on i.iid = r.iid where f.fname = 'BBQ Chicken'";
+					runQuery(stmt, sqlQuery);
+				} else if (option.equals("5")) {
+					String fname=JOptionPane.showInputDialog("Enter foodname:");
+					insertFood(conn, fname);
+				} else if (option.equals("6")) {
+					String iname=JOptionPane.showInputDialog("Enter exact name of the ingredient to check:");
+					checkIngredient(conn, iname);
+				}  
+				else {
+					break;
+				}
+			}
+			// close the statement
+			if (stmt != null) stmt.close();
+			// close the connection
+			if (conn != null) conn.close();
+		} catch (Exception e) {
+			
+			System.out.println("Program terminates due to errors or user cancelation");
+			e.printStackTrace(); // for debugging; 
+		}
+	}
+
+}

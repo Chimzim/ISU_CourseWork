@@ -1,0 +1,29 @@
+package project5;
+
+public class Basketball
+{
+	private double ballDiamter;
+  public Basketball(double givenDiameter)
+  {
+	  ballDiamter = givenDiameter;
+  }
+
+  public boolean isDribbleable()
+  {
+    return false;
+  }
+
+  public double getDiameter()
+  {
+    return 0;
+  }
+
+  public double getCircumference()
+  {
+    return 0;
+  }
+
+  public void inflate()
+  {
+  }
+}

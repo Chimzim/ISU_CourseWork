@@ -1,0 +1,22 @@
+package com.example.test;
+
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+
+
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+public class NotificationSocket {
+
+	
+	private void sendNotificationMessage() {
+		
+	}
+}

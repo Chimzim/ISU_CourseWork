@@ -1,0 +1,114 @@
+package com.example.test;
+
+import java.awt.Button;
+import java.awt.event.MouseListener;
+import java.io.IOException;
+import java.text.NumberFormat;
+import java.time.LocalTime;
+import java.util.HashMap;
+
+import javax.management.Notification;
+import javax.websocket.OnClose;
+import javax.websocket.OnError;
+import javax.websocket.OnMessage;
+import javax.websocket.OnOpen;
+import javax.websocket.Session;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+
+
+import org.springframework.stereotype.Controller;
+
+
+@Controller
+@ServerEndpoint(value = "/User/{id}")
+public class NotificationSocket {
+    
+	private HashMap<User, Session> userToSession = new HashMap<User, Session>(); 
+	private HashMap<Session, User> sessionToUser = new HashMap<Session, User>();
+	private User currentUser;
+	int count = 0, deliveryTime;
+	private LocalTime currentTime;
+	private boolean isPhoneNumber = true;
+	private String messageToSend = "", timeOfOrder = "";
+	private String welcomeMessage = "Thank you for ordering from ISU delivery\nPlease enter enter your phone number register with your account for more order information";
+	
+	public NotificationSocket(User user) {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	@OnOpen
+	public void onOpen(Session sess, @PathParam("id") User user) throws IOException {
+		
+		//stores the user connected information
+		currentUser = user;
+		userToSession.put(currentUser, sess);
+		sessionToUser.put(sess, currentUser);
+		
+		//Send the message to user prompting them to enter in there phone number or order number to get details about it
+		sess.getBasicRemote().sendText(welcomeMessage);
+		
+	}
+	
+	@OnClose
+	public void onClose(Session session) {
+		//remove user from session
+		User temp = sessionToUser.get(session);
+		sessionToUser.remove(session);
+		userToSession.remove(temp);
+	}
+	
+	@OnMessage
+	public void onMessage(Session current, String message) throws IOException {
+		if(count == 0) {
+			isPhoneNumber = verifyPhoneNumber(message);
+			if(isPhoneNumber) {
+				count++;
+				current.getBasicRemote().sendText("null");
+			}else {
+				MessageHandling();
+				current.getBasicRemote().sendText(messageToSend);
+			}
+		} else {
+			
+		}
+	}
+	
+	
+	
+	
+	
+	public boolean verifyPhoneNumber(String number) {
+		boolean isNumber = true;
+		int phoneNumber = 0;
+		for(int i = 0; i < number.length()-1; i++) {
+			String temp = number.substring(i, i+1);
+			try {
+				phoneNumber += (Math.pow(10.0, 10.0-i)*Integer.parseInt(temp));
+			}catch(NumberFormatException e) {
+				isNumber = false;
+			}
+		}
+		return isNumber;
+	}
+	
+	public void MessageHandling() {
+		if(count == 0 && !isPhoneNumber) {
+			messageToSend = "Looks like you didnt enter a valid phone number. Please enter the phone number registered with the account to get order information";
+		}else if(count == 0 && isPhoneNumber) {
+			messageToSend = "Your order was placed at"+ timeOfOrder;
+		}
+	}
+	
+	public void getOrderInformation() {
+		//currentTime = super.c_getTime();
+		//timeOfOrder = super.c_getPlacedAt();
+		//deliveryTime = super.c_getDeliveryTime();
+	}
+	
+	public void prepTimeLeft() {
+		
+		
+	}
+}

@@ -1,0 +1,58 @@
+<html> 
+<head>
+<script src="./Validation1.js"> </script>
+<title>
+      Validation Form
+</title>
+</head>
+
+<body>
+<h1>
+  Validation Form 1
+</h1>
+<form id="personalInformation" action="" >
+  <fieldset>
+    <legend>Contact Details</legend>
+    <p id = "First">
+      <label for="firstname">First name</label> 
+      <input id="firstname" name="firstname" required/>
+     
+    </p>
+    <p id= "Last">
+      <label for="lastname">Last name</label> 
+      <input id="lastname" name="lastname" type="text" required/>
+      
+    </p>
+    <p id="Orientation">
+      <label for="gender">Gender</label> 
+      <input list="gender" name="gender" required/>
+		<datalist id="gender">
+		  <option value="Male">
+		  <option value="Female">
+		</datalist>
+   
+    </p>
+    <p id="Donde">
+      <label for="states">State</label> 
+      <input list="states" name="states" required/>
+		<datalist id="states">
+		  <option value="Arizona">
+		  <option value="California">
+		  <option value="Colorado">
+		  <option value="Florida">
+		  <option value="Hawaii">
+		  <option value="Iowa">
+		  <option value="New York">
+		  <option value="Texas">
+		  <option value="Virginia">
+		  <option value="Washington">
+		</datalist>
+    
+    </p>
+    <p>
+      <Button type="button" onClick="validation1()" id="submit" name="submit">Contiune</Button>
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>
