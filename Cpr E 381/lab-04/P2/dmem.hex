@@ -1,0 +1,26 @@
+// File Format:
+// 
+// The text file can contain whitespace characters, comments (C-style),
+// and binary ($readmemb) or hexadecimal ($readmemh) data values.  Both
+// types of data values can contain x or X, z or Z, and the underscore
+// character.
+// 
+// The data values are assigned to memory words from left to right,
+// beginning at start_addr or the left array bound (the default).  The
+// next address to load may be specified in the file itself using @hhhhhh, 
+// where h is a hexadecimal character.  Spaces between the @ and the address 
+// character are not allowed.  It shall be an error if there are too many 
+// words in the file or if an address is outside the bounds of the array.
+// 
+@0
+00000001 // Loads at address 0
+00000002
+11111113
+00000004
+11111115
+00000006
+11111117
+00000008
+11111119
+0000000A // Loads at address 9
+

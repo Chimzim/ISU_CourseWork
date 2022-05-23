@@ -1,0 +1,14 @@
+|miniStep4
+Bob <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Z => inst1.IN0
+Z => inst9.IN0
+Z => inst.IN0
+Y => inst1.IN1
+Y => inst2.IN1
+Y => inst7.IN0
+W => inst1.IN2
+W => inst5.IN0
+X => inst6.IN0
+X => inst.IN2
+
+

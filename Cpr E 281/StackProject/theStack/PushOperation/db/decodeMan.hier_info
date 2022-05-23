@@ -1,0 +1,27 @@
+|decodeMan
+a => d4.IN0
+a => d6.IN0
+a => d0.IN0
+a => d2.IN0
+b => d2.IN1
+b => d6.IN1
+b => d0.IN1
+b => d4.IN1
+c => d1.IN1
+c => d3.IN1
+c => d5.IN1
+c => d7.IN1
+c => d0.IN1
+c => d2.IN1
+c => d4.IN1
+c => d6.IN1
+d0 <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= d4.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= d5.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= d6.DB_MAX_OUTPUT_PORT_TYPE
+d7 <= d7.DB_MAX_OUTPUT_PORT_TYPE
+
+

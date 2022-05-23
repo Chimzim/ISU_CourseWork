@@ -1,0 +1,16 @@
+|miniStep7
+W => p.IN0
+W => p.IN0
+X => p.IN0
+X => p.IN0
+X => p.IN1
+Y => p.IN1
+Y => p.IN1
+Y => p.IN1
+Y => p.IN1
+Z => p.IN1
+Z => p.IN1
+Z => p.IN1
+p <= p.DB_MAX_OUTPUT_PORT_TYPE
+
+

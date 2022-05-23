@@ -1,0 +1,119 @@
+-------------------------------------------------------------------------
+-- Chimzim Ogbondah
+-- Software Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- decoder.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains an implementation of a 3-8 deconder
+-- gate.
+--
+--
+-- NOTES:
+-- 8/19/16 by JAZ::Design created.
+-- 1/16/19 by H3::Changed name to avoid name conflict with Quartus 
+--         primitives.
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity decoder is
+
+  port(i_X          : in std_logic;
+       i_Y          : in std_logic;
+       i_Z          : in std_logic;
+       D0th          : out std_logic;
+       D1st          : out std_logic;
+       D2nd          : out std_logic;
+       D3rd          : out std_logic;
+       D4th          : out std_logic;
+       D5th          : out std_logic;
+       D6th          : out std_logic;
+       D7th         : out std_logic);
+
+end decoder;
+
+architecture structure of Nbitdff is
+  
+component invg
+  port(i_A          : in std_logic;
+       o_F          : out std_logic);
+end component;
+
+component andg2
+  port(i_A          : in std_logic;
+       i_B          : in std_logic;
+       o_F          : out std_logic);
+end component;
+signal Notx, Noty, Notz, NotXY, yNotx, xNoty, XY : std_logic;
+begin
+
+  
+  ---------------------------------------------------------------------------
+  -- Level 1: getting reusable input values
+  ---------------------------------------------------------------------------
+g_ivng: invg
+port MAP(i_A          => i_X,
+       o_F          => Notx);
+g_ing1: invg
+port MAP(i_A          => i_Y,
+       o_F          => Noty);
+g_invg2: invg
+port MAP(i_A          => i_Z,
+       o_F          => Notz);
+
+g_and: andg2 
+port MAP(i_A          => Notx,
+       i_B        => Noty,
+       o_F        => NotXY);
+g_and1: andg2 
+port MAP(i_A          => i_Y,
+       i_B        => Notx,
+       o_F        => yNotx);
+g_and2: andg2 
+port MAP(i_A          => i_X,
+       i_B        => Noty,
+       o_F        => xNoty);
+g_and3: andg2 
+port MAP(i_A          => i_X,
+       i_B        => i_Y,
+       o_F        => XY);
+  ---------------------------------------------------------------------------
+  -- Level 2: Setting the ouputs
+  ---------------------------------------------------------------------------
+g_and4: andg2 
+port MAP(i_A          => NotXY,
+       i_B        => Notz,
+       o_F        => D0th);
+g_and5: andg2 
+port MAP(i_A          => NotXY,
+       i_B        => i_Z,
+       o_F        => D1st);
+g_and6: andg2 
+port MAP(i_A          => yNotx,
+       i_B        => Notz,
+       o_F        => D2nd);
+g_and7: andg2 
+port MAP(i_A          => yNotx,
+       i_B        => i_Z,
+       o_F        => D3rd);
+g_and8: andg2 
+port MAP(i_A          => xNoty,
+       i_B        => Notz,
+       o_F        => D4th);
+g_and9: andg2 
+port MAP(i_A          => xNoty,
+       i_B        => i_Z,
+       o_F        => D5th);
+g_and10: andg2 
+port MAP(i_A          => XY,
+       i_B        => Notz,
+       o_F        => D6th);
+g_and11: andg2 
+port MAP(i_A          => XY,
+       i_B        => i_Z,
+       o_F        => D7th);
+end structure;

@@ -1,0 +1,3 @@
+vcom -work work ALU_32bit.vhd
+vsim work.ALU_32bit
+add wave sim:/ALU_32bit/*

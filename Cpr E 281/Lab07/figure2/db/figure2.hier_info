@@ -1,0 +1,98 @@
+|figure2
+S2 <= figure1:inst3.S
+CarryIn => figure1:inst.Cin
+X0 => figure1:inst.X
+Y0 => figure1:inst.Y
+X1 => figure1:inst1.X
+Y1 => figure1:inst1.Y
+X2 => figure1:inst3.X
+Y2 => figure1:inst3.Y
+S1 <= figure1:inst1.S
+S0 <= figure1:inst.S
+pin_name1 <= figure1:inst5.S
+X3 => figure1:inst5.X
+Y3 => figure1:inst5.Y
+Overflow <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+carryOut <= figure1:inst5.Cout
+
+
+|figure2|figure1:inst3
+Cin => S.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => S.IN1
+Cin => S.IN1
+X => S.IN0
+X => S.IN0
+X => Cout.IN0
+X => S.IN0
+X => S.IN0
+Y => S.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => S.IN1
+Y => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|figure2|figure1:inst1
+Cin => S.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => S.IN1
+Cin => S.IN1
+X => S.IN0
+X => S.IN0
+X => Cout.IN0
+X => S.IN0
+X => S.IN0
+Y => S.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => S.IN1
+Y => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|figure2|figure1:inst
+Cin => S.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => S.IN1
+Cin => S.IN1
+X => S.IN0
+X => S.IN0
+X => Cout.IN0
+X => S.IN0
+X => S.IN0
+Y => S.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => S.IN1
+Y => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|figure2|figure1:inst5
+Cin => S.IN1
+Cin => S.IN1
+Cin => Cout.IN1
+Cin => S.IN1
+Cin => S.IN1
+X => S.IN0
+X => S.IN0
+X => Cout.IN0
+X => S.IN0
+X => S.IN0
+Y => S.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => S.IN1
+Y => S.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,188 @@
+|de2
+A <= SimCounter:inst.A
+W => SimCounter:inst.W
+W => SimCounter:inst1.W
+manualClock => SimCounter:inst.clock
+manualClock => Debouncer:inst2.Manual
+B <= SimCounter:inst.B
+C <= SimCounter:inst.C
+D <= SimCounter:inst.D
+E <= SimCounter:inst.E
+F <= SimCounter:inst.F
+G <= SimCounter:inst.G
+A1 <= SimCounter:inst1.A
+50hzClock => Debouncer:inst2.board
+B1 <= SimCounter:inst1.B
+C1 <= SimCounter:inst1.C
+D1 <= SimCounter:inst1.D
+E1 <= SimCounter:inst1.E
+F1 <= SimCounter:inst1.F
+G1 <= SimCounter:inst1.G
+
+
+|de2|SimCounter:inst
+A <= seven_seg_decoder:inst.A
+clock => inst2.CLK
+clock => inst3.CLK
+W => inst14.IN0
+W => inst8.IN1
+W => inst11.IN0
+B <= seven_seg_decoder:inst.B
+C <= seven_seg_decoder:inst.C
+D <= seven_seg_decoder:inst.D
+E <= seven_seg_decoder:inst.E
+F <= seven_seg_decoder:inst.F
+G <= seven_seg_decoder:inst.G
+
+
+|de2|SimCounter:inst|seven_seg_decoder:inst
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|de2|SimCounter:inst1
+A <= seven_seg_decoder:inst.A
+clock => inst2.CLK
+clock => inst3.CLK
+W => inst14.IN0
+W => inst8.IN1
+W => inst11.IN0
+B <= seven_seg_decoder:inst.B
+C <= seven_seg_decoder:inst.C
+D <= seven_seg_decoder:inst.D
+E <= seven_seg_decoder:inst.E
+F <= seven_seg_decoder:inst.F
+G <= seven_seg_decoder:inst.G
+
+
+|de2|SimCounter:inst1|seven_seg_decoder:inst
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|de2|Debouncer:inst2
+smooth <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+board => clock_divider_1024:inst.CLK_IN
+Manual => inst2.DATAIN
+
+
+|de2|Debouncer:inst2|clock_divider_1024:inst1
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|de2|Debouncer:inst2|clock_divider_1024:inst
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+

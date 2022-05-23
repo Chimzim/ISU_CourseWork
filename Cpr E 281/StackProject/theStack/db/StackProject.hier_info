@@ -1,0 +1,703 @@
+|StackProject
+A0 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+CLOCK => inst135.IN0
+S0 => inst110.IN0
+S0 => mux4to1:inst41.S0
+S0 => mux4to1:inst37.S0
+S0 => mux4to1:inst33.S0
+S0 => mux4to1:inst42.S0
+S0 => mux4to1:inst38.S0
+S0 => mux4to1:inst43.S0
+S0 => mux4to1:inst39.S0
+S0 => mux4to1:inst35.S0
+S0 => mux4to1:inst31.S0
+S0 => mux4to1:inst2.S0
+S0 => mux4to1:inst40.S0
+S0 => mux4to1:inst36.S0
+S0 => mux4to1:inst32.S0
+S0 => mux4to1:inst30.S0
+S0 => mux4to1:inst34.S0
+S0 => mux4to1:inst29.S0
+S1 => inst110.IN1
+S1 => mux4to1:inst41.S1
+S1 => mux4to1:inst37.S1
+S1 => mux4to1:inst33.S1
+S1 => mux4to1:inst42.S1
+S1 => mux4to1:inst38.S1
+S1 => mux4to1:inst43.S1
+S1 => mux4to1:inst39.S1
+S1 => mux4to1:inst35.S1
+S1 => mux4to1:inst31.S1
+S1 => mux4to1:inst2.S1
+S1 => mux4to1:inst40.S1
+S1 => mux4to1:inst36.S1
+S1 => mux4to1:inst32.S1
+S1 => mux4to1:inst30.S1
+S1 => mux4to1:inst34.S1
+S1 => mux4to1:inst29.S1
+S1 => inst125.IN0
+sw1 => mux4to1:inst31.W0
+sw0 => mux4to1:inst32.W0
+sw2 => mux4to1:inst30.W0
+sw3 => mux4to1:inst29.W0
+B0 <= inst80.DB_MAX_OUTPUT_PORT_TYPE
+C0 <= inst79.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= inst78.DB_MAX_OUTPUT_PORT_TYPE
+E0 <= inst77.DB_MAX_OUTPUT_PORT_TYPE
+F0 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+G0 <= inst83.DB_MAX_OUTPUT_PORT_TYPE
+A1 <= inst89.DB_MAX_OUTPUT_PORT_TYPE
+B1 <= inst88.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= inst87.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= inst86.DB_MAX_OUTPUT_PORT_TYPE
+E1 <= inst85.DB_MAX_OUTPUT_PORT_TYPE
+F1 <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+G1 <= inst90.DB_MAX_OUTPUT_PORT_TYPE
+B2 <= inst96.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= inst97.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= inst95.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= inst94.DB_MAX_OUTPUT_PORT_TYPE
+E2 <= inst93.DB_MAX_OUTPUT_PORT_TYPE
+F2 <= inst92.DB_MAX_OUTPUT_PORT_TYPE
+G2 <= inst98.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= figure4:inst1.Overflow
+A3 <= inst104.DB_MAX_OUTPUT_PORT_TYPE
+B3 <= inst103.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= inst102.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= inst101.DB_MAX_OUTPUT_PORT_TYPE
+E3 <= inst100.DB_MAX_OUTPUT_PORT_TYPE
+F3 <= inst99.DB_MAX_OUTPUT_PORT_TYPE
+G3 <= inst105.DB_MAX_OUTPUT_PORT_TYPE
+StackOverflow <= decodeMan:inst73.d5
+underflow <= inst125.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|seven_seg_decoder:inst5
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|StackProject|decodeMan:inst73
+a => d4.IN0
+a => d6.IN0
+a => d0.IN0
+a => d2.IN0
+b => d2.IN1
+b => d6.IN1
+b => d0.IN1
+b => d4.IN1
+c => d1.IN1
+c => d3.IN1
+c => d5.IN1
+c => d7.IN1
+c => d0.IN1
+c => d2.IN1
+c => d4.IN1
+c => d6.IN1
+d0 <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= d4.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= d5.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= d6.DB_MAX_OUTPUT_PORT_TYPE
+d7 <= d7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst29
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst
+S2 <= figure1:inst3.S
+CarryIn => figure1:inst.Cin
+X0 => figure1:inst.X
+Y0 => figure1:inst.Y
+X1 => figure1:inst1.X
+Y1 => figure1:inst1.Y
+X2 => figure1:inst3.X
+Y2 => figure1:inst3.Y
+S1 <= figure1:inst1.S
+S0 <= figure1:inst.S
+Overflow <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+X3 => figure1:inst5.X
+Y3 => figure1:inst5.Y
+carryOut <= figure1:inst5.Cout
+S3 <= figure1:inst5.S
+
+
+|StackProject|figure4:inst|figure1:inst3
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst|figure1:inst1
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst|figure1:inst
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst|figure1:inst5
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst25
+S2 <= figure1:inst3.S
+CarryIn => figure1:inst.Cin
+X0 => figure1:inst.X
+Y0 => figure1:inst.Y
+X1 => figure1:inst1.X
+Y1 => figure1:inst1.Y
+X2 => figure1:inst3.X
+Y2 => figure1:inst3.Y
+S1 <= figure1:inst1.S
+S0 <= figure1:inst.S
+Overflow <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+X3 => figure1:inst5.X
+Y3 => figure1:inst5.Y
+carryOut <= figure1:inst5.Cout
+S3 <= figure1:inst5.S
+
+
+|StackProject|figure4:inst25|figure1:inst3
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst25|figure1:inst1
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst25|figure1:inst
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst25|figure1:inst5
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst33
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst37
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst41
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst34
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst38
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst42
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst30
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst1
+S2 <= figure1:inst3.S
+CarryIn => figure1:inst.Cin
+X0 => figure1:inst.X
+Y0 => figure1:inst.Y
+X1 => figure1:inst1.X
+Y1 => figure1:inst1.Y
+X2 => figure1:inst3.X
+Y2 => figure1:inst3.Y
+S1 <= figure1:inst1.S
+S0 <= figure1:inst.S
+Overflow <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+X3 => figure1:inst5.X
+Y3 => figure1:inst5.Y
+carryOut <= figure1:inst5.Cout
+S3 <= figure1:inst5.S
+
+
+|StackProject|figure4:inst1|figure1:inst3
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst1|figure1:inst1
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst1|figure1:inst
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|figure4:inst1|figure1:inst5
+Cin => S.IN1
+Cin => Cout.IN0
+Cin => Cout.IN0
+X => S.IN0
+X => Cout.IN0
+X => Cout.IN1
+Y => S.IN1
+Y => Cout.IN1
+Y => Cout.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst31
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst35
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst39
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst43
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst32
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst36
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst40
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|mux4to1:inst2
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|StackProject|seven_seg_decoder:inst6
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|StackProject|seven_seg_decoder:inst13
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|StackProject|seven_seg_decoder:inst3
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+

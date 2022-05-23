@@ -1,0 +1,26 @@
+|NegativeTrigger
+Q <= datalatch:inst1.Q
+D => datalatch:inst.D
+Clock => datalatch:inst.Clock
+Clock => inst2.IN0
+Q~ <= datalatch:inst1.Q~
+
+
+|NegativeTrigger|datalatch:inst1
+Q~ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clock => inst1.IN1
+Clock => inst.IN0
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|NegativeTrigger|datalatch:inst
+Q~ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clock => inst1.IN1
+Clock => inst.IN0
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

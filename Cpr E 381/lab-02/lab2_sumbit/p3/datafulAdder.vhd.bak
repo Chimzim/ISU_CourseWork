@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------
+-- Chimzim Ogbondah
+-- Software Engineering
+-- Iowa State University
+-------------------------------------------------------------------------
+
+
+-- dataNfullAdder.vhd
+-------------------------------------------------------------------------
+-- DESCRIPTION: This file contains a dataflow implementation of the N bit 2-1 mux
+--
+-- NOTES:
+-- 9/2/20 by Chimzim Ogbondah:Design created.
+-------------------------------------------------------------------------
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity datafullAdder is
+  generic(N : Integer:= 32);
+  port(Cin		: in std_logic_vector(N-1 downto 0);
+	i_X          : in std_logic_vector(N-1 downto 0);
+	i_Y          : in std_logic_vector(N-1 downto 0);
+	Cout	:  out std_logic_vector(N-1 downto 0);
+       o_F          : out std_logic_vector(N-1 downto 0));
+
+end datafullAdder;
+
+
+architecture dataflow of datafullAdder is
+signal Carrybit : std_logic_vector(N-1 downto 0);
+begin
+o_F(0) <= (Cin XOR i_X) XOR i_Y;
+  Cout(0) <= (i_X AND i_Y) OR (Cin AND(i_X XOR i_Y));
+Carrybit(0) <= Cout(0);
+G1: for i in 0 to N-1 generate
+  o_F(i) <= (Carrybit(i-1) XOR i_X(i)) XOR i_Y(i);
+  Cout(i) <= (i_X(i) AND i_Y(i)) OR (Carrybit(i-1) AND(i_X(i) XOR i_Y(i)));
+Carrybit(i) <= Cout(i);
+end generate;
+  
+end dataflow;

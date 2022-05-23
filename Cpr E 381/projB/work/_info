@@ -1,0 +1,902 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CPRE381/projB
+T_opt
+!s110 1604379018
+V^KP`f4I?eHdGS_;h@LEU?1
+04 15 9 work fullcontrolunit structure 1
+=1-0050569b1b37-5fa0e189-4f-1f18
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.2;71
+R0
+T_opt1
+!s110 1604270396
+VUYaA:Z`f5<fLVP]LA5V431
+04 10 6 work alucontrol design 1
+=1-0050569b10e9-5f9f393c-60-2bc8
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1604377496
+VjjfjBG_E64SGMDE35=NFk1
+04 7 9 work pclogic structure 1
+=1-0050569b1b37-5fa0db95-2bb-2db0
+R1
+R2
+n@_opt2
+R3
+R0
+Ealucontrol
+Z4 w1604789406
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 98
+R0
+Z7 8U:/CPRE381/projB/ControlUnit/ALUcontrol.vhd
+Z8 FU:/CPRE381/projB/ControlUnit/ALUcontrol.vhd
+l0
+Z9 L21 1
+V5Y5z=96Fj^B4NPkC?C5ZL3
+!s100 O5LbE4mG0KZR96Sg`<Cb`2
+Z10 OL;C;2020.2;71
+32
+Z11 !s110 1604789624
+!i10b 1
+Z12 !s108 1604789623.000000
+Z13 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/ControlUnit/ALUcontrol.vhd|
+Z14 !s107 U:/CPRE381/projB/ControlUnit/ALUcontrol.vhd|
+!i113 0
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Adesign
+R5
+R6
+DEx4 work 10 alucontrol 0 22 5Y5z=96Fj^B4NPkC?C5ZL3
+!i122 98
+l33
+L31 82
+V1iY_BdjLWmSgFXLHR<Q3U1
+!s100 aV2NEaESTo=V4e=`JbzGJ2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
+Eandg2
+Z17 w1558467780
+R5
+R6
+!i122 59
+R0
+Z18 8U:/CPRE381/projB/andg2.vhd
+Z19 FU:/CPRE381/projB/andg2.vhd
+l0
+Z20 L23 1
+VQ@<<<@nlJ=eiIl4BJDFzW2
+!s100 YT?bGzEmcFo:DlnoC^B4_0
+R10
+32
+Z21 !s110 1604369716
+!i10b 1
+Z22 !s108 1604369716.000000
+Z23 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/andg2.vhd|
+Z24 !s107 U:/CPRE381/projB/andg2.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 5 andg2 0 22 Q@<<<@nlJ=eiIl4BJDFzW2
+!i122 59
+l32
+Z25 L31 6
+VJVOzCk?IH:iJ5bCRU`CK13
+!s100 I`@Z@UBObS]<7m8bPgKUS1
+R10
+32
+R21
+!i10b 1
+R22
+R23
+R24
+!i113 0
+R15
+R16
+Ebarrelshifter
+Z26 w1602170255
+R5
+R6
+!i122 76
+R0
+Z27 8U:/CPRE381/projB/barrelShifter.vhd
+Z28 FU:/CPRE381/projB/barrelShifter.vhd
+l0
+R9
+VL?>emZ^ol?0aEo^lBTM8l2
+!s100 ETP4^@a1O4Hd2@Ol?^X8o2
+R10
+32
+Z29 !s110 1604376600
+!i10b 1
+Z30 !s108 1604376600.000000
+Z31 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/barrelShifter.vhd|
+Z32 !s107 U:/CPRE381/projB/barrelShifter.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 13 barrelshifter 0 22 L?>emZ^ol?0aEo^lBTM8l2
+!i122 76
+l42
+L31 189
+V;B^8CWE]`I:Ta<?RbSNI:1
+!s100 76=h^G_I]71SLYSPQQ8Qm1
+R10
+32
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 0
+R15
+R16
+Econtrolunit
+Z33 w1604269342
+R5
+R6
+!i122 48
+R0
+Z34 8U:/CPRE381/projB/controlUnit.vhd
+Z35 FU:/CPRE381/projB/controlUnit.vhd
+l0
+R9
+VD3R>EM1hdk53@QQm4L9WU0
+!s100 ;lYO>D6@Dnn?nVbE;Yo?30
+R10
+32
+Z36 !s110 1604284515
+!i10b 1
+Z37 !s108 1604284515.000000
+Z38 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/controlUnit.vhd|
+Z39 !s107 U:/CPRE381/projB/controlUnit.vhd|
+!i113 0
+R15
+R16
+Adesign
+R5
+R6
+DEx4 work 11 controlunit 0 22 D3R>EM1hdk53@QQm4L9WU0
+!i122 48
+l38
+L36 134
+V:nJcFWe=Ga_He<ccc89CN0
+!s100 WPS?]Cf5FVCi3KK^99d371
+R10
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 0
+R15
+R16
+Edff
+R17
+R5
+R6
+!i122 58
+R0
+Z40 8U:/CPRE381/projB/dff.vhd
+Z41 FU:/CPRE381/projB/dff.vhd
+l0
+R9
+V<R:lmjjDXa`]L14ceUIAn3
+!s100 mT_OLTf8f1nD0BMVi`22Q3
+R10
+32
+Z42 !s110 1604369714
+!i10b 1
+Z43 !s108 1604369714.000000
+Z44 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/dff.vhd|
+Z45 !s107 U:/CPRE381/projB/dff.vhd|
+!i113 0
+R15
+R16
+Amixed
+R5
+R6
+DEx4 work 3 dff 0 22 <R:lmjjDXa`]L14ceUIAn3
+!i122 58
+l35
+L31 29
+VMe1[^^c?@jk=`6K1ZJFGM0
+!s100 j3C[YCFRW8M@3<JaVm8?<1
+R10
+32
+R42
+!i10b 1
+R43
+R44
+R45
+!i113 0
+R15
+R16
+Efulladder
+Z46 w1598674908
+R5
+R6
+!i122 57
+R0
+Z47 8U:/CPRE381/projB/fullAdder.vhd
+Z48 FU:/CPRE381/projB/fullAdder.vhd
+l0
+R9
+Ve;GdYn4PWn=dF0a;[:0d92
+!s100 [oEE?6S0Y7mQLmHD`[WWQ1
+R10
+32
+Z49 !s110 1604369712
+!i10b 1
+Z50 !s108 1604369712.000000
+Z51 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/fullAdder.vhd|
+Z52 !s107 U:/CPRE381/projB/fullAdder.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 9 fulladder 0 22 e;GdYn4PWn=dF0a;[:0d92
+!i122 57
+l57
+L31 69
+VIPi@9T08HTfYOg]8kk6[o0
+!s100 X`9X;^VR4^94Cl]Ij9@U12
+R10
+32
+R49
+!i10b 1
+R50
+R51
+R52
+!i113 0
+R15
+R16
+Efullcontrolunit
+Z53 w1604378971
+R5
+R6
+!i122 84
+R0
+Z54 8U:/CPRE381/projB/ControlUnit/fullControlUnit.vhd
+Z55 FU:/CPRE381/projB/ControlUnit/fullControlUnit.vhd
+l0
+L20 1
+VLI]BADnQdYa]VgBXAoi6o2
+!s100 M88LRjUdm:UamYOnJVjam0
+R10
+32
+Z56 !s110 1604379005
+!i10b 1
+Z57 !s108 1604379005.000000
+Z58 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/ControlUnit/fullControlUnit.vhd|
+Z59 !s107 U:/CPRE381/projB/ControlUnit/fullControlUnit.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 15 fullcontrolunit 0 22 LI]BADnQdYa]VgBXAoi6o2
+!i122 84
+l65
+L38 56
+VSPi@HQCb`OkaiBCiQDN`L3
+!s100 LMlT4mMVEO95kK8;Ic_V30
+R10
+32
+R56
+!i10b 1
+R57
+R58
+R59
+!i113 0
+R15
+R16
+Einvg
+R17
+R5
+R6
+!i122 73
+R0
+Z60 8U:/CPRE381/projB/invg.vhd
+Z61 FU:/CPRE381/projB/invg.vhd
+l0
+R20
+VQ?6hb9ePk@>kZZ9k]hNSO3
+!s100 _XK?_^5z0Rm1<k12?;5R?2
+R10
+32
+Z62 !s110 1604376591
+!i10b 1
+Z63 !s108 1604376590.000000
+Z64 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/invg.vhd|
+Z65 !s107 U:/CPRE381/projB/invg.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 4 invg 0 22 Q?6hb9ePk@>kZZ9k]hNSO3
+!i122 73
+l31
+L30 6
+Vch>li:oKYZkCO5]GamViK1
+!s100 bk7I76o8e1LURdoZEQb8H0
+R10
+32
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 0
+R15
+R16
+Emips_processor
+Z66 w1604789831
+R5
+R6
+!i122 100
+R0
+Z67 8U:/CPRE381/projB/MIPS_Processor.vhd
+Z68 FU:/CPRE381/projB/MIPS_Processor.vhd
+l0
+R20
+V<cc;5ZgnfMfhzk91mdbM:2
+!s100 9FjB2b^5[lY6?_1O9VNg?3
+R10
+32
+Z69 !s110 1604789865
+!i10b 1
+Z70 !s108 1604789865.000000
+Z71 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/MIPS_Processor.vhd|
+!s107 U:/CPRE381/projB/MIPS_Processor.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 14 mips_processor 0 22 <cc;5ZgnfMfhzk91mdbM:2
+!i122 100
+l159
+L34 239
+VZn;UhcOUgG;>?b^EQ4[E[2
+!s100 AWR6E8]2`6@DO[VoIUW7A1
+R10
+32
+R69
+!i10b 1
+R70
+R71
+Z72 !s107 U:/CPRE381/projB/MIPS_Processor.vhd|
+!i113 0
+R15
+R16
+Emux
+Z73 w1604376539
+R5
+R6
+!i122 72
+R0
+Z74 8U:/CPRE381/projB/mux.vhd
+Z75 FU:/CPRE381/projB/mux.vhd
+l0
+R9
+VMRoAbPblG>d:QlOf1ERaX0
+!s100 NJ`^hfAagIdRH?@AD2@0h0
+R10
+32
+Z76 !s110 1604376588
+!i10b 1
+Z77 !s108 1604376588.000000
+Z78 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/mux.vhd|
+Z79 !s107 U:/CPRE381/projB/mux.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 3 mux 0 22 MRoAbPblG>d:QlOf1ERaX0
+!i122 72
+l52
+L30 57
+VEB7g`geKf:]z<kY?F0b7P3
+!s100 YlH056N5^8DkCGo<9^A9[0
+R10
+32
+R76
+!i10b 1
+R77
+R78
+R79
+!i113 0
+R15
+R16
+Enbitdecoder
+Z80 w1599678102
+R5
+R6
+!i122 87
+R0
+Z81 8U:/CPRE381/projB/Nbitdecoder.vhd
+Z82 FU:/CPRE381/projB/Nbitdecoder.vhd
+l0
+R9
+V?H4B3LeU[7ma8YHeSj?U32
+!s100 :kKm1EjRBO<:H9QKm^9?20
+R10
+32
+Z83 !s110 1604457696
+!i10b 1
+Z84 !s108 1604457696.000000
+Z85 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/Nbitdecoder.vhd|
+Z86 !s107 U:/CPRE381/projB/Nbitdecoder.vhd|
+!i113 0
+R15
+R16
+Adesign
+R5
+R6
+DEx4 work 11 nbitdecoder 0 22 ?H4B3LeU[7ma8YHeSj?U32
+!i122 87
+l32
+L30 40
+VQIY@iaYzE;fmI0d9[YSjU1
+!s100 _T5]:71:M9LXFm1HhXY]m1
+R10
+32
+R83
+!i10b 1
+R84
+R85
+R86
+!i113 0
+R15
+R16
+Enbitdff
+Z87 w1599750734
+R5
+R6
+!i122 55
+R0
+Z88 8U:/CPRE381/projB/Nbitdff.vhd
+Z89 FU:/CPRE381/projB/Nbitdff.vhd
+l0
+R9
+Vm@6jnTob;7O;2z94V]neQ2
+!s100 K_c;4J8??RR_7ZSDkjMn81
+R10
+32
+Z90 !s110 1604369708
+!i10b 1
+Z91 !s108 1604369708.000000
+Z92 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/Nbitdff.vhd|
+Z93 !s107 U:/CPRE381/projB/Nbitdff.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 7 nbitdff 0 22 m@6jnTob;7O;2z94V]neQ2
+!i122 55
+l44
+L33 27
+V9@Y;OD<`@4?LNL@B>^eI02
+!s100 @Fi7;i@7B0XO^::L5Ga321
+R10
+32
+R90
+!i10b 1
+R91
+R92
+R93
+!i113 0
+R15
+R16
+Enbitfulladder
+Z94 w1604369721
+R5
+R6
+!i122 61
+R0
+Z95 8U:/CPRE381/projB/NbitfullAdder.vhd
+Z96 FU:/CPRE381/projB/NbitfullAdder.vhd
+l0
+R9
+V4h?OAgS609X?eFI^o;[B]0
+!s100 <I=lgci5V5jA4lTPED?9m3
+R10
+32
+Z97 !s110 1604369758
+!i10b 1
+Z98 !s108 1604369758.000000
+Z99 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/NbitfullAdder.vhd|
+Z100 !s107 U:/CPRE381/projB/NbitfullAdder.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 13 nbitfulladder 0 22 4h?OAgS609X?eFI^o;[B]0
+!i122 61
+l44
+L31 43
+VSOm8[60<S0kQNI2RmX8SU3
+!s100 A]D>ZH2a;EoTWdkd4;n4`1
+R10
+32
+R97
+!i10b 1
+R98
+R99
+R100
+!i113 0
+R15
+R16
+Eorg2
+R17
+R5
+R6
+!i122 54
+R0
+Z101 8U:/CPRE381/projB/org2.vhd
+Z102 FU:/CPRE381/projB/org2.vhd
+l0
+R20
+V[C`FCj=kL0CTBYLlbjJzD3
+!s100 bGQ1F9eW^Q17OoL9h4g7z2
+R10
+32
+Z103 !s110 1604369706
+!i10b 1
+Z104 !s108 1604369706.000000
+Z105 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/org2.vhd|
+Z106 !s107 U:/CPRE381/projB/org2.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 4 org2 0 22 [C`FCj=kL0CTBYLlbjJzD3
+!i122 54
+l32
+R25
+VNHGn>Kh:]BEh4o]ImiG<d3
+!s100 h5_AzR3TdRA0a_K=dQ>mI2
+R10
+32
+R103
+!i10b 1
+R104
+R105
+R106
+!i113 0
+R15
+R16
+Epc
+Z107 w1604370919
+R5
+R6
+!i122 78
+R0
+Z108 8U:/CPRE381/projB/PC.vhd
+Z109 FU:/CPRE381/projB/PC.vhd
+l0
+R9
+V<bEALD9HRj8WYfR=dEKUk0
+!s100 hE`K>T2n@B=Ji]Ze0eD>C3
+R10
+32
+Z110 !s110 1604377325
+!i10b 1
+Z111 !s108 1604377325.000000
+Z112 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/PC.vhd|
+Z113 !s107 U:/CPRE381/projB/PC.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 2 pc 0 22 <bEALD9HRj8WYfR=dEKUk0
+!i122 78
+l40
+L28 29
+VmFB0j:]Ge[P:^?BmXI;LY2
+!s100 ZOZ9:HhDXKQ]niKiaB7[_0
+R10
+32
+R110
+!i10b 1
+R111
+R112
+R113
+!i113 0
+R15
+R16
+Epclogic
+Z114 w1604789260
+R5
+R6
+!i122 96
+R0
+Z115 8U:/CPRE381/projB/PC/PClogic.vhd
+Z116 FU:/CPRE381/projB/PC/PClogic.vhd
+l0
+R9
+VPAPi9ZQ]MFC`JKDaIjVPz0
+!s100 dje=8adncIEC`dHRmLUiH0
+R10
+32
+Z117 !s110 1604789298
+!i10b 1
+Z118 !s108 1604789298.000000
+Z119 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/PC/PClogic.vhd|
+Z120 !s107 U:/CPRE381/projB/PC/PClogic.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 7 pclogic 0 22 PAPi9ZQ]MFC`JKDaIjVPz0
+!i122 96
+l67
+L33 104
+VF`dmlL9YADH5ai:DC;NX[0
+!s100 fedQijWohKl;eH]QXaFA[3
+R10
+32
+R117
+!i10b 1
+R118
+R119
+R120
+!i113 0
+R15
+R16
+Eprojbmips
+Z121 w1604605616
+R5
+R6
+!i122 93
+R0
+Z122 8U:/CPRE381/projB/projBMips.vhd
+Z123 FU:/CPRE381/projB/projBMips.vhd
+l0
+R20
+V7cQYadLhjXOn@mG^Uh[;^3
+!s100 2Q2Z6IVFS_z2jR1H2B9D:2
+R10
+32
+Z124 !s110 1604605679
+!i10b 1
+Z125 !s108 1604605678.000000
+Z126 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/projBMips.vhd|
+Z127 !s107 U:/CPRE381/projB/projBMips.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 9 projbmips 0 22 7cQYadLhjXOn@mG^Uh[;^3
+!i122 93
+l155
+L34 231
+VWJFkjFbj2o]a61mbUb5Nz0
+!s100 ;ll<>:jCaf[b;4kkR3d742
+R10
+32
+R124
+!i10b 1
+R125
+R126
+R127
+!i113 0
+R15
+R16
+Eregisterfile
+Z128 w1604608117
+R5
+R6
+!i122 95
+R0
+Z129 8U:/CPRE381/projB/registerfile.vhd
+Z130 FU:/CPRE381/projB/registerfile.vhd
+l0
+R9
+V7Ji_Hhg`hzP`W7@6PEJc43
+!s100 I<7Bm5;R308PO_o3i:27N1
+R10
+32
+Z131 !s110 1604608152
+!i10b 1
+Z132 !s108 1604608151.000000
+Z133 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/registerfile.vhd|
+Z134 !s107 U:/CPRE381/projB/registerfile.vhd|
+!i113 0
+R15
+R16
+Astructure
+R5
+R6
+DEx4 work 12 registerfile 0 22 7Ji_Hhg`hzP`W7@6PEJc43
+!i122 95
+l95
+L35 437
+V0CRzla5UOoShE:@8VJ9>z0
+!s100 77cb@g]A7:]9l`Z5lY5K]0
+R10
+32
+R131
+!i10b 1
+R132
+R133
+R134
+!i113 0
+R15
+R16
+Etb_alucontrol
+Z135 w1604199045
+R5
+R6
+!i122 39
+R0
+Z136 8U:/CPRE381/projB/tb_ALUcontrol.vhd
+Z137 FU:/CPRE381/projB/tb_ALUcontrol.vhd
+l0
+Z138 L22 1
+VC4Pi?z:@dlL<S7=o43i^C1
+!s100 F>_g9Jh@bGU6FNo;n>az:0
+R10
+32
+Z139 !s110 1604202871
+!i10b 1
+Z140 !s108 1604202871.000000
+Z141 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/tb_ALUcontrol.vhd|
+Z142 !s107 U:/CPRE381/projB/tb_ALUcontrol.vhd|
+!i113 0
+R15
+R16
+Abehavior
+R5
+R6
+DEx4 work 13 tb_alucontrol 0 22 C4Pi?z:@dlL<S7=o43i^C1
+!i122 39
+l42
+L26 148
+V<S8W:@nY7_`BEgc;JjA]R2
+!s100 4bA7O21g2d:E^XVO78?UY1
+R10
+32
+R139
+!i10b 1
+R140
+R141
+R142
+!i113 0
+R15
+R16
+Etb_controlunit
+Z143 w1604195185
+R5
+R6
+!i122 30
+R0
+Z144 8U:/CPRE381/projB/tb_controlUnit.vhd
+Z145 FU:/CPRE381/projB/tb_controlUnit.vhd
+l0
+R138
+VO4C@0OVj?WieQJV[l;HTB1
+!s100 i8l<`NBjAj`[K53nk6EXJ1
+R10
+32
+Z146 !s110 1604196485
+!i10b 1
+Z147 !s108 1604196485.000000
+Z148 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/tb_controlUnit.vhd|
+Z149 !s107 U:/CPRE381/projB/tb_controlUnit.vhd|
+!i113 0
+R15
+R16
+Abehavior
+R5
+R6
+DEx4 work 14 tb_controlunit 0 22 O4C@0OVj?WieQJV[l;HTB1
+!i122 30
+l48
+L26 160
+Vng8^lfO]h`2;9jK4SU7`Q0
+!s100 3d<TF17LUnHA_7TCj2I4d0
+R10
+32
+R146
+!i10b 1
+R147
+R148
+R149
+!i113 0
+R15
+R16
+Exorg2
+R17
+R5
+R6
+!i122 53
+R0
+Z150 8U:/CPRE381/projB/xorg2.vhd
+Z151 FU:/CPRE381/projB/xorg2.vhd
+l0
+R20
+V;hb`C0MKik;h36`3`SzM60
+!s100 [hI[mXFH4_j16U;>U1Lfn2
+R10
+32
+Z152 !s110 1604369703
+!i10b 1
+Z153 !s108 1604369703.000000
+Z154 !s90 -reportprogress|300|-work|work|U:/CPRE381/projB/xorg2.vhd|
+Z155 !s107 U:/CPRE381/projB/xorg2.vhd|
+!i113 0
+R15
+R16
+Adataflow
+R5
+R6
+DEx4 work 5 xorg2 0 22 ;hb`C0MKik;h36`3`SzM60
+!i122 53
+l32
+R25
+VbmLohbkYjJQ`?EHUY>LoL1
+!s100 Z6[FAPS4fBLB`F?OO<AY72
+R10
+32
+R152
+!i10b 1
+R153
+R154
+R155
+!i113 0
+R15
+R16

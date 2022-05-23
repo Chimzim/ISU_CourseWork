@@ -1,0 +1,9 @@
+|SRLatch
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst1.IN0
+Clock => inst.IN1
+R => inst1.IN1
+S => inst.IN0
+Q~ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

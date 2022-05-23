@@ -1,0 +1,26 @@
+|posflip
+Q <= datalatch:inst1.Q
+D => datalatch:inst.D
+Clock => inst3.IN0
+Clock => datalatch:inst1.Clock
+Q~ <= datalatch:inst1.Q~
+
+
+|posflip|datalatch:inst1
+Q~ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clock => inst1.IN1
+Clock => inst.IN0
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|posflip|datalatch:inst
+Q~ <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+D => inst4.IN0
+D => inst.IN1
+Clock => inst1.IN1
+Clock => inst.IN0
+Q <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 20 16:45:47 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : Mod6Counter
+Top-level Entity Name : Mod6Counter
+Family : Cyclone IV E
+Total logic elements : 44
+    Total combinational functions : 44
+    Dedicated logic registers : 30
+Total registers : 30
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,206 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dU:/CPRE381/lab-04
+T_opt
+!s110 1600922745
+VMEdJHaVYC2L2SoGWho7?a1
+04 7 8 work tb_dmem behavior 1
+=1-0050569b2d0b-5f6c2479-55-15d4
+Z1 o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.2;71
+T_opt1
+!s110 1600884876
+VbYEik>28dDgk8??W^lM`U1
+Z4 04 7 8 work signext dataflow 1
+=1-0050569b0ad1-5f6b908b-2ea-20b4
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1600898590
+V4S19KGz^0R1T=9>lKcd7:1
+R4
+=1-0050569b007c-5f6bc61c-3a9-21cc
+R1
+R2
+n@_opt2
+R3
+R0
+Emem
+Z5 w1558467780
+Z6 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 7
+R0
+Z9 8U:/CPRE381/lab-04/mem.vhd
+Z10 FU:/CPRE381/lab-04/mem.vhd
+l0
+L8 1
+Vl8<PCiN;cU;BN3M[A<;IE3
+!s100 fRlcaiTJZJ1H;nZh;8=LI3
+Z11 OL;C;2020.2;71
+32
+Z12 !s110 1600921039
+!i10b 1
+Z13 !s108 1600921038.000000
+Z14 !s90 -reportprogress|300|-work|work|U:/CPRE381/lab-04/mem.vhd|
+Z15 !s107 U:/CPRE381/lab-04/mem.vhd|
+!i113 0
+Z16 o-work work
+Z17 tExplicit 1 CvgOpt 0
+Artl
+R6
+R7
+R8
+DEx4 work 3 mem 0 22 l8<PCiN;cU;BN3M[A<;IE3
+!i122 7
+l37
+L27 24
+V`6^NbPhKNmSBg:`:Un8;g3
+!s100 OI8_3><BhDkT3l3n8`OXd3
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Esignext
+Z18 w1600884830
+R7
+R8
+!i122 6
+R0
+Z19 8U:/CPRE381/lab-04/signExt.vhd
+Z20 FU:/CPRE381/lab-04/signExt.vhd
+l0
+Z21 L21 1
+V:`=lc8kTVjV2M[ag2z[0a3
+!s100 @KbzQP=<K`ETQN`bO3BN20
+R11
+32
+Z22 !s110 1600898579
+!i10b 1
+Z23 !s108 1600898579.000000
+Z24 !s90 -reportprogress|300|-work|work|U:/CPRE381/lab-04/signExt.vhd|
+Z25 !s107 U:/CPRE381/lab-04/signExt.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 7 signext 0 22 :`=lc8kTVjV2M[ag2z[0a3
+!i122 6
+l31
+Z26 L27 17
+V1fA02P_glUO_Z_n=2h]Pn0
+!s100 DQDMcQMgboX0icRSgPAh61
+R11
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 0
+R16
+R17
+Etb_dmem
+Z27 w1600922708
+R7
+R8
+!i122 14
+R0
+Z28 8U:/CPRE381/lab-04/test_dmem.vhd
+Z29 FU:/CPRE381/lab-04/test_dmem.vhd
+l0
+L22 1
+VMThJ?laJj?i<H1ESH6oBW0
+!s100 nUTln>UlNl>E`OObhf_<73
+R11
+32
+Z30 !s110 1600922734
+!i10b 1
+Z31 !s108 1600922733.000000
+Z32 !s90 -reportprogress|300|-work|work|U:/CPRE381/lab-04/test_dmem.vhd|
+Z33 !s107 U:/CPRE381/lab-04/test_dmem.vhd|
+!i113 0
+R16
+R17
+Abehavior
+R7
+R8
+DEx4 work 7 tb_dmem 0 22 MThJ?laJj?i<H1ESH6oBW0
+!i122 14
+l49
+L31 261
+VHz;eR2TMan^@f5ibbL5Nh3
+!s100 RMN:aA5;L_mLaV]ZnKKh10
+R11
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R16
+R17
+Ezeroext
+Z34 w1600884226
+R7
+R8
+!i122 5
+R0
+Z35 8U:/CPRE381/lab-04/zeroExt.vhd.vhd
+Z36 FU:/CPRE381/lab-04/zeroExt.vhd.vhd
+l0
+R21
+VY8h8XLR:MPm4hE2O8bM]93
+!s100 mdakH@TCQ6WG49a1dfiBD0
+R11
+32
+Z37 !s110 1600898456
+!i10b 1
+Z38 !s108 1600898455.000000
+Z39 !s90 -reportprogress|300|-work|work|U:/CPRE381/lab-04/zeroExt.vhd.vhd|
+Z40 !s107 U:/CPRE381/lab-04/zeroExt.vhd.vhd|
+!i113 0
+R16
+R17
+Adataflow
+R7
+R8
+DEx4 work 7 zeroext 0 22 Y8h8XLR:MPm4hE2O8bM]93
+!i122 5
+l31
+R26
+Ve0?Vfl7k_[;UWzMSHGR`W3
+!s100 Dh8TRIN]IfnIVUA9bEfTf1
+R11
+32
+R37
+!i10b 1
+R38
+R39
+R40
+!i113 0
+R16
+R17

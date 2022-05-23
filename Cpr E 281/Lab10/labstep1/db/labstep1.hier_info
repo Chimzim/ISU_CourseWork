@@ -1,0 +1,12 @@
+|labstep1
+Q1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clock => inst.CLK
+Clock => inst1.CLK
+Clock => inst2.CLK
+Clock => inst3.CLK
+Input => inst.DATAIN
+Q2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+Q3 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Q4 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+

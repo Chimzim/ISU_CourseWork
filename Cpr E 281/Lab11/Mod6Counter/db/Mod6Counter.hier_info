@@ -1,0 +1,100 @@
+|Mod6Counter
+A <= seven_seg_decoder:inst6.A
+clock => clock_generator:inst28.CLK_IN
+W => inst7.IN1
+W => inst24.IN0
+W => inst33.IN2
+W => inst10.IN0
+W => inst22.IN0
+B <= seven_seg_decoder:inst6.B
+C <= seven_seg_decoder:inst6.C
+D <= seven_seg_decoder:inst6.D
+E <= seven_seg_decoder:inst6.E
+F <= seven_seg_decoder:inst6.F
+G <= seven_seg_decoder:inst6.G
+
+
+|Mod6Counter|seven_seg_decoder:inst6
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|Mod6Counter|clock_generator:inst28
+CLK_OUT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => clock_divider_1024:inst.CLK_IN
+
+
+|Mod6Counter|clock_generator:inst28|clock_divider_1024:inst8
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+
+|Mod6Counter|clock_generator:inst28|clock_divider_1024:inst
+CLK_OUT <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+CLK_IN => inst1.CLK
+CLK_IN => inst2.CLK
+CLK_IN => inst3.CLK
+CLK_IN => inst4.CLK
+CLK_IN => inst5.CLK
+CLK_IN => inst6.CLK
+CLK_IN => inst7.CLK
+CLK_IN => inst8.CLK
+CLK_IN => inst9.CLK
+CLK_IN => inst10.CLK
+
+

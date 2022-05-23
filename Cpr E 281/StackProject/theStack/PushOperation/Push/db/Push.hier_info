@@ -1,0 +1,502 @@
+|Push
+A0 <= inst75.DB_MAX_OUTPUT_PORT_TYPE
+clear => inst100.ACLR
+clear => inst1.ACLR
+clear => inst3.ACLR
+clear => inst2.ACLR
+clear => inst100.PRESET
+clear => inst66.ACLR
+clear => inst66.PRESET
+clear => inst67.ACLR
+clear => inst67.PRESET
+clear => inst68.ACLR
+clear => inst68.PRESET
+clear => inst25.ACLR
+clear => inst25.PRESET
+clear => inst37.ACLR
+clear => inst37.PRESET
+clear => inst38.ACLR
+clear => inst38.PRESET
+clear => inst39.ACLR
+clear => inst39.PRESET
+clear => inst43.ACLR
+clear => inst43.PRESET
+clear => inst45.ACLR
+clear => inst45.PRESET
+clear => inst46.ACLR
+clear => inst46.PRESET
+clear => inst47.ACLR
+clear => inst47.PRESET
+clear => inst52.ACLR
+clear => inst52.PRESET
+clear => inst54.ACLR
+clear => inst54.PRESET
+clear => inst55.ACLR
+clear => inst55.PRESET
+clear => inst56.ACLR
+clear => inst56.PRESET
+clock2 => inst100.CLK
+clock2 => inst1.CLK
+clock2 => inst3.CLK
+clock2 => inst2.CLK
+clock2 => inst66.CLK
+clock2 => inst67.CLK
+clock2 => inst68.CLK
+clock2 => inst25.CLK
+clock2 => inst37.CLK
+clock2 => inst38.CLK
+clock2 => inst39.CLK
+clock2 => inst43.CLK
+clock2 => inst45.CLK
+clock2 => inst46.CLK
+clock2 => inst47.CLK
+clock2 => inst52.CLK
+clock2 => inst54.CLK
+clock2 => inst55.CLK
+clock2 => inst56.CLK
+SW3 => mux4to1:inst22.W1
+Push => inst19.IN0
+Push => inst15.IN0
+Push => inst11.IN0
+Push => inst8.IN0
+Push => inst6.IN2
+SW2 => mux4to1:inst29.W1
+SW1 => mux4to1:inst30.W1
+SW0 => mux4to1:inst31.W1
+B0 <= inst74.DB_MAX_OUTPUT_PORT_TYPE
+C0 <= inst73.DB_MAX_OUTPUT_PORT_TYPE
+D0 <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+E0 <= inst71.DB_MAX_OUTPUT_PORT_TYPE
+F0 <= inst70.DB_MAX_OUTPUT_PORT_TYPE
+G0 <= inst69.DB_MAX_OUTPUT_PORT_TYPE
+A1 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+B1 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+C1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+D1 <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+E1 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+F1 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+G1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A2 <= <GND>
+B2 <= inst79.DB_MAX_OUTPUT_PORT_TYPE
+C2 <= inst78.DB_MAX_OUTPUT_PORT_TYPE
+D2 <= inst77.DB_MAX_OUTPUT_PORT_TYPE
+E2 <= inst76.DB_MAX_OUTPUT_PORT_TYPE
+F2 <= inst65.DB_MAX_OUTPUT_PORT_TYPE
+G2 <= inst60.DB_MAX_OUTPUT_PORT_TYPE
+A3 <= inst87.DB_MAX_OUTPUT_PORT_TYPE
+B3 <= inst86.DB_MAX_OUTPUT_PORT_TYPE
+C3 <= inst85.DB_MAX_OUTPUT_PORT_TYPE
+D3 <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+E3 <= inst83.DB_MAX_OUTPUT_PORT_TYPE
+F3 <= inst82.DB_MAX_OUTPUT_PORT_TYPE
+G3 <= inst81.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= decodeMan:inst.d5
+
+
+|Push|seven_seg_decoder:inst64
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|Push|mux4to1:inst22
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|decodeMan:inst
+a => d4.IN0
+a => d6.IN0
+a => d0.IN0
+a => d2.IN0
+b => d2.IN1
+b => d6.IN1
+b => d0.IN1
+b => d4.IN1
+c => d1.IN1
+c => d3.IN1
+c => d5.IN1
+c => d7.IN1
+c => d0.IN1
+c => d2.IN1
+c => d4.IN1
+c => d6.IN1
+d0 <= d0.DB_MAX_OUTPUT_PORT_TYPE
+d1 <= d1.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= d2.DB_MAX_OUTPUT_PORT_TYPE
+d3 <= d3.DB_MAX_OUTPUT_PORT_TYPE
+d4 <= d4.DB_MAX_OUTPUT_PORT_TYPE
+d5 <= d5.DB_MAX_OUTPUT_PORT_TYPE
+d6 <= d6.DB_MAX_OUTPUT_PORT_TYPE
+d7 <= d7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst29
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst30
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst31
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|seven_seg_decoder:inst63
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|Push|mux4to1:inst24
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst40
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst41
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst42
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|seven_seg_decoder:inst62
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|Push|mux4to1:inst26
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst48
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst49
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst50
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|seven_seg_decoder:inst61
+A <= A.DB_MAX_OUTPUT_PORT_TYPE
+B <= B.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+D <= D.DB_MAX_OUTPUT_PORT_TYPE
+E <= E.DB_MAX_OUTPUT_PORT_TYPE
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+G <= G.DB_MAX_OUTPUT_PORT_TYPE
+W => A.IN0
+W => A.IN0
+W => B.IN0
+W => A.IN0
+W => A.IN0
+W => E.IN0
+W => F.IN0
+X => A.IN1
+X => A.IN1
+X => B.IN0
+X => A.IN1
+X => A.IN1
+X => E.IN0
+Y => A.IN1
+Y => B.IN1
+Y => B.IN1
+Y => C.IN1
+Y => C.IN1
+Y => F.IN1
+Y => G.IN1
+Y => A.IN1
+Y => A.IN1
+Y => A.IN1
+Y => E.IN1
+Z => A.IN1
+Z => A.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => D.IN1
+Z => E.IN1
+Z => E.IN1
+Z => F.IN1
+Z => F.IN1
+Z => G.IN1
+Z => A.IN1
+Z => B.IN1
+Z => B.IN1
+Z => C.IN1
+Z => D.IN1
+Z => G.IN1
+
+
+|Push|mux4to1:inst51
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst57
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst58
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Push|mux4to1:inst59
+W3 => F.DATAB
+W2 => F.DATAA
+W1 => F.DATAB
+W0 => F.DATAA
+S0 => F.OUTPUTSELECT
+S0 => F.OUTPUTSELECT
+S1 => F.OUTPUTSELECT
+F <= F.DB_MAX_OUTPUT_PORT_TYPE
+
+

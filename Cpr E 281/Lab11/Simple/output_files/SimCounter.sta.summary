@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -2.318
+TNS   : -7.149
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -2.288
+TNS   : -6.845
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -1.997
+TNS   : -4.261
+
+Type  : Slow 1200mV 85C Model Setup 'clock_generator:inst18|inst7'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst18|inst7'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock_generator:inst18|inst7'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -2.053
+TNS   : -5.630
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -2.002
+TNS   : -5.362
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -1.744
+TNS   : -3.328
+
+Type  : Slow 1200mV 0C Model Setup 'clock_generator:inst18|inst7'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock_generator:inst18|inst7'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -15.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -1.285
+TNS   : -8.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|inst7'
+Slack : -1.285
+TNS   : -2.570
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -0.662
+TNS   : -0.662
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -0.646
+TNS   : -0.646
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -0.478
+TNS   : -0.478
+
+Type  : Fast 1200mV 0C Model Setup 'clock_generator:inst18|inst7'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clock_generator:inst18|inst7'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -13.620
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst|inst10'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|clock_divider_1024:inst8|inst10'
+Slack : -1.000
+TNS   : -7.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock_generator:inst18|inst7'
+Slack : -1.000
+TNS   : -2.000
+
+------------------------------------------------------------

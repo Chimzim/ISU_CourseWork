@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 20 17:40:18 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : Debouncer
+Top-level Entity Name : Debouncer
+Family : Cyclone IV E
+Total logic elements : 26
+    Total combinational functions : 25
+    Dedicated logic registers : 21
+Total registers : 21
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
